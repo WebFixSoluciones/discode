@@ -1,0 +1,225 @@
+/**
+ * DISCODE ECUADOR - Script Global Principal
+ * Manejo de navegación móvil, enlaces dinámicos de WhatsApp,
+ * botón flotante contextual y herramientas interactivas.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initMobileMenu();
+  initActiveNavLink();
+  initWhatsAppContextLinks();
+  initFloatingWhatsApp();
+  initDynamicContactData();
+});
+
+/**
+ * Control del menú hamburguesa en dispositivos móviles
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (toggleBtn && mobileMenu) {
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+}
+
+/**
+ * Resalta el enlace activo de navegación según la URL actual
+ */
+function initActiveNavLink() {
+  const currentPath = window.location.pathname;
+  const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
+  
+  const navLinks = document.querySelectorAll('header nav a, #mobile-menu a');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    
+    // Normalizar si tiene .html o URL limpia
+    const cleanHref = href.replace('.html', '');
+    const cleanPage = pageName.replace('.html', '');
+
+    if (href === pageName || (cleanHref && cleanPage === cleanHref) || (pageName === '' && href === 'index.html')) {
+      link.classList.add('text-brand-navy', 'font-bold');
+      link.classList.remove('text-slate-700');
+    }
+  });
+}
+
+/**
+ * Escanea elementos con atributo data-whatsapp-context y asigna el enlace correspondiente
+ */
+function initWhatsAppContextLinks() {
+  if (typeof DISCODE_CONFIG === 'undefined') return;
+
+  const waLinks = document.querySelectorAll('[data-whatsapp-context]');
+  waLinks.forEach(el => {
+    const context = el.getAttribute('data-whatsapp-context');
+    const extra = el.getAttribute('data-whatsapp-detail') || '';
+    const link = DISCODE_CONFIG.getWhatsAppLink(context, extra);
+
+    if (el.tagName.toLowerCase() === 'a') {
+      el.setAttribute('href', link);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      el.addEventListener('click', () => {
+        window.open(link, '_blank', 'noopener,noreferrer');
+      });
+    }
+  });
+}
+
+/**
+ * Inyecta o configura el botón flotante oficial de WhatsApp con mensaje inteligente según la página
+ */
+function initFloatingWhatsApp() {
+  if (typeof DISCODE_CONFIG === 'undefined') return;
+  if (document.getElementById('discode-floating-wa')) return; // Ya existe
+
+  // Determinar contexto por el nombre de la página
+  const currentPath = window.location.pathname;
+  const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
+  
+  let pageContext = 'default';
+  let badgeText = 'Asesor en línea';
+
+  if (pageName.includes('producto')) {
+    pageContext = 'etiquetas';
+    badgeText = 'Cotizar productos';
+  } else if (pageName.includes('solucione')) {
+    pageContext = 'solucion_integral';
+    badgeText = 'Cotizar soluciones';
+  } else if (pageName.includes('servicio')) {
+    pageContext = 'servicio_tecnico';
+    badgeText = 'Servicio técnico';
+  } else if (pageName.includes('industria')) {
+    pageContext = 'default';
+    badgeText = 'Atención a plantas';
+  } else if (pageName.includes('caso')) {
+    pageContext = 'caso_camaronera';
+    badgeText = 'Casos de éxito';
+  } else if (pageName.includes('recurso')) {
+    pageContext = 'ribbons';
+    badgeText = 'Soporte técnico';
+  } else if (pageName.includes('contacto')) {
+    pageContext = 'default';
+    badgeText = 'Cotización inmediata';
+  }
+
+  const waUrl = DISCODE_CONFIG.getWhatsAppLink(pageContext);
+
+  const container = document.createElement('div');
+  container.id = 'discode-floating-wa';
+  container.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 print:hidden';
+  
+  container.innerHTML = `
+    <div class="hidden sm:flex flex-col items-end">
+      <span class="text-[10px] font-mono uppercase tracking-wider bg-slate-900 text-white px-2 py-0.5 shadow-sm">
+        ${badgeText}
+      </span>
+      <span class="text-xs font-semibold text-slate-800 bg-white border border-slate-200 px-3 py-1 shadow-sm mt-1">
+        ¿Cotizamos por WhatsApp?
+      </span>
+    </div>
+    <a href="${waUrl}" target="_blank" rel="noopener noreferrer" 
+       class="w-13 h-13 bg-brand-navy hover:bg-slate-900 text-white flex items-center justify-center p-3.5 border border-slate-900 shadow-md transition transform hover:-translate-y-0.5 rounded-sm"
+       aria-label="Contactar a DISCODE por WhatsApp">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  `;
+
+  document.body.appendChild(container);
+}
+
+/**
+ * Rellena automáticamente teléfonos y correos en elementos que tengan clases específicas
+ */
+function initDynamicContactData() {
+  if (typeof DISCODE_CONFIG === 'undefined') return;
+
+  document.querySelectorAll('.discode-phone-text').forEach(el => {
+    el.textContent = DISCODE_CONFIG.phoneFormatted;
+  });
+
+  document.querySelectorAll('.discode-phone-link').forEach(el => {
+    el.setAttribute('href', `tel:${DISCODE_CONFIG.phoneTel}`);
+    if (!el.textContent.trim()) el.textContent = DISCODE_CONFIG.phoneFormatted;
+  });
+
+  document.querySelectorAll('.discode-email-link').forEach(el => {
+    el.setAttribute('href', `mailto:${DISCODE_CONFIG.email}`);
+    if (!el.textContent.trim()) el.textContent = DISCODE_CONFIG.email;
+  });
+
+  document.querySelectorAll('.discode-wa-default').forEach(el => {
+    el.setAttribute('href', DISCODE_CONFIG.getWhatsAppLink('default'));
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+  });
+}
+
+/**
+ * Función para el Selector Técnico de Ribbon (usada en recursos.html)
+ */
+function selectRibbonMaterial(type) {
+  const buttons = document.querySelectorAll('.ribbon-select-btn');
+  buttons.forEach(b => {
+    b.classList.remove('border-brand-navy', 'bg-slate-50', 'ring-1', 'ring-brand-navy');
+    b.classList.add('border-slate-200', 'bg-white');
+  });
+
+  const selectedBtn = document.getElementById(`ribbon-opt-${type}`);
+  if (selectedBtn) {
+    selectedBtn.classList.add('border-brand-navy', 'bg-slate-50', 'ring-1', 'ring-brand-navy');
+    selectedBtn.classList.remove('border-slate-200', 'bg-white');
+  }
+
+  const titleEl = document.getElementById('ribbon-result-title');
+  const typeEl = document.getElementById('ribbon-result-type');
+  const descEl = document.getElementById('ribbon-result-desc');
+  const specsEl = document.getElementById('ribbon-result-specs');
+  const ctaBtn = document.getElementById('ribbon-result-cta');
+
+  if (!titleEl || !descEl || !ctaBtn) return;
+
+  if (type === 'papel') {
+    titleEl.textContent = 'Ribbon de Cera Formulada';
+    typeEl.textContent = 'TIPO: WAX / CERA INDUSTRIAL';
+    descEl.textContent = 'Formulación balanceada de ceras técnicas para sustratos de papel bond, térmico e ilustración. Permite excelente contraste en códigos de barras y datos variables a velocidad estándar con bajo desgaste del cabezal.';
+    specsEl.innerHTML = `
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900">Papel mate, brillante, cartulinas</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900">Moderada (despacho general)</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900">Bodega, logística, cajas máster</strong></div>
+    `;
+    ctaBtn.href = DISCODE_CONFIG.getWhatsAppLink('ribbon_cera');
+    ctaBtn.textContent = 'Cotizar Ribbon de Cera por WhatsApp';
+  } else if (type === 'sintetico') {
+    titleEl.textContent = 'Ribbon de Resina Industrial Pura';
+    typeEl.textContent = 'TIPO: RESIN / RESINA DE ALTO RENDIMIENTO';
+    descEl.textContent = 'Resina pura para polipropileno (BOPP), poliéster, polietileno y películas plásticas. Máxima fijación química resistente a congelación profunda (-25°C), humedad extrema, agua de mar, grasas y solventes.';
+    specsEl.innerHTML = `
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900">Polipropileno, Poliéster, Sintéticos</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900">Extrema (anti-fricción y químicos)</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900">Camaroneras, congelados, químicos, agro</strong></div>
+    `;
+    ctaBtn.href = DISCODE_CONFIG.getWhatsAppLink('ribbon_resina');
+    ctaBtn.textContent = 'Cotizar Ribbon de Resina por WhatsApp';
+  } else if (type === 'textil') {
+    titleEl.textContent = 'Ribbon de Resina Textil Especializada';
+    typeEl.textContent = 'TIPO: TEXTILE RESIN / RESINA TEXTIL LAVABLE';
+    descEl.textContent = 'Polímeros desarrollados exclusivamente para sustratos textiles como poliamida (nylon tafetán) y raso/satín. Resiste lavado industrial con agua caliente, detergentes severos, tintorería y planchado a alta temperatura.';
+    specsEl.innerHTML = `
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900">Nylon, Poliamida, Satín textil</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900">Ciclos de lavado textil y calor</strong></div>
+      <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900">Confección, ropa, etiquetas de cuidado</strong></div>
+    `;
+    ctaBtn.href = DISCODE_CONFIG.getWhatsAppLink('ribbon_textil');
+    ctaBtn.textContent = 'Cotizar Ribbon Textil por WhatsApp';
+  }
+}

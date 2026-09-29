@@ -1,0 +1,56 @@
+# ==============================================================================
+# DISCODE ECUADOR — Configuración de Servidor Apache para cPanel
+# Optimización de URLs limpias, compresión de alto rendimiento y caché estática
+# ==============================================================================
+
+# 1. Habilitar Motor de Reescritura
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Permitir acceso directo a archivos existentes sin modificar
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Reescribir URLs limpias sin .html (ej: discode.ec/productos -> discode.ec/productos.html)
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [L]
+</IfModule>
+
+# 2. Codificación por Defecto UTF-8
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .css .js .json .xml
+</IfModule>
+
+# 3. Compresión GZIP / Deflate para Máxima Velocidad en cPanel
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# 4. Políticas de Caché para Archivos Estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# 5. Encabezados de Seguridad Básicos
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
