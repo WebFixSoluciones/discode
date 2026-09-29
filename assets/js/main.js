@@ -6,6 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
+  initMegaMenus();
   initActiveNavLink();
   initWhatsAppContextLinks();
   initFloatingWhatsApp();
@@ -223,3 +224,115 @@ function selectRibbonMaterial(type) {
     ctaBtn.textContent = 'Cotizar Ribbon Textil por WhatsApp';
   }
 }
+
+/**
+ * Inicializador de Megamenús Desktop y Acordeones Móviles
+ */
+function initMegaMenus() {
+  const triggers = document.querySelectorAll('[data-megamenu-trigger]');
+  const menus = document.querySelectorAll('[data-megamenu-panel]');
+  let closeTimeout = null;
+
+  function closeAll() {
+    menus.forEach(menu => {
+      menu.classList.add('hidden');
+      menu.classList.remove('opacity-100');
+    });
+    triggers.forEach(trigger => {
+      trigger.setAttribute('aria-expanded', 'false');
+      const arrow = trigger.querySelector('.megamenu-arrow');
+      if (arrow) arrow.style.transform = 'rotate(0deg)';
+    });
+  }
+
+  function openMenu(targetId, triggerEl) {
+    clearTimeout(closeTimeout);
+    const targetPanel = document.getElementById(targetId);
+    if (!targetPanel) return;
+
+    // Cerrar otros
+    menus.forEach(menu => {
+      if (menu !== targetPanel) {
+        menu.classList.add('hidden');
+        menu.classList.remove('opacity-100');
+      }
+    });
+    triggers.forEach(t => {
+      if (t !== triggerEl) {
+        t.setAttribute('aria-expanded', 'false');
+        const arrow = t.querySelector('.megamenu-arrow');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
+      }
+    });
+
+    targetPanel.classList.remove('hidden');
+    targetPanel.classList.add('opacity-100');
+    triggerEl.setAttribute('aria-expanded', 'true');
+    const arrow = triggerEl.querySelector('.megamenu-arrow');
+    if (arrow) arrow.style.transform = 'rotate(180deg)';
+  }
+
+  triggers.forEach(trigger => {
+    const targetId = trigger.getAttribute('data-megamenu-trigger');
+    const panel = document.getElementById(targetId);
+
+    // Eventos Desktop Hover
+    trigger.addEventListener('mouseenter', () => openMenu(targetId, trigger));
+    const parentContainer = trigger.closest('.megamenu-parent') || trigger.parentElement;
+    if (parentContainer) {
+      parentContainer.addEventListener('mouseleave', () => {
+        closeTimeout = setTimeout(closeAll, 150);
+      });
+    }
+
+    if (panel) {
+      panel.addEventListener('mouseenter', () => clearTimeout(closeTimeout));
+      panel.addEventListener('mouseleave', () => {
+        closeTimeout = setTimeout(closeAll, 150);
+      });
+    }
+
+    // Toggle por click (para táctil o accesibilidad)
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        closeAll();
+      } else {
+        openMenu(targetId, trigger);
+      }
+    });
+  });
+
+  // Cerrar con tecla Escape o clic fuera
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('[data-megamenu-container]')) {
+      closeAll();
+    }
+  });
+
+  // Acordeones para menú móvil
+  const accordionButtons = document.querySelectorAll('[data-accordion-btn]');
+  accordionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-accordion-btn');
+      const targetList = document.getElementById(targetId);
+      const icon = btn.querySelector('.accordion-icon');
+      if (!targetList) return;
+
+      const isHidden = targetList.classList.contains('hidden');
+      if (isHidden) {
+        targetList.classList.remove('hidden');
+        if (icon) icon.textContent = '[-]';
+      } else {
+        targetList.classList.add('hidden');
+        if (icon) icon.textContent = '[+]';
+      }
+    });
+  });
+}
+
