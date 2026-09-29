@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrias — DISCODE ECUADOR | Soluciones por Industria</title>
+  <meta name="description" content="Soluciones de etiquetado, codificación y trazabilidad por sector industrial en Ecuador: camaronera, pesquera, alimentos, agro, flores, textil, farmacéutica y logística.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="text-brand-navy font-bold">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="hover:text-brand-navy transition">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-brand-navy font-bold py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-slate-700 hover:text-brand-navy py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- ENCABEZADO DE PÁGINA (PÁGINA 8 DE LA GUÍA) -->
+  <section class="py-16 md:py-20 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="max-w-4xl">
+        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-3">
+          Aplicaciones Especializadas por Sector Productivo
+        </span>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
+          SOLUCIONES POR INDUSTRIA
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl">
+          Cada industria tiene diferentes necesidades de identificación, etiquetado y trazabilidad. En DISCODE desarrollamos soluciones de acuerdo con las características de cada operación.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRILLA DETALLADA DE LAS INDUSTRIAS (PÁGINAS 8-10 DE LA GUÍA) -->
+  <section class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Camaronera (Especialidad principal) -->
+        <article class="border-2 border-brand-navy bg-white p-8 flex flex-col justify-between" id="camaronera">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-mono text-xs text-brand-navy font-bold">SECTOR 01</span>
+              <span class="text-[10px] font-mono uppercase bg-brand-navy text-white px-2 py-0.5 font-bold">Exportación Crítica</span>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">CAMARONERA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para identificación, trazabilidad y control de productos en plantas empacadoras y operaciones relacionadas con la exportación de camarón, resistentes a las bajas temperaturas y humedad.
+            </p>
+            
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Aplicaciones:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5 font-medium">
+                <li>· Etiquetas para cajas máster</li>
+                <li>· Etiquetas para fundas (grado alimentario)</li>
+                <li>· Identificación de producto y gramaje</li>
+                <li>· Lotes y fechas de empaque</li>
+                <li>· Códigos de barras GS1 de exportación</li>
+                <li>· Trazabilidad completa de piscina a contenedor</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20soluciones%20de%20etiquetado%20y%20trazabilidad%20para%20industria%20camaronera" data-whatsapp-context="industria_camaronera" target="_blank" class="w-full text-center bg-brand-navy hover:bg-slate-900 text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR CAMARONERA
+          </a>
+        </article>
+
+        <!-- 2. Pesquera y atunera -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="pesquera">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 02</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">PESQUERA Y ATUNERA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones de identificación para productos, empaques, cajas y procesos de trazabilidad en la industria pesquera.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Resistencia a salinidad, humedad y lavado con agua a presión.</li>
+                <li>· Ribbons de resina pura para marcado indeleble de lotes.</li>
+                <li>· Marcado directo con Reiner JetStamp sobre latas y envases.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20soluciones%20de%20identificaci%C3%B3n%20para%20industria%20pesquera%20y%20atunera" data-whatsapp-context="industria_pesquera" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 3. Alimenticia -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="alimenticia">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 03</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">ALIMENTICIA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Identificación de productos, lotes, fechas, códigos de barras y trazabilidad para procesos de producción y distribución.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Cumplimiento de registros sanitarios y semáforo nutricional.</li>
+                <li>· Adhesivos no tóxicos para contacto indirecto de alimentos.</li>
+                <li>· Impresión nítida de fecha de elaboración y caducidad.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20codificaci%C3%B3n%20de%20fechas,%20lotes%20y%20trazabilidad%20para%20alimentos" data-whatsapp-context="industria_alimentos" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 4. Agrícola -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="agricola">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 04</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">AGRÍCOLA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para identificación de productos, empaques y procesos de trazabilidad dentro de la cadena agrícola.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Etiquetado de gavetas, cajas de banano, cacao y hortalizas.</li>
+                <li>· Resistencia a intemperie, sol, tierra y cambios de humedad.</li>
+                <li>· Control de hacienda, cuadrilla de corte y lote fitosanitario.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20identificaci%C3%B3n%20y%20empaque%20para%20el%20sector%20agr%C3%ADcola" data-whatsapp-context="industria_agricola" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 5. Florícola -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="floricola">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 05</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">FLORÍCOLA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Etiquetas y soluciones de identificación para productos florícolas, empaques y procesos de exportación.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Comportamiento en cuartos fríos (4°C) y condensación de aire.</li>
+                <li>· Etiquetas para buncheo, variedad, longitud y código del tallo.</li>
+                <li>· Guías para transporte aéreo internacional sin desprendimiento.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20etiquetas%20para%20exportaci%C3%B3n%20flor%C3%ADcola%20en%20cuartos%20fr%C3%ADos" data-whatsapp-context="industria_florícola" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 6. Textil -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="textil">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 06</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">TEXTIL</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones de identificación para productos textiles, etiquetas, inventarios y procesos logísticos.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Cintas de poliamida (nylon tafetán) y raso para costura.</li>
+                <li>· Ribbons de Resina Textil resistentes a lavado y tintorería.</li>
+                <li>· Cartulinas colgantes para precio, tallas y códigos EAN.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20ribbons%20de%20resina%20textil%20y%20etiquetas%20para%20confecci%C3%B3n" data-whatsapp-context="industria_textil" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 7. Manufactura -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="manufactura">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 07</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">MANUFACTURA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Identificación de productos, componentes, cajas y procesos internos de producción.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Control de ensamble y componentes con etiquetas de poliéster.</li>
+                <li>· Marcado de activos fijos con etiquetas destructibles de seguridad.</li>
+                <li>· Resistencia a aceites mecánicos, polvo y fricción.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20etiquetado%20para%20manufactura" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 8. Plásticos -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="plasticos">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 08</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">PLÁSTICOS</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para rotulación y marcado directo sobre resinas, bidones, envases y moldes plásticos.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Adherencia sobre sustratos de baja energía superficial (PE/PP).</li>
+                <li>· Fechado directo con Reiner JetStamp sobre galoneras y tapas.</li>
+                <li>· Etiquetas resistentes a deformación plástica.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20para%20industria%20pl%C3%A1stica" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 9. Logística y distribución -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="logistica">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 09</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">LOGÍSTICA Y DISTRIBUCIÓN</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para identificación, almacenamiento, despacho, códigos de barras y control de productos.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Etiquetas de pallet con código GS1-128 de alta legibilidad.</li>
+                <li>· Impresoras móviles para operarios de picking y recepción.</li>
+                <li>· Rótulos de estantería y ubicaciones de bodega WMS.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20soluciones%20de%20etiquetado%20de%20cajas,%20pallets%20y%20log%C3%ADstica" data-whatsapp-context="industria_logistica" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 10. Retail -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="retail">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 10</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">RETAIL</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para marcaje de precios, promociones, control de inventario y gestión en punto de venta.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Impresoras de escritorio compactas de recarga rápida.</li>
+                <li>· Etiquetas térmicas directas económicas sin ribbon.</li>
+                <li>· Etiquetas de seguridad anti-hurto y control de mermas.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20etiquetado%20para%20retail" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 11. Laboratorios / Cosmética / Farmacéutica -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="laboratorios">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 11, 12 Y 13</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">LABORATORIOS / COSMÉTICA / FARMACÉUTICA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para identificación y trazabilidad de productos que requieren información clara, legible y controlada.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Impresión en micro-fuentes y códigos DataMatrix de alta resolución.</li>
+                <li>· Tintas y ribbons resistentes a alcohol, desinfectantes y químicos.</li>
+                <li>· Cumplimiento de normativas de la Agencia Nacional de Regulación (ARCSA).</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20trazabilidad%20y%20codificaci%C3%B3n%20para%20laboratorios/farmac%C3%A9utica" data-whatsapp-context="industria_farmaceutica" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 14. Bebidas -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="bebidas">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 14</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">BEBIDAS</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Marcado de lotes y fechas de alta velocidad sobre tapas, cuellos de botella y cajas termoencogibles.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Tintas de fijación instantánea sobre PET, vidrio y hojalata.</li>
+                <li>· Resistencia a condensación por llenado en frío.</li>
+                <li>· Codificadores manuales e integrables a bandas transportadoras.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20para%20industria%20de%20bebidas" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 15. Avícola -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="avicola">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 15</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">AVÍCOLA</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Control de bandejas, despachos refrigerados y trazabilidad en plantas de beneficio avícola.
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Etiquetas resistentes a humedad y bajas temperaturas (+2°C a -18°C).</li>
+                <li>· Registro exacto de fecha de faena, lote y peso neto.</li>
+                <li>· Adhesivos especiales para empaques con contacto cárnico.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20para%20industria%20av%C3%ADcola" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+        <!-- 16. Exportadores -->
+        <article class="border border-slate-300 bg-white p-8 flex flex-col justify-between" id="exportadores">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-3">SECTOR 16</span>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-3">EXPORTADORES</h2>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Cumplimiento riguroso de normativas aduaneras internacionales, estándares GS1 y requerimientos de destino (EE.UU., Unión Europea, Asia).
+            </p>
+            <div class="border-t border-slate-100 pt-4 mb-6">
+              <span class="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider block mb-2">Puntos Críticos:</span>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li>· Legibilidad garantizada de códigos para evitar rechazos en aduana.</li>
+                <li>· Resistencia a trayectos marítimos prolongados y humedad de contenedor.</li>
+                <li>· Certificación ISO 9001 de DISCODE que avala la consistencia de insumos.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20requiero%20cotizar%20soluciones%20para%20exportaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="w-full text-center border border-slate-300 hover:border-slate-900 text-slate-900 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-900 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-9 w-auto brightness-0 invert object-contain">
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            DISCODE ECUADOR — Soluciones de identificación, codificación y trazabilidad para la industria. Integración de equipos, consumibles y servicio técnico especializado.
+          </p>
+          <div class="pt-2">
+            <span class="inline-block font-mono text-[11px] text-slate-300 border border-slate-800 bg-slate-900 px-3 py-1">
+              SISTEMA DE GESTIÓN CERTIFICADO ISO 9001
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Navegación</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-white transition">Productos</a></li>
+            <li><a href="soluciones.html" class="hover:text-white transition">Soluciones</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-white transition">Servicio Técnico</a></li>
+            <li><a href="industrias.html" class="hover:text-white transition">Industrias</a></li>
+            <li><a href="marcas.html" class="hover:text-white transition">Marcas</a></li>
+            <li><a href="casos.html" class="hover:text-white transition">Casos</a></li>
+            <li><a href="recursos.html" class="hover:text-white transition">Recursos</a></li>
+            <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Productos</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="productos.html#etiquetas" class="hover:text-white transition">Etiquetas</a></li>
+            <li><a href="productos.html#ribbons" class="hover:text-white transition">Ribbons</a></li>
+            <li><a href="productos.html#impresoras" class="hover:text-white transition">Impresoras</a></li>
+            <li><a href="productos.html#codificadores" class="hover:text-white transition">Codificadores</a></li>
+            <li><a href="soluciones.html#comodato" class="hover:text-white transition">Comodato de Equipos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Contacto</span>
+          <div class="space-y-3">
+            <div>
+              <span class="text-slate-500 text-[11px] block">Cotización directa:</span>
+              <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="text-white font-mono font-bold text-sm hover:text-emerald-400 transition">
+                COTIZAR POR WHATSAPP
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Teléfono / WhatsApp:</span>
+              <a href="tel:+593984345891" class="text-slate-300 font-mono hover:text-white discode-phone-text">
+                +593 98 434 5891
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Correo corporativo:</span>
+              <a href="mailto:ventas@discode.ec" class="text-slate-300 hover:text-white discode-email-link">
+                ventas@discode.ec
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[11px] gap-4">
+        <div>
+          © 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.
+        </div>
+        <div class="flex space-x-6 font-medium">
+          <a href="#" class="hover:text-slate-300">Política de Privacidad</a>
+          <a href="#" class="hover:text-slate-300">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
