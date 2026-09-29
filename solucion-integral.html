@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solución Integral — DISCODE ECUADOR | Modelos Operativos</title>
+  <meta name="description" content="Centraliza tus etiquetas, ribbons, impresoras y codificadores con un solo socio estratégico en Ecuador. Compatibilidad 100% garantizada y cero paradas de planta.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="text-brand-navy font-bold">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="hover:text-brand-navy transition">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20la%20Soluci%C3%B3n%20Integral" data-whatsapp-context="solucion_integral" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-brand-navy font-bold py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-slate-700 hover:text-brand-navy py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR 90% CON MENÚ LATERAL EXCLUSIVO DE SOLUCIONES -->
+  <div class="discode-container py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A SOLUCIONES -->
+      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
+        <div class="mb-6 pb-4 border-b border-slate-200">
+          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">MODELOS DE INTEGRACIÓN</span>
+          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Soluciones DISCODE</h2>
+        </div>
+
+        <nav class="space-y-4 text-xs">
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
+            <a href="soluciones.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
+              · Resumen y Comparativa
+            </a>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Modelos Operativos:</span>
+            <ul class="space-y-1 font-medium">
+              <li>
+                <a href="solucion-integral.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
+                  1. Solución Integral
+                </a>
+              </li>
+              <li>
+                <a href="solucion-servicio-absoluto.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  2. Servicio Absoluto
+                </a>
+              </li>
+              <li>
+                <a href="solucion-comodato.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  3. Equipos en Comodato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2 pt-2 border-t border-slate-200">Servicio Especializado:</span>
+            <a href="servicio-tecnico.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
+              · Servicio Técnico Oficial
+            </a>
+          </div>
+        </nav>
+
+        <div class="mt-8 pt-6 border-t border-slate-200">
+          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">ATENCIÓN CORPORATIVA</span>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20evaluar%20la%20Soluci%C3%B3n%20Integral%20para%20mi%20empresa" data-whatsapp-context="solucion_integral" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Cotizar Solución Integral
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL: SOLUCIÓN INTEGRAL -->
+      <main class="lg:col-span-9 bg-white">
+        
+        <!-- Breadcrumb -->
+        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <span>/</span>
+          <a href="soluciones.html" class="hover:underline">Soluciones</a>
+          <span>/</span>
+          <span class="text-slate-900 font-semibold">Solución Integral</span>
+        </div>
+
+        <div class="mb-8">
+          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
+            MODELO 01 — CENTRALIZACIÓN DE SUMINISTROS Y HARDWARE
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mb-4">
+            SOLUCIÓN INTEGRAL DISCODE
+          </h1>
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
+            Un único socio estratégico para responder por el 100% del ecosistema de identificación de tu planta. Integramos la fabricación de etiquetas adhesivas a la medida, el suministro de ribbons térmicos formulados, impresoras de alta velocidad Zebra/TSC, codificadores directos Reiner y soporte técnico en sitio.
+          </p>
+        </div>
+
+        <!-- EL PROBLEMA VS LA SOLUCIÓN DISCODE -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <div class="border border-red-200 bg-red-50/30 p-6">
+            <span class="font-mono text-xs text-red-700 font-bold block mb-2">EL PROBLEMA TÍPICO</span>
+            <h3 class="text-base font-bold text-slate-950 mb-3">Múltiples proveedores desconectados</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Comprar etiquetas a una imprenta genérica, ribbons a un distribuidor de suministros de oficina y las impresoras por separado genera fallas constantes de compatibilidad química:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-red-600 font-mono font-bold">[-]</span>
+                <span>La cinta térmica se quema o borra porque no coincide con el recubrimiento de la etiqueta.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-600 font-mono font-bold">[-]</span>
+                <span>El proveedor de etiquetas culpa a la impresora, y el técnico de impresoras culpa al material.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-600 font-mono font-bold">[-]</span>
+                <span>Desabastecimientos imprevistos por falta de seguimiento a tus órdenes de producción.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="border border-brand-navy bg-slate-50 p-6">
+            <span class="font-mono text-xs text-brand-navy font-bold block mb-2">LA RESPUESTA DISCODE</span>
+            <h3 class="text-base font-bold text-slate-950 mb-3">Responsabilidad única y técnica garantizada</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              En DISCODE asumimos la responsabilidad técnica completa del sistema. Si hay una falla de adherencia o lectura, un solo equipo de ingenieros resuelve el caso de inmediato:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-navy font-mono font-bold">[+]</span>
+                <span>Compatibilidad probada en laboratorio antes del despacho masivo a tu fábrica.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-navy font-mono font-bold">[+]</span>
+                <span>Entregas automáticas programadas según tu tasa de rotación de inventario.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-navy font-mono font-bold">[+]</span>
+                <span>Facturación consolidada y tarifas preferenciales por volumen corporativo unificado.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 4 PILARES DEL MODELO INTEGRAL -->
+        <div class="mb-12">
+          <div class="flex justify-between items-center mb-6 pb-2 border-b border-slate-200">
+            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+              Arquitectura de la Solución Integral
+            </h3>
+            <span class="text-xs font-mono text-slate-400">4 PILARES ESTRATÉGICOS</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
+            <div class="border border-slate-200 p-6 bg-white">
+              <span class="font-mono text-brand-navy font-bold text-sm block mb-1">01</span>
+              <strong class="text-slate-950 text-sm block mb-2">Fabricación y Conversión a Medida</strong>
+              <p class="text-slate-600 leading-relaxed">
+                Fabricamos tus etiquetas en los sustratos exactos que exige tu cadena de frío, humedad o almacenamiento (Transferencia Térmica, Térmico Directo, BOPP blanco/transparente o Poliéster).
+              </p>
+            </div>
+
+            <div class="border border-slate-200 p-6 bg-white">
+              <span class="font-mono text-brand-navy font-bold text-sm block mb-1">02</span>
+              <strong class="text-slate-950 text-sm block mb-2">Formulación de Ribbons Compatibles</strong>
+              <p class="text-slate-600 leading-relaxed">
+                Asignamos el ribbon térmico con la formulación química exacta (Cera Premium, Resina Industrial o Resina Textil) garantizando nitidez de código de barras a la menor temperatura de cabezal.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 p-6 bg-white">
+              <span class="font-mono text-brand-navy font-bold text-sm block mb-1">03</span>
+              <strong class="text-slate-950 text-sm block mb-2">Equipamiento Industrial Calibrado</strong>
+              <p class="text-slate-600 leading-relaxed">
+                Instalación y puesta a punto de impresoras Zebra/TSC y codificadores Reiner en tus líneas. Parametrizamos sensores, temperaturas y formatos de diseño ZPL/EPL.
+              </p>
+            </div>
+
+            <div class="border border-slate-200 p-6 bg-white">
+              <span class="font-mono text-brand-navy font-bold text-sm block mb-1">04</span>
+              <strong class="text-slate-950 text-sm block mb-2">Soporte Técnico Continuo en Sitio</strong>
+              <p class="text-slate-600 leading-relaxed">
+                Visitas técnicas periódicas de mantenimiento preventivo, limpieza ultrasónica de cabezales y respuesta prioritaria para evitar paradas no planificadas de empaque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASES DE IMPLEMENTACIÓN -->
+        <div class="border border-slate-200 bg-slate-50 p-8 mb-12">
+          <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">METODOLOGÍA DE TRABAJO</span>
+          <h3 class="text-xl font-bold text-slate-950 mb-6">¿Cómo implementamos la Solución Integral en tu empresa?</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-xs">
+            <div class="border-l-2 border-brand-navy pl-4">
+              <span class="font-mono text-slate-400 block mb-1">FASE 1</span>
+              <strong class="text-slate-950 block mb-1">Levantamiento</strong>
+              <p class="text-slate-600">Auditoría en planta de tus impresoras, superficies de adhesión, rangos de temperatura y volúmenes.</p>
+            </div>
+
+            <div class="border-l-2 border-brand-navy pl-4">
+              <span class="font-mono text-slate-400 block mb-1">FASE 2</span>
+              <strong class="text-slate-950 block mb-1">Homologación</strong>
+              <p class="text-slate-600">Entrega de rollos de muestra para pruebas reales en túneles de frío, congeladores o líneas de fricción.</p>
+            </div>
+
+            <div class="border-l-2 border-brand-navy pl-4">
+              <span class="font-mono text-slate-400 block mb-1">FASE 3</span>
+              <strong class="text-slate-950 block mb-1">Acuerdo SLA</strong>
+              <p class="text-slate-600">Firma de acuerdo de suministro con inventario de seguridad reservado en nuestras bodegas de Guayaquil/Quito.</p>
+            </div>
+
+            <div class="border-l-2 border-brand-navy pl-4">
+              <span class="font-mono text-slate-400 block mb-1">FASE 4</span>
+              <strong class="text-slate-950 block mb-1">Puesta en Marcha</strong>
+              <p class="text-slate-600">Despachos programados automáticos y calibración en línea con soporte técnico dedicado de DISCODE.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="border border-slate-200 p-8 text-center bg-white">
+          <h3 class="text-xl font-bold text-slate-950 mb-2">Simplifica las compras de tu planta y elimina fallas de empaque</h3>
+          <p class="text-xs text-slate-600 max-w-xl mx-auto mb-6">
+            Permite que nuestros ingenieros realicen un diagnóstico gratuito de tu sistema de etiquetado y codificación actual.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20un%20diagn%C3%B3stico%20gratuito%20para%20la%20Soluci%C3%B3n%20Integral" data-whatsapp-context="solucion_integral" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Solicitar Diagnóstico en WhatsApp
+          </a>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white py-12 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-200 text-xs text-slate-600">
+        <div>
+          <img src="assets/images/logo.png" alt="DISCODE" class="h-8 w-auto mb-4">
+          <p class="mb-4 leading-relaxed">
+            Soluciones integrales de codificación, etiquetado y trazabilidad industrial en Ecuador.
+          </p>
+          <span class="font-mono text-[11px] text-slate-500 block">RUC: 0992751433001</span>
+          <span class="font-mono text-[11px] text-slate-500 block">Certificación ISO 9001:2015</span>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Suministros</h4>
+          <ul class="space-y-2">
+            <li><a href="producto-etiquetas.html" class="hover:text-brand-navy">Etiquetas Adhesivas</a></li>
+            <li><a href="producto-ribbons.html" class="hover:text-brand-navy">Ribbons Térmicos</a></li>
+            <li><a href="producto-impresoras.html" class="hover:text-brand-navy">Impresoras de Etiquetas</a></li>
+            <li><a href="producto-codificadores.html" class="hover:text-brand-navy">Codificadores Reiner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Soluciones</h4>
+          <ul class="space-y-2">
+            <li><a href="solucion-integral.html" class="hover:text-brand-navy font-semibold text-brand-navy">Solución Integral</a></li>
+            <li><a href="solucion-servicio-absoluto.html" class="hover:text-brand-navy">Servicio Absoluto</a></li>
+            <li><a href="solucion-comodato.html" class="hover:text-brand-navy">Equipos en Comodato</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-brand-navy">Mantenimiento y Reparación</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Contacto Comercial</h4>
+          <p class="mb-1"><strong>WhatsApp:</strong> <a href="https://wa.me/593984345891" class="hover:underline discode-phone-text">+593 98 434 5891</a></p>
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:ventas@discode.ec" class="hover:underline">ventas@discode.ec</a></p>
+          <p class="mt-2 text-slate-500">Atención técnica y despachos a todo el territorio ecuatoriano.</p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+        <p>© 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0 font-mono">Diseño de Catálogo Técnico Industrial</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

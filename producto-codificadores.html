@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codificadores Reiner — DISCODE ECUADOR | Catálogo de Productos</title>
+  <meta name="description" content="Codificadores manuales e industriales Reiner JetStamp 1025, 970 y 990 en Ecuador. Marcado directo de lote, fecha y QR sobre plástico, vidrio, metal y cartón.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Distribución Oficial REINER Germany</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="text-brand-navy font-bold">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="hover:text-brand-navy transition">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20un%20codificador%20Reiner%20JetStamp" data-whatsapp-context="codificadores" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-brand-navy font-bold py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-slate-700 hover:text-brand-navy py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR 90% CON MENÚ LATERAL EXCLUSIVO DE PRODUCTOS -->
+  <div class="discode-container py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A PRODUCTOS -->
+      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
+        <div class="mb-6 pb-4 border-b border-slate-200">
+          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CATÁLOGO EXCLUSIVO</span>
+          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Productos DISCODE</h2>
+        </div>
+
+        <nav class="space-y-4 text-xs">
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
+            <a href="productos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
+              · Índice de Productos
+            </a>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2 pt-2 border-t border-slate-200">Líneas de Suministros:</span>
+            <ul class="space-y-1 font-medium">
+              <li>
+                <a href="producto-etiquetas.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  1. Etiquetas Adhesivas
+                </a>
+              </li>
+              <li>
+                <a href="producto-ribbons.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  2. Ribbons Térmicos
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Equipamiento Industrial:</span>
+            <ul class="space-y-1 font-medium">
+              <li>
+                <a href="producto-impresoras.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  3. Impresoras de Etiquetas
+                </a>
+              </li>
+              <li>
+                <a href="producto-codificadores.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
+                  4. Codificadores Reiner
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="mt-8 pt-6 border-t border-slate-200">
+          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">DEMOSTRACIÓN EN PLANTA</span>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20demostraci%C3%B3n%20en%20planta%20del%20codificador%20Reiner" data-whatsapp-context="codificadores" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Solicitar Demo en Vivo
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL: CODIFICADORES REINER -->
+      <main class="lg:col-span-9 bg-white">
+        
+        <!-- Breadcrumb -->
+        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <span>/</span>
+          <a href="productos.html" class="hover:underline">Productos</a>
+          <span>/</span>
+          <span class="text-slate-900 font-semibold">Codificadores Reiner JetStamp</span>
+        </div>
+
+        <div class="mb-8">
+          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
+            CATEGORÍA 4 — INYECCIÓN DE TINTA TÉRMICA (TIJ) · INGENIERÍA ALEMANA
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mb-4">
+            CODIFICADORES MANUALES E INDUSTRIALES REINER
+          </h1>
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
+            Solución alemana avanzada para marcaje directo sin contacto sobre empaques primarios, secundarios y superficies complejas: plástico, vidrio, metal, aluminio, caucho, madera y cartón. Elimina la necesidad de etiquetas en aplicaciones donde se requiere codificar lote y fecha de vencimiento al instante.
+          </p>
+        </div>
+
+        <!-- MODELOS DESTACADOS REINER -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          
+          <!-- Modelo 1: JetStamp 1025 -->
+          <div class="border-2 border-brand-navy p-6 bg-white flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="font-mono text-xs text-brand-navy font-bold">MODELO INSIGNIA</span>
+                <span class="font-mono text-[10px] bg-brand-navy text-white px-2 py-0.5 font-bold">1 PULGADA (25 MM)</span>
+              </div>
+              <div class="bg-slate-50 border border-slate-100 p-4 mb-4 flex items-center justify-center">
+                <img src="assets/images/codificadores/jetstamp-1025.avif" alt="Reiner JetStamp 1025" class="h-44 w-auto object-contain">
+              </div>
+              <h3 class="text-lg font-bold text-slate-950 mb-2">JetStamp 1025</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                El codificador manual con la mayor altura de impresión de su categoría. Imprime textos de gran tamaño, logotipos, códigos de barras 1D y códigos bidimensionales (DataMatrix y QR).
+              </p>
+              <ul class="text-xs text-slate-700 space-y-1.5 mb-6 font-mono">
+                <li>· <strong>Área de impresión:</strong> 25 x 85 mm.</li>
+                <li>· <strong>Resolución:</strong> 300 dpi nítido.</li>
+                <li>· <strong>Pantalla:</strong> Display integrado para vista previa.</li>
+                <li>· <strong>Conectividad:</strong> USB y Bluetooth.</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20el%20codificador%20Reiner%20JetStamp%201025" data-whatsapp-context="codificadores" target="_blank" class="block text-center bg-brand-navy hover:bg-slate-900 text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+              Cotizar JetStamp 1025
+            </a>
+          </div>
+
+          <!-- Modelo 2: JetStamp 970 Graphic -->
+          <div class="border border-slate-200 p-6 bg-slate-50 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="font-mono text-xs text-slate-500 font-bold">GRÁFICO VERSÁTIL</span>
+                <span class="font-mono text-[10px] bg-slate-200 text-slate-700 px-2 py-0.5">1/2 PULGADA (12.7 MM)</span>
+              </div>
+              <div class="bg-white border border-slate-200 p-4 mb-4 flex items-center justify-center">
+                <img src="assets/images/codificadores/jetstamp-970.avif" alt="Reiner JetStamp 970" class="h-44 w-auto object-contain">
+              </div>
+              <h3 class="text-lg font-bold text-slate-950 mb-2">JetStamp 970 Graphic</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Diseñado para el marcado ágil de fechas, horas, números correlativos, logotipos y códigos de barras en envases cilíndricos, fundas de empaque y cajas.
+              </p>
+              <ul class="text-xs text-slate-700 space-y-1.5 mb-6 font-mono">
+                <li>· <strong>Área de impresión:</strong> 12.7 x 65 mm.</li>
+                <li>· <strong>Peso ligero:</strong> Solo 520 gramos con batería.</li>
+                <li>· <strong>Memoria:</strong> Hasta 4 mensajes predefinidos en equipo.</li>
+                <li>· <strong>Baterías:</strong> Litio recargable de larga duración.</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20el%20codificador%20Reiner%20JetStamp%20970" data-whatsapp-context="codificadores" target="_blank" class="block text-center border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+              Cotizar JetStamp 970
+            </a>
+          </div>
+
+          <!-- Modelo 3: speed-i-Jet 798 / 990 -->
+          <div class="border border-slate-200 p-6 bg-white flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="font-mono text-xs text-slate-500 font-bold">LÍNEA TEXTO RÁPIDO</span>
+                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">ULTRAPORTÁTIL</span>
+              </div>
+              <div class="bg-slate-50 border border-slate-100 p-4 mb-4 flex items-center justify-center">
+                <img src="assets/images/codificadores/jetstamp-990.avif" alt="Reiner JetStamp 990" class="h-44 w-auto object-contain">
+              </div>
+              <h3 class="text-lg font-bold text-slate-950 mb-2">speed-i-Jet 798 / 990</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Formato tipo bolígrafo o pistola ergonómica para codificación de 1 a 2 líneas de texto, números de serie, fecha de caducidad y número de lote sobre superficies lisas o irregulares.
+              </p>
+              <ul class="text-xs text-slate-700 space-y-1.5 mb-6 font-mono">
+                <li>· <strong>Velocidad:</strong> Deslizamiento manual sin fricción.</li>
+                <li>· <strong>Capacidad:</strong> Hasta 40 caracteres por línea.</li>
+                <li>· <strong>Superficies:</strong> Sobres, frascos, tarjetas, bolsas.</li>
+                <li>· <strong>Operación:</strong> Silenciosa y ultra limpia.</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20el%20codificador%20Reiner%20798%20o%20990" data-whatsapp-context="codificadores" target="_blank" class="block text-center border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+              Cotizar speed-i-Jet
+            </a>
+          </div>
+
+        </div>
+
+        <!-- CARTUCHOS Y TINTAS MP VS P1 -->
+        <div class="border border-slate-200 p-8 bg-slate-50 mb-12">
+          <div class="flex justify-between items-center mb-6 pb-3 border-b border-slate-200">
+            <div>
+              <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block">QUÍMICA DE IMPRESIÓN REINER</span>
+              <h3 class="text-xl font-bold text-slate-950">Cartuchos Originales de Secado Instantáneo</h3>
+            </div>
+            <span class="font-mono text-xs text-slate-400">SUMINISTROS ORIGINALES</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+            <div class="border border-slate-200 bg-white p-5">
+              <span class="font-mono text-[10px] bg-slate-900 text-white px-2 py-0.5 inline-block mb-2 font-bold">TINTA MP (SECADO RÁPIDO)</span>
+              <h4 class="text-sm font-bold text-slate-950 mb-2">Para Superficies No Porosas y Plásticos</h4>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Formulada especialmente para adherirse con secado en menos de 2 segundos sin correrse ni manchar sobre superficies lisas como:
+              </p>
+              <ul class="text-slate-700 space-y-1 font-mono">
+                <li>· Plásticos: Polipropileno (BOPP), Polietileno (PE), PET, PVC.</li>
+                <li>· Metales: Hojalata, tapas de aluminio, acero inoxidable.</li>
+                <li>· Vidrio: Botellas, ampollas y frascos de laboratorio.</li>
+                <li>· Cartones barnizados con brillo o recubrimiento plástico.</li>
+              </ul>
+            </div>
+
+            <div class="border border-slate-200 bg-white p-5">
+              <span class="font-mono text-[10px] bg-slate-200 text-slate-800 px-2 py-0.5 inline-block mb-2 font-bold">TINTA P1 / P3 (BASE AGUA)</span>
+              <h4 class="text-sm font-bold text-slate-950 mb-2">Para Superficies Porosas y Absorventes</h4>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Excelente rendimiento y mayor cantidad de impresiones por cartucho en materiales absorbentes:
+              </p>
+              <ul class="text-slate-700 space-y-1 font-mono">
+                <li>· Cajas de cartón corrugado y cartulina kraft.</li>
+                <li>· Papel bond, sobres postales y documentación legal.</li>
+                <li>· Maderas, pallets de despacho y aglomerados.</li>
+                <li>· Textiles y empaques de fibra vegetal (yute, sacos).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- VENTAJAS TECNOLÓGICAS FRENTE A CODIFICADORES CIJ CONVENCIONALES -->
+        <div class="mb-12">
+          <div class="flex justify-between items-center mb-4 pb-2 border-b border-slate-200">
+            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+              ¿Por qué elegir Reiner JetStamp frente a sistemas de chorro continuo (CIJ)?
+            </h3>
+            <span class="text-xs font-mono text-slate-400">ANÁLISIS TÉCNICO DE COSTOS</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">01 / CERO SOLVENTES TÓXICOS</span>
+              <strong class="text-slate-950 block mb-1">Sin vapores ni olores</strong>
+              <p class="text-slate-600">No requiere solventes inflamables (make-up) ni diluyentes peligrosos en la nave de producción.</p>
+            </div>
+
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">02 / CERO BOMBAS Y MANGUERAS</span>
+              <strong class="text-slate-950 block mb-1">Sin desgaste mecánico</strong>
+              <p class="text-slate-600">No existen filtros que cambiar, bombas de presión que se tranquen ni boquillas que se obstruyan.</p>
+            </div>
+
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">03 / CABEZAL NUEVO EN CADA CARTUCHO</span>
+              <strong class="text-slate-950 block mb-1">Calidad siempre perfecta</strong>
+              <p class="text-slate-600">Cada cartucho de tinta incluye su propia boquilla microinyectora. Al renovar tinta, renuevas el cabezal.</p>
+            </div>
+
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">04 / SOFTWARE LIBRE PCSET</span>
+              <strong class="text-slate-950 block mb-1">Sin licencias anuales</strong>
+              <p class="text-slate-600">El software de diseño y programación para Windows viene incluido con el equipo, sin costos de suscripción.</p>
+            </div>
+
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">05 / PORTABILIDAD ABSOLUTA</span>
+              <strong class="text-slate-950 block mb-1">Llévalo a donde esté el producto</strong>
+              <p class="text-slate-600">Codifica bultos grandes, pallets o máquinas fijas sin tener que mover la carga hacia una línea transportadora.</p>
+            </div>
+
+            <div class="border border-slate-200 p-4 bg-white">
+              <span class="font-mono text-brand-navy font-bold block mb-1">06 / RESPALDO DISCODE EN ECUADOR</span>
+              <strong class="text-slate-950 block mb-1">Stock de cartuchos y servicio</strong>
+              <p class="text-slate-600">Mantenemos cartuchos en firme en Guayaquil y Quito con entrega rápida en 24 a 48 horas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- APLICACIONES EN PLANTA REAL -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div class="border border-slate-200 bg-white p-6">
+            <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">APLICACIÓN REAL 01</span>
+            <h4 class="text-base font-bold text-slate-950 mb-2">Marcaje de Código de Barras y Lote</h4>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Impresión nítida de códigos 1D y 2D directamente sobre corrugados, barnices y empaques secundarios con secado en 2 segundos.
+            </p>
+            <div class="bg-slate-50 border border-slate-100 p-2 flex items-center justify-center">
+              <img src="assets/images/codificadores/jetstamp-970-barcode.avif" alt="Reiner 970 Marcando Códigos" class="h-48 w-full object-cover">
+            </div>
+          </div>
+
+          <div class="border border-slate-200 bg-white p-6">
+            <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">APLICACIÓN REAL 02</span>
+            <h4 class="text-base font-bold text-slate-950 mb-2">Codificación Manual en Línea de Envasado</h4>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Operación ergonómica sin cables para lotificación en frascos, latas, tapas plásticas y empaques antes de encajonar.
+            </p>
+            <div class="bg-slate-50 border border-slate-100 p-2 flex items-center justify-center">
+              <img src="assets/images/codificadores/jetstamp-1025-app.avif" alt="Reiner JetStamp 1025 en Planta" class="h-48 w-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- DEMOSTRACIÓN EN PLANTA CTA -->
+        <div class="border border-slate-200 p-8 text-center bg-slate-50">
+          <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">VALIDACIÓN TÉCNICA</span>
+          <h3 class="text-xl font-bold text-slate-950 mb-2">Prueba el marcaje sobre tus propios envases antes de comprar</h3>
+          <p class="text-xs text-slate-600 max-w-xl mx-auto mb-6">
+            Llevamos el equipo Reiner a tus instalaciones o recibimos muestras de tus empaques para realizar pruebas de adherencia, tiempo de secado y resistencia a la congelación.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20coordinar%20una%20prueba%20de%20adherencia%20con%20Reiner%20sobre%20mis%20productos" data-whatsapp-context="codificadores" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Coordinar Prueba con un Asesor
+          </a>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white py-12 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-200 text-xs text-slate-600">
+        <div>
+          <img src="assets/images/logo.png" alt="DISCODE" class="h-8 w-auto mb-4">
+          <p class="mb-4 leading-relaxed">
+            Soluciones integrales de codificación, etiquetado y trazabilidad industrial en Ecuador.
+          </p>
+          <span class="font-mono text-[11px] text-slate-500 block">RUC: 0992751433001</span>
+          <span class="font-mono text-[11px] text-slate-500 block">Distribución Oficial REINER Germany</span>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Suministros</h4>
+          <ul class="space-y-2">
+            <li><a href="producto-etiquetas.html" class="hover:text-brand-navy">Etiquetas Adhesivas</a></li>
+            <li><a href="producto-ribbons.html" class="hover:text-brand-navy">Ribbons Térmicos</a></li>
+            <li><a href="producto-impresoras.html" class="hover:text-brand-navy">Impresoras de Etiquetas</a></li>
+            <li><a href="producto-codificadores.html" class="hover:text-brand-navy font-semibold text-brand-navy">Codificadores Reiner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Soluciones</h4>
+          <ul class="space-y-2">
+            <li><a href="solucion-integral.html" class="hover:text-brand-navy">Solución Integral</a></li>
+            <li><a href="solucion-servicio-absoluto.html" class="hover:text-brand-navy">Servicio Absoluto</a></li>
+            <li><a href="solucion-comodato.html" class="hover:text-brand-navy">Equipos en Comodato</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-brand-navy">Mantenimiento y Reparación</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Contacto Comercial</h4>
+          <p class="mb-1"><strong>WhatsApp:</strong> <a href="https://wa.me/593984345891" class="hover:underline discode-phone-text">+593 98 434 5891</a></p>
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:ventas@discode.ec" class="hover:underline">ventas@discode.ec</a></p>
+          <p class="mt-2 text-slate-500">Atención técnica y despachos a todo el territorio ecuatoriano.</p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+        <p>© 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0 font-mono">Diseño de Catálogo Técnico Industrial</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

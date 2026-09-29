@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipo de Etiqueta según Aplicación — DISCODE ECUADOR | Recursos Técnicos</title>
+  <meta name="description" content="Guía técnica para elegir sustratos y adhesivos de etiquetas: congelación (-25°C), cajas de cartón corrugado, intemperie y trazabilidad en Ecuador.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="text-brand-navy font-bold">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20sobre%20el%20tipo%20de%20etiqueta%20adecuado" data-whatsapp-context="etiquetas" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-brand-navy font-bold py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR 90% CON MENÚ LATERAL EXCLUSIVO DE RECURSOS -->
+  <div class="discode-container py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS -->
+      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
+        <div class="mb-6 pb-4 border-b border-slate-200">
+          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CENTRO DE CONOCIMIENTO</span>
+          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Recursos Técnicos</h2>
+        </div>
+
+        <nav class="space-y-4 text-xs">
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
+            <a href="recursos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
+              · Índice de Guías
+            </a>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Guías Prácticas:</span>
+            <ul class="space-y-1 font-medium">
+              <li>
+                <a href="recurso-selector-ribbon.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  1. Selector de Ribbon
+                </a>
+              </li>
+              <li>
+                <a href="recurso-transferencia-vs-directa.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  2. Transferencia vs Directa
+                </a>
+              </li>
+              <li>
+                <a href="recurso-como-elegir-impresora.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  3. Elegir Impresora
+                </a>
+              </li>
+              <li>
+                <a href="recurso-tipo-de-etiqueta.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
+                  4. Tipo de Etiqueta
+                </a>
+              </li>
+              <li>
+                <a href="recurso-mejorar-trazabilidad.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  5. Mejorar Trazabilidad
+                </a>
+              </li>
+              <li>
+                <a href="recurso-evitar-desperdicios.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  6. Evitar Desperdicio
+                </a>
+              </li>
+              <li>
+                <a href="recurso-mantenimiento-zebra.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  7. Mantenimiento Zebra
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="mt-8 pt-6 border-t border-slate-200">
+          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">MUESTRAS DE SUSTRATOS</span>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20un%20muestrario%20de%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Solicitar Muestrario
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL: TIPO DE ETIQUETA -->
+      <main class="lg:col-span-9 bg-white">
+        
+        <!-- Breadcrumb -->
+        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <span>/</span>
+          <a href="recursos.html" class="hover:underline">Recursos</a>
+          <span>/</span>
+          <span class="text-slate-900 font-semibold">Tipo de Etiqueta según Aplicación</span>
+        </div>
+
+        <div class="mb-8">
+          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
+            GUÍA TÉCNICA 04 — INGENIERÍA DE MATERIALES Y ADHESIVOS
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mb-4">
+            ¿CÓMO SELECCIONAR EL TIPO DE ETIQUETA SEGÚN SU APLICACIÓN?
+          </h1>
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
+            Una etiqueta que se despega en una cámara de congelación o que pierde su adhesión en cajas de exportación causa rechazos aduaneros millonarios. Aprende a evaluar el sustrato, el adhesivo y las condiciones de servicio.
+          </p>
+        </div>
+
+        <!-- ESTRUCTURA ANATÓMICA DE LA ETIQUETA -->
+        <div class="border border-slate-200 p-8 bg-slate-50 mb-12">
+          <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">ANATOMÍA TÉCNICA</span>
+          <h3 class="text-xl font-bold text-slate-950 mb-6">Los 3 componentes de una etiqueta autoadhesiva</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+            <div class="bg-white p-5 border border-slate-200">
+              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 01</span>
+              <strong class="text-slate-950 text-sm block mb-2">El Facial (Frontal)</strong>
+              <p class="text-slate-600 leading-relaxed">
+                La capa superior donde se imprime. Puede ser papel (couché, mate, térmico directo) o película plástica sintética (polipropileno BOPP, poliéster o poliamida textil).
+              </p>
+            </div>
+
+            <div class="bg-white p-5 border border-slate-200">
+              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 02</span>
+              <strong class="text-slate-950 text-sm block mb-2">El Adhesivo</strong>
+              <p class="text-slate-600 leading-relaxed">
+                La formulación química responsable del anclaje. Se clasifica en Acrílico (base agua), Hotmelt (base caucho sintético), Criogénico (-30°C) o Removible (sin dejar residuos).
+              </p>
+            </div>
+
+            <div class="bg-white p-5 border border-slate-200">
+              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 03</span>
+              <strong class="text-slate-950 text-sm block mb-2">El Liner (Soporte)</strong>
+              <p class="text-slate-600 leading-relaxed">
+                Papel siliconado glassine o kraft que sostiene la etiqueta antes de ser desprendida. Su espesor y resistencia al rasgado son cruciales en dispensadores automáticos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUSTRATOS MÁS UTILIZADOS EN ECUADOR -->
+        <div class="mb-12">
+          <div class="flex justify-between items-center mb-6 pb-2 border-b border-slate-200">
+            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+              Principales Sustratos Faciales y sus Aplicaciones
+            </h3>
+            <span class="text-xs font-mono text-slate-400">GUÍA DE SELECCIÓN</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
+            <div class="border border-slate-200 p-6 bg-white">
+              <div class="flex justify-between items-start mb-2">
+                <strong class="text-sm font-bold text-slate-950">Papel Couché / Transferencia Térmica</strong>
+                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">ECONÓMICO</span>
+              </div>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Papel estucado semi-brillante con excelente blancura y lisura superficial. Proporciona alto contraste con ribbon de cera.
+              </p>
+              <div class="font-mono text-slate-700 space-y-1">
+                <div>· <strong>Uso ideal:</strong> Cajas corrugadas, pallets de almacenamiento, despacho logístico y retail interior.</div>
+                <div>· <strong>Limitación:</strong> No apto para inmersión en agua ni intemperie prolongada.</div>
+              </div>
+            </div>
+
+            <div class="border-2 border-brand-navy p-6 bg-white">
+              <div class="flex justify-between items-start mb-2">
+                <strong class="text-sm font-bold text-brand-navy">Polipropileno (BOPP Blanco / Transparente)</strong>
+                <span class="font-mono text-[10px] bg-brand-navy text-white px-2 py-0.5 font-bold">ALTA RESISTENCIA</span>
+              </div>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Película plástica biorientada ultra resistente al rasgado, a la humedad continua, condensación y aceites. Se imprime con ribbon de resina.
+              </p>
+              <div class="font-mono text-slate-700 space-y-1">
+                <div>· <strong>Uso ideal:</strong> Cajas master de camarón congelado (-25°C), botellas plásticas, químicos y cosméticos.</div>
+                <div>· <strong>Ventaja:</strong> No absorbe agua ni se desintegra en túneles de frío.</div>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 p-6 bg-white">
+              <div class="flex justify-between items-start mb-2">
+                <strong class="text-sm font-bold text-slate-950">Papel Térmico Directo (Top Coated)</strong>
+                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">SIN RIBBON</span>
+              </div>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Papel termosensible con capa barrera superior que protege los químicos contra grasa, vapor y contacto con dedos.
+              </p>
+              <div class="font-mono text-slate-700 space-y-1">
+                <div>· <strong>Uso ideal:</strong> Balanzas de supermercados, guías courier y etiquetas de despacho de consumo inmediato.</div>
+                <div>· <strong>Limitación:</strong> Sensible a fuentes directas de calor o exposición solar.</div>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 p-6 bg-white">
+              <div class="flex justify-between items-start mb-2">
+                <strong class="text-sm font-bold text-slate-950">Poliéster / Poliamida Textil</strong>
+                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">ESPECIALIDAD</span>
+              </div>
+              <p class="text-slate-600 leading-relaxed mb-3">
+                Sustratos técnicos sintéticos diseñados para resistir condiciones extremas de temperatura (+150°C), lavados químicos o fricción abrasiva.
+              </p>
+              <div class="font-mono text-slate-700 space-y-1">
+                <div>· <strong>Uso ideal:</strong> Cintas cosidas en prendas de vestir (satín/nylon) y placas de identificación de maquinaria.</div>
+                <div>· <strong>Ventaja:</strong> Resiste lavandería industrial y vapor a presión.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLA DE ADHESIVOS SEGÚN TEMPERATURA -->
+        <div class="border border-slate-200 bg-slate-50 p-8 mb-12">
+          <div class="flex justify-between items-center mb-4 pb-2 border-b border-slate-200">
+            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+              Clasificación de Adhesivos Industriales
+            </h3>
+            <span class="text-xs font-mono text-slate-400">RANGOS TÉRMICOS</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse bg-white">
+              <thead>
+                <tr class="border-b border-slate-200 bg-slate-100 font-mono text-[11px] text-slate-700">
+                  <th class="py-2.5 px-3">Tipo de Adhesivo</th>
+                  <th class="py-2.5 px-3">Temp. Mínima de Pegado</th>
+                  <th class="py-2.5 px-3">Temp. de Servicio en Régimen</th>
+                  <th class="py-2.5 px-3">Sustrato Recomendado</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Acrílico Estándar</td>
+                  <td class="py-2.5 px-3 font-mono">+5°C</td>
+                  <td class="py-2.5 px-3 font-mono">-10°C a +80°C</td>
+                  <td class="py-2.5 px-3 text-slate-600">Vidrio, plástico liso, metal, papel</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Hotmelt Permanente (Caucho)</td>
+                  <td class="py-2.5 px-3 font-mono">0°C</td>
+                  <td class="py-2.5 px-3 font-mono">-20°C a +60°C</td>
+                  <td class="py-2.5 px-3 text-slate-600">Cartón corrugado rugoso, fundas PE</td>
+                </tr>
+                <tr class="bg-brand-navy/5 font-bold">
+                  <td class="py-2.5 px-3 text-brand-navy">Adhesivo Criogénico para Congelados</td>
+                  <td class="py-2.5 px-3 font-mono text-brand-navy">-15°C</td>
+                  <td class="py-2.5 px-3 font-mono text-brand-navy">-30°C a +50°C</td>
+                  <td class="py-2.5 px-3 text-slate-800">Cajas de camarón, atún, carnes y mariscos</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Removible Sin Residuos</td>
+                  <td class="py-2.5 px-3 font-mono">+10°C</td>
+                  <td class="py-2.5 px-3 font-mono">-15°C a +70°C</td>
+                  <td class="py-2.5 px-3 text-slate-600">Cristalería, vajilla, electrodomésticos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="border border-slate-200 p-8 text-center bg-white">
+          <h3 class="text-xl font-bold text-slate-950 mb-2">¿Tienes problemas de desprendimiento de etiquetas en tu planta?</h3>
+          <p class="text-xs text-slate-600 max-w-xl mx-auto mb-6">
+            Envíanos fotos de tus envases y cuéntanos sobre tus condiciones de frío o embalaje. Te enviaremos una muestra con el adhesivo formulado para tu proceso.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20tengo%20problemas%20con%20el%20pegado%20de%20mis%20etiquetas%20y%20quisiera%20asesor%C3%ADa" data-whatsapp-context="etiquetas" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Consultar Adhesivos en WhatsApp
+          </a>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white py-12 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-200 text-xs text-slate-600">
+        <div>
+          <img src="assets/images/logo.png" alt="DISCODE" class="h-8 w-auto mb-4">
+          <p class="mb-4 leading-relaxed">
+            Soluciones integrales de codificación, etiquetado y trazabilidad industrial en Ecuador.
+          </p>
+          <span class="font-mono text-[11px] text-slate-500 block">RUC: 0992751433001</span>
+          <span class="font-mono text-[11px] text-slate-500 block">Certificación ISO 9001:2015</span>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Suministros</h4>
+          <ul class="space-y-2">
+            <li><a href="producto-etiquetas.html" class="hover:text-brand-navy">Etiquetas Adhesivas</a></li>
+            <li><a href="producto-ribbons.html" class="hover:text-brand-navy">Ribbons Térmicos</a></li>
+            <li><a href="producto-impresoras.html" class="hover:text-brand-navy">Impresoras de Etiquetas</a></li>
+            <li><a href="producto-codificadores.html" class="hover:text-brand-navy">Codificadores Reiner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Soluciones</h4>
+          <ul class="space-y-2">
+            <li><a href="solucion-integral.html" class="hover:text-brand-navy">Solución Integral</a></li>
+            <li><a href="solucion-servicio-absoluto.html" class="hover:text-brand-navy">Servicio Absoluto</a></li>
+            <li><a href="solucion-comodato.html" class="hover:text-brand-navy">Equipos en Comodato</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-brand-navy">Mantenimiento y Reparación</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Contacto Comercial</h4>
+          <p class="mb-1"><strong>WhatsApp:</strong> <a href="https://wa.me/593984345891" class="hover:underline discode-phone-text">+593 98 434 5891</a></p>
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:ventas@discode.ec" class="hover:underline">ventas@discode.ec</a></p>
+          <p class="mt-2 text-slate-500">Atención técnica y despachos a todo el territorio ecuatoriano.</p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+        <p>© 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0 font-mono">Diseño de Catálogo Técnico Industrial</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

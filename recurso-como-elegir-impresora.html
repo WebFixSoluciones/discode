@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo Elegir Impresora de Etiquetas — DISCODE ECUADOR | Recursos Técnicos</title>
+  <meta name="description" content="Guía técnica paso a paso para seleccionar la impresora térmica adecuada según volumen, resolución (203 vs 300 dpi) y ambiente de trabajo en Ecuador.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="text-brand-navy font-bold">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20para%20elegir%20una%20impresora" data-whatsapp-context="impresoras" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-brand-navy font-bold py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR 90% CON MENÚ LATERAL EXCLUSIVO DE RECURSOS -->
+  <div class="discode-container py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS -->
+      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
+        <div class="mb-6 pb-4 border-b border-slate-200">
+          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CENTRO DE CONOCIMIENTO</span>
+          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Recursos Técnicos</h2>
+        </div>
+
+        <nav class="space-y-4 text-xs">
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
+            <a href="recursos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
+              · Índice de Guías
+            </a>
+          </div>
+
+          <div>
+            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Guías Prácticas:</span>
+            <ul class="space-y-1 font-medium">
+              <li>
+                <a href="recurso-selector-ribbon.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  1. Selector de Ribbon
+                </a>
+              </li>
+              <li>
+                <a href="recurso-transferencia-vs-directa.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  2. Transferencia vs Directa
+                </a>
+              </li>
+              <li>
+                <a href="recurso-como-elegir-impresora.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
+                  3. Elegir Impresora
+                </a>
+              </li>
+              <li>
+                <a href="recurso-tipo-de-etiqueta.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  4. Tipo de Etiqueta
+                </a>
+              </li>
+              <li>
+                <a href="recurso-mejorar-trazabilidad.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  5. Mejorar Trazabilidad
+                </a>
+              </li>
+              <li>
+                <a href="recurso-evitar-desperdicios.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  6. Evitar Desperdicio
+                </a>
+              </li>
+              <li>
+                <a href="recurso-mantenimiento-zebra.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
+                  7. Mantenimiento Zebra
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="mt-8 pt-6 border-t border-slate-200">
+          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">ASESORÍA DIRECTA</span>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20ayuda%20para%20dimensionar%20mi%20impresora" data-whatsapp-context="impresoras" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Consultar con Asesor
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENIDO PRINCIPAL: CÓMO ELEGIR IMPRESORA -->
+      <main class="lg:col-span-9 bg-white">
+        
+        <!-- Breadcrumb -->
+        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <span>/</span>
+          <a href="recursos.html" class="hover:underline">Recursos</a>
+          <span>/</span>
+          <span class="text-slate-900 font-semibold">Cómo Elegir tu Impresora</span>
+        </div>
+
+        <div class="mb-8">
+          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
+            GUÍA TÉCNICA 03 — DIMENSIONAMIENTO DE HARDWARE INDUSTRIAL
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mb-4">
+            CÓMO ELEGIR LA IMPRESORA DE ETIQUETAS ADECUADA
+          </h1>
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
+            Comprar una impresora basándose únicamente en el precio inicial suele terminar en cabezales dañados, cambios de rollo excesivos o incompatibilidad con el software de planta. Conoce los 7 factores determinantes.
+          </p>
+        </div>
+
+        <!-- LOS 7 FACTORES TÉCNICOS -->
+        <div class="space-y-6 mb-12">
+          
+          <div class="border border-slate-200 p-6 bg-slate-50">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 01</span>
+              <h3 class="text-base font-bold text-slate-950">Volumen Diario de Impresión</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Es el factor más crítico. Las impresoras de escritorio están diseñadas para ciclos de trabajo de hasta 2,000 etiquetas al día con pausas térmicas. Si tu planta produce más de 5,000 etiquetas diarias continuas, un equipo desktop sufrirá sobrecalentamiento de placa y descalibración motora; requieres una semi-industrial (ej. Zebra ZT231 / TSC MB240) o industrial pesada (Zebra ZT411).
+            </p>
+          </div>
+
+          <div class="border border-slate-200 p-6 bg-white">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 02</span>
+              <h3 class="text-base font-bold text-slate-950">Resolución del Cabezal: 203 vs 300 vs 600 DPI</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>203 dpi (8 dots/mm):</strong> Es el estándar de la industria logística. Ideal para códigos de barras GS1-128, cajas de cartón y textos de tamaño normal (fuente 8 pt en adelante).<br>
+              <strong>300 dpi (12 dots/mm):</strong> Indispensable para etiquetas farmacéuticas, cosméticas, cintas textiles (satín/poliamida) y códigos DataMatrix o QR densos menores a 10 mm.<br>
+              <strong>600 dpi (24 dots/mm):</strong> Específica para microchips electrónicos, tarjetas PCB y joyería de precisión.
+            </p>
+          </div>
+
+          <div class="border border-slate-200 p-6 bg-slate-50">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 03</span>
+              <h3 class="text-base font-bold text-slate-950">Ancho Máximo de Impresión (4" vs 6" u 8")</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              La mayoría de impresoras tienen un ancho máximo de 4.09 pulgadas (104 mm). Si requieres rotular pallets con estándares internacionales (etiqueta A5 de 148 x 210 mm) o tambores químicos de 55 galones (norma GHS), necesitas una impresora de formato ancho de 6 pulgadas (ej. Zebra ZT421 o TSC TTP-2610MT).
+            </p>
+          </div>
+
+          <div class="border border-slate-200 p-6 bg-white">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 04</span>
+              <h3 class="text-base font-bold text-slate-950">Ambiente de Operación en Planta</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              En oficinas y farmacias una carcasa de polímero es suficiente. Pero en plantas procesadoras de alimentos, camaroneras o aserraderos, el vapor de agua, la salinidad y el polvo entran a los engranajes. En estos entornos se requiere chasis metálico fundido sellado y resistencia a condensación.
+            </p>
+          </div>
+
+          <div class="border border-slate-200 p-6 bg-slate-50">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 05</span>
+              <h3 class="text-base font-bold text-slate-950">Autonomía de Consumibles (Longitud de Ribbon)</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Una impresora de escritorio aloja rollos de ribbon de 74 a 110 metros y rollos de etiquetas con diámetro externo pequeño (buje de 1"). Una impresora industrial aloja ribbons de 450 metros y rollos gigantes de etiquetas (buje de 3"), lo que reduce los tiempos de parada para reabastecimiento en más de un 75%.
+            </p>
+          </div>
+
+          <div class="border border-slate-200 p-6 bg-white">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-slate-900 text-white px-2 py-0.5 font-bold">FACTOR 06</span>
+              <h3 class="text-base font-bold text-slate-950">Conectividad e Integración con ERP</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Determina cómo se enviarán las órdenes de impresión. ¿Conexión directa por USB a una PC? ¿Conexión de red Ethernet cableada TCP/IP compartida entre varios puestos? ¿Conectividad inalámbrica Wi-Fi o Bluetooth para terminales portátiles? Asegúrate de que el equipo soporte emulaciones ZPL, EPL o TSPL para integrarse nativamente con SAP, Oracle u Odoo.
+            </p>
+          </div>
+
+          <div class="border-2 border-brand-navy p-6 bg-slate-50">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="font-mono text-xs bg-brand-navy text-white px-2 py-0.5 font-bold">FACTOR 07</span>
+              <h3 class="text-base font-bold text-slate-950">Modelo Financiero: Compra Directa vs. Comodato</h3>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Evalúa si a tu empresa le conviene descapitalizarse adquiriendo las máquinas o si califica para el programa de <strong>Equipos en Comodato DISCODE</strong>, donde la máquina se instala sin costo inicial vinculada a tu consumo recurrente de insumos, con mantenimiento preventivo incluido.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="border border-slate-200 p-8 text-center bg-white">
+          <h3 class="text-xl font-bold text-slate-950 mb-2">¿Quieres que analicemos tu proceso productivo sin costo?</h3>
+          <p class="text-xs text-slate-600 max-w-xl mx-auto mb-6">
+            Envíanos las dimensiones de tu etiqueta, tu estimado de producción mensual y las condiciones de tu bodega o nave industrial.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20para%20dimensionar%20una%20impresora%20seg%C3%BAn%20la%20gu%C3%ADa" data-whatsapp-context="impresoras" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            Recibir Recomendación por WhatsApp
+          </a>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white py-12 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-200 text-xs text-slate-600">
+        <div>
+          <img src="assets/images/logo.png" alt="DISCODE" class="h-8 w-auto mb-4">
+          <p class="mb-4 leading-relaxed">
+            Soluciones integrales de codificación, etiquetado y trazabilidad industrial en Ecuador.
+          </p>
+          <span class="font-mono text-[11px] text-slate-500 block">RUC: 0992751433001</span>
+          <span class="font-mono text-[11px] text-slate-500 block">Certificación ISO 9001:2015</span>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Suministros</h4>
+          <ul class="space-y-2">
+            <li><a href="producto-etiquetas.html" class="hover:text-brand-navy">Etiquetas Adhesivas</a></li>
+            <li><a href="producto-ribbons.html" class="hover:text-brand-navy">Ribbons Térmicos</a></li>
+            <li><a href="producto-impresoras.html" class="hover:text-brand-navy">Impresoras de Etiquetas</a></li>
+            <li><a href="producto-codificadores.html" class="hover:text-brand-navy">Codificadores Reiner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Soluciones</h4>
+          <ul class="space-y-2">
+            <li><a href="solucion-integral.html" class="hover:text-brand-navy">Solución Integral</a></li>
+            <li><a href="solucion-servicio-absoluto.html" class="hover:text-brand-navy">Servicio Absoluto</a></li>
+            <li><a href="solucion-comodato.html" class="hover:text-brand-navy">Equipos en Comodato</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-brand-navy">Mantenimiento y Reparación</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-4">Contacto Comercial</h4>
+          <p class="mb-1"><strong>WhatsApp:</strong> <a href="https://wa.me/593984345891" class="hover:underline discode-phone-text">+593 98 434 5891</a></p>
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:ventas@discode.ec" class="hover:underline">ventas@discode.ec</a></p>
+          <p class="mt-2 text-slate-500">Atención técnica y despachos a todo el territorio ecuatoriano.</p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+        <p>© 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0 font-mono">Diseño de Catálogo Técnico Industrial</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
