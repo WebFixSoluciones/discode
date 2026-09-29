@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISCODE ECUADOR — Soluciones de Identificación, Codificación y Trazabilidad para la Industria</title>
+  <meta name="description" content="Etiquetas, ribbons, impresoras industriales, codificadores directos y servicio técnico para la industria en Ecuador. Empresa certificada ISO 9001.">
+  
+  <!-- CDN Tailwind CSS de alto rendimiento -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tipografía Técnica de Precisión -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Configuración personalizada de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA DE CERTIFICACIÓN Y CONTACTO: LIMPIA Y SOBRIA -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL: ESPACIOSA Y LIMPIA -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="text-brand-navy font-bold">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="hover:text-brand-navy transition">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable para móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-brand-navy font-bold py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-slate-700 hover:text-brand-navy py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+      <div class="pt-3 border-t border-slate-100">
+        <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="block text-center bg-brand-navy text-white py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm">
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER PRINCIPAL (HERO) -->
+  <section class="py-20 md:py-28 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="max-w-4xl">
+        <div class="inline-block border border-slate-300 bg-slate-50 text-slate-800 uppercase tracking-widest text-[11px] font-semibold px-3 py-1 mb-8">
+          Tecnología de Identificación, Codificación & Trazabilidad
+        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.12] mb-8">
+          SOLUCIONES DE IDENTIFICACIÓN, CODIFICACIÓN Y TRAZABILIDAD PARA LA INDUSTRIA
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 font-normal leading-relaxed mb-10 max-w-3xl">
+          Etiquetas, ribbons, impresoras, codificadores y servicio técnico para que tus productos estén correctamente identificados en cada etapa de tu operación.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR
+          </a>
+          <a href="productos.html" class="border border-slate-300 hover:border-slate-900 text-slate-900 px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            VER PRODUCTOS
+          </a>
+        </div>
+
+        <p class="text-xs uppercase tracking-wider font-mono text-slate-500">
+          Todo lo que necesitas para identificar, imprimir y controlar tus productos, en un solo lugar.
+        </p>
+      </div>
+
+      <!-- CIFRAS / BENCHMARKS TÉCNICOS: ALTO CONTRASTE Y LÍNEAS LIMPIAS -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-12 border-t border-slate-200">
+        <div>
+          <span class="block font-mono text-2xl font-bold text-slate-950">ISO 9001</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Calidad Certificada</span>
+        </div>
+        <div>
+          <span class="block font-mono text-2xl font-bold text-slate-950">4 LÍNEAS</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Insumos y Maquinaria</span>
+        </div>
+        <div>
+          <span class="block font-mono text-2xl font-bold text-slate-950">REINER</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Tecnología Alemana</span>
+        </div>
+        <div>
+          <span class="block font-mono text-2xl font-bold text-slate-950">COBERTURA</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Soporte Técnico Nacional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ¿POR QUÉ DISCODE? -->
+  <section class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-4">
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-3 font-mono">Enfoque Operativo</span>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-950 leading-tight">
+            Una solución integral para tus procesos de identificación
+          </h2>
+        </div>
+        <div class="lg:col-span-8 space-y-6 text-base text-slate-600 leading-relaxed">
+          <p>
+            En <strong>DISCODE ECUADOR</strong> ayudamos a empresas de diferentes industrias a optimizar sus procesos de identificación, codificación y trazabilidad.
+          </p>
+          <p>
+            Integramos productos, tecnología, suministros y servicio técnico para ofrecer soluciones adaptadas a las necesidades de cada operación.
+          </p>
+          <p>
+            Nuestro objetivo es que puedas contar con los equipos y materiales adecuados, disponibilidad de suministros y respaldo técnico cuando lo necesites.
+          </p>
+          <div class="pt-2">
+            <a href="nosotros.html" class="inline-block text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono">
+              Conocer más sobre DISCODE Ecuador →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: NUESTROS PRODUCTOS (4 BLOQUES) -->
+  <section class="py-24 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-slate-200">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Portafolio Industrial</span>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">PRODUCTOS PARA CADA ETAPA DE TU OPERACIÓN</h2>
+        </div>
+        <a href="productos.html" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono mt-4 md:mt-0">
+          VER CATÁLOGO COMPLETO →
+        </a>
+      </div>
+
+      <!-- Cuatro bloques de producto -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 catalog-grid">
+        
+        <!-- Bloque 1: Etiquetas Adhesivas -->
+        <div class="p-8 catalog-cell flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">CAT-01 / SUMINISTROS</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">ETIQUETAS ADHESIVAS</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Etiquetas fabricadas para diferentes aplicaciones, materiales, tamaños y necesidades de identificación.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-8 font-medium">
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Identificación de productos</span><span class="text-slate-400 font-mono">✓</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Etiquetas para congelados</span><span class="text-slate-400 font-mono">✓</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Cajas, fundas y exportación</span><span class="text-slate-400 font-mono">✓</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR ETIQUETAS
+          </a>
+        </div>
+
+        <!-- Bloque 2: Ribbons -->
+        <div class="p-8 catalog-cell flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">CAT-02 / TRANSFERENCIA</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">RIBBONS</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Ribbons de transferencia térmica para obtener impresiones claras, resistentes y de alta calidad.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-8 font-medium">
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Ribbon de cera</span><span class="text-slate-400 font-mono">Papel</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Ribbon de resina</span><span class="text-slate-400 font-mono">Sintético</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Ribbon de resina textil</span><span class="text-slate-400 font-mono">Prendas</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR RIBBON
+          </a>
+        </div>
+
+        <!-- Bloque 3: Impresoras -->
+        <div class="p-8 catalog-cell flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">CAT-03 / HARDWARE</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">IMPRESORAS</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Impresoras industriales, semi industriales, de escritorio y móviles para diferentes volúmenes y aplicaciones.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-8 font-medium">
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Industriales de alto volumen</span><span class="text-slate-400 font-mono">Planta</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Semi industriales y textil</span><span class="text-slate-400 font-mono">Taller</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Marcas Zebra, TSC y otras</span><span class="text-slate-400 font-mono">Soporte</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20etiquetas" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR IMPRESORA
+          </a>
+        </div>
+
+        <!-- Bloque 4: Codificadores -->
+        <div class="p-8 catalog-cell flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">CAT-04 / MARCADO DIRECTO</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">CODIFICADORES</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Soluciones para impresión y codificación directa sobre diferentes tipos de superficies y productos.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-8 font-medium">
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Tecnología alemana Reiner</span><span class="text-slate-400 font-mono">JetStamp</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Fechas, lotes y códigos</span><span class="text-slate-400 font-mono">Directo</span></li>
+              <li class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Repuestos y servicio técnico</span><span class="text-slate-400 font-mono">Local</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20codificadores%20directos%20Reiner" data-whatsapp-context="codificadores" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR CODIFICADOR
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="productos.html" class="inline-block bg-slate-950 hover:bg-brand-navy text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          VER PRODUCTOS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: SOLUCIONES DISCODE (3 BLOQUES) -->
+  <section class="py-24 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container">
+      <div class="max-w-3xl mb-16">
+        <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Integración de Servicios</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">MÁS QUE PRODUCTOS, UNA SOLUCIÓN</h2>
+        <p class="text-base text-slate-600 mt-4 leading-relaxed">
+          Diseñamos soluciones que combinan equipos, suministros y servicio para simplificar tus procesos de identificación y trazabilidad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Bloque 1: Solución Integral -->
+        <div class="border border-slate-300 bg-white p-8 flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">MODELO 01</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">SOLUCIÓN INTEGRAL DISCODE</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Integramos los productos y servicios necesarios para cubrir tus requerimientos de identificación y codificación.
+            </p>
+            <p class="text-xs font-mono text-slate-500 mb-6">
+              Centraliza etiquetas, ribbons, impresoras y codificadores con un solo proveedor calificado.
+            </p>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20la%20Soluci%C3%B3n%20Integral" data-whatsapp-context="solucion_integral" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR SOLUCIÓN
+          </a>
+        </div>
+
+        <!-- Bloque 2: Servicio Absoluto -->
+        <div class="border border-slate-300 bg-white p-8 flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-slate-400 block mb-4">MODELO 02</span>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">SERVICIO ABSOLUTO DISCODE</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Una solución orientada a garantizar continuidad, soporte y atención durante la operación.
+            </p>
+            <p class="text-xs font-mono text-slate-500 mb-6">
+              Combinamos suministro programado, mantenimiento preventivo y soporte técnico de planta.
+            </p>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20el%20Servicio%20Absoluto" data-whatsapp-context="servicio_absoluto" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider border border-slate-300 hover:border-slate-900 text-slate-900 transition rounded-sm">
+            COTIZAR SERVICIO
+          </a>
+        </div>
+
+        <!-- Bloque 3: Comodato -->
+        <div class="border-2 border-brand-navy bg-white p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-mono text-xs text-brand-navy font-bold">MODELO 03</span>
+              <span class="text-[10px] uppercase font-bold tracking-widest bg-brand-navy text-white px-2 py-0.5">Cero Inversión Inicial</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-950 mb-3">COMODATO DISCODE</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Una alternativa para empresas que requieren equipos de impresión y codificación acompañados de suministros y soporte.
+            </p>
+            <p class="text-xs font-mono text-slate-500 mb-6">
+              Equipos de impresión sin inversión inicial de capital, con consumibles y respaldo técnico garantizados.
+            </p>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20sobre%20la%20soluci%C3%B3n%20de%20comodato" data-whatsapp-context="comodato" target="_blank" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider bg-brand-navy text-white hover:bg-slate-900 transition rounded-sm">
+            COTIZAR COMODATO
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: INDUSTRIAS (16 TARJETAS TÉCNICAS) -->
+  <section class="py-24 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-slate-200">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Cobertura Multisectorial</span>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">SOLUCIONES PARA DIFERENTES INDUSTRIAS</h2>
+          <p class="text-base text-slate-600 mt-4 leading-relaxed max-w-2xl">
+            Conocemos que cada industria tiene necesidades diferentes de identificación, etiquetado, codificación y trazabilidad. Por eso desarrollamos soluciones adaptadas a cada operación.
+          </p>
+        </div>
+        <a href="industrias.html" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono mt-4 md:mt-0">
+          VER TODAS LAS INDUSTRIAS →
+        </a>
+      </div>
+
+      <!-- Grilla de 16 tarjetas -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-01</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Camaronera</h4>
+            <p class="text-xs text-slate-600 leading-snug">Empacadoras, bajas temperaturas y congelación.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-02</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Pesquera</h4>
+            <p class="text-xs text-slate-600 leading-snug">Atuneras, empaques y trazabilidad marítima.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-03</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Alimenticia</h4>
+            <p class="text-xs text-slate-600 leading-snug">Lotes, fechas, códigos de barras y normativas.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-04</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Agrícola</h4>
+            <p class="text-xs text-slate-600 leading-snug">Cajas, empaques y cadena agroexportadora.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-05</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Florícola</h4>
+            <p class="text-xs text-slate-600 leading-snug">Exportación de flores, empaques y cuartos fríos.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-06</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Textil</h4>
+            <p class="text-xs text-slate-600 leading-snug">Etiquetas cosidas, inventarios y resina textil.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-07</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Manufactura</h4>
+            <p class="text-xs text-slate-600 leading-snug">Componentes, cajas y procesos de ensamblaje.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-08</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Plásticos</h4>
+            <p class="text-xs text-slate-600 leading-snug">Rotulación directa, resinas y envases.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-09</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Logística y distribución</h4>
+            <p class="text-xs text-slate-600 leading-snug">Almacenamiento, pallets, despacho y control.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-10</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Retail</h4>
+            <p class="text-xs text-slate-600 leading-snug">Etiquetado de precios, inventarios y góndolas.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-11</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Laboratorios</h4>
+            <p class="text-xs text-slate-600 leading-snug">Información controlada, química y legible.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-12</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Cosmética</h4>
+            <p class="text-xs text-slate-600 leading-snug">Frascos, cajas y presentación de alta calidad.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-13</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Farmacéutica</h4>
+            <p class="text-xs text-slate-600 leading-snug">Trazabilidad estricta, registros sanitarios y lotes.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-14</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Bebidas</h4>
+            <p class="text-xs text-slate-600 leading-snug">Embotellado continuo, tapas, botellas y cajas.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-15</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Avícola</h4>
+            <p class="text-xs text-slate-600 leading-snug">Cadenas de frío, bandejas y despachos seguros.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-16</span>
+            <h4 class="font-bold text-slate-950 text-sm mb-1">Exportadores</h4>
+            <p class="text-xs text-slate-600 leading-snug">Normativas aduaneras, estándares GS1 y control.</p>
+          </div>
+          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="industrias.html" class="inline-block bg-slate-950 hover:bg-brand-navy text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          VER INDUSTRIAS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FINAL DE INICIO (CALL TO ACTION DIRECTO) -->
+  <section class="py-24 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container text-center max-w-4xl">
+      <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-3 font-mono">Asesoría Técnica Inmediata</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-950 mb-6">
+        ¿Necesitas una solución para identificar tus productos?
+      </h2>
+      <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+        Cuéntanos qué necesitas y te ayudamos a encontrar la combinación adecuada de etiquetas, ribbons, equipos y servicios para tu operación.
+      </p>
+      <div>
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-10 py-4 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          COTIZAR POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER DE TODA LA WEB (UNIFICADO SEGÚN PÁGINAS 31-32 DE LA GUÍA) -->
+  <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-900">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Columna Identidad -->
+        <div class="lg:col-span-2 space-y-4">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-9 w-auto brightness-0 invert object-contain">
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            DISCODE ECUADOR — Soluciones de identificación, codificación y trazabilidad para la industria. Integración de equipos, consumibles y servicio técnico especializado.
+          </p>
+          <div class="pt-2">
+            <span class="inline-block font-mono text-[11px] text-slate-300 border border-slate-800 bg-slate-900 px-3 py-1">
+              SISTEMA DE GESTIÓN CERTIFICADO ISO 9001
+            </span>
+          </div>
+        </div>
+
+        <!-- Columna Navegación -->
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Navegación</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-white transition">Productos</a></li>
+            <li><a href="soluciones.html" class="hover:text-white transition">Soluciones</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-white transition">Servicio Técnico</a></li>
+            <li><a href="industrias.html" class="hover:text-white transition">Industrias</a></li>
+            <li><a href="marcas.html" class="hover:text-white transition">Marcas</a></li>
+            <li><a href="casos.html" class="hover:text-white transition">Casos</a></li>
+            <li><a href="recursos.html" class="hover:text-white transition">Recursos</a></li>
+            <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Productos -->
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Productos</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="productos.html#etiquetas" class="hover:text-white transition">Etiquetas</a></li>
+            <li><a href="productos.html#ribbons" class="hover:text-white transition">Ribbons</a></li>
+            <li><a href="productos.html#impresoras" class="hover:text-white transition">Impresoras</a></li>
+            <li><a href="productos.html#codificadores" class="hover:text-white transition">Codificadores</a></li>
+            <li><a href="soluciones.html#comodato" class="hover:text-white transition">Comodato de Equipos</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Contacto -->
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Contacto</span>
+          <div class="space-y-3">
+            <div>
+              <span class="text-slate-500 text-[11px] block">Cotización directa:</span>
+              <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="text-white font-mono font-bold text-sm hover:text-emerald-400 transition">
+                COTIZAR POR WHATSAPP
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Teléfono / WhatsApp:</span>
+              <a href="tel:+593984345891" class="text-slate-300 font-mono hover:text-white discode-phone-text">
+                +593 98 434 5891
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Correo corporativo:</span>
+              <a href="mailto:ventas@discode.ec" class="text-slate-300 hover:text-white discode-email-link">
+                ventas@discode.ec
+              </a>
+            </div>
+            <p class="text-slate-500 text-[11px] pt-1">
+              Guayaquil · Quito · Cuenca · Cobertura en todo el Ecuador.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de copyright y políticas -->
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[11px] gap-4">
+        <div>
+          © 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.
+        </div>
+        <div class="flex space-x-6 font-medium">
+          <a href="#" class="hover:text-slate-300">Política de Privacidad</a>
+          <a href="#" class="hover:text-slate-300">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Globales -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
