@@ -23,6 +23,7 @@ const DISCODE_BRANDS = [
       { code: "JetStamp 970", desc: "Impresión de alta precisión y velocidad para líneas de empaque y lotes farmacéuticos." },
       { code: "JetStamp 990", desc: "Formato ultracompacto y ligero para marcado rápido de fechas y vencimientos." }
     ],
+    image: "assets/images/codificadores/jetstamp-1025.avif",
     whatsappContext: "codificadores"
   },
   {
@@ -102,6 +103,12 @@ function renderBrandsCatalog(containerId) {
       ? DISCODE_CONFIG.getWhatsAppLink(brand.whatsappContext, `Interés en equipos marca ${brand.name}`)
       : `https://wa.me/593984345891?text=${encodeURIComponent(`Hola DISCODE, me interesa información y cotización sobre la marca ${brand.name}`)}`;
 
+    const imageHtml = brand.image 
+      ? `<div class="bg-slate-50 border border-slate-100 p-4 mb-6 flex items-center justify-center">
+           <img src="${brand.image}" alt="${brand.name}" class="h-36 w-auto object-contain">
+         </div>`
+      : '';
+
     html += `
       <article class="border border-slate-200 bg-white p-8 md:p-10 transition hover:border-slate-400 flex flex-col justify-between" id="brand-${brand.id}">
         <div>
@@ -116,6 +123,8 @@ function renderBrandsCatalog(containerId) {
             </span>
           </div>
 
+          ${imageHtml}
+
           <p class="text-sm text-slate-600 leading-relaxed mb-6">
             ${brand.description}
           </p>
@@ -123,7 +132,7 @@ function renderBrandsCatalog(containerId) {
           <div class="mb-6">
             <span class="text-xs font-mono font-semibold text-slate-900 uppercase tracking-wider block mb-3">Características Clave:</span>
             <ul class="text-xs text-slate-600 space-y-2">
-              ${brand.highlights.map(h => `<li class="flex items-start gap-2"><span class="text-brand-navy font-bold font-mono">✓</span> <span>${h}</span></li>`).join('')}
+              ${brand.highlights.map(h => `<li class="flex items-start gap-2"><span class="text-brand-navy font-bold font-mono">[+]</span> <span>${h}</span></li>`).join('')}
             </ul>
           </div>
 
