@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos y Conocimiento — DISCODE ECUADOR | Guías Técnicas y Selector de Ribbon</title>
+  <meta name="description" content="Guías técnicas de codificación, selector interactivo de ribbons, comparativa transferencia térmica vs térmica directa, mantenimiento de impresoras Zebra y trazabilidad.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#00337F',
+              dark: '#0A1128',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              accent: '#0284C7',
+              whatsapp: '#0D8A5E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+
+  <!-- BARRA SUPERIOR -->
+  <div class="border-b border-slate-200 bg-slate-50 py-2.5 px-4 text-xs text-slate-600">
+    <div class="discode-container flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center space-x-4 md:space-x-6 tracking-wide uppercase font-medium text-[11px]">
+        <span class="text-brand-navy font-bold">DISCODE ECUADOR S.A.</span>
+        <span class="text-slate-300">|</span>
+        <span class="text-slate-800 font-semibold">Sistema de Gestión de Calidad ISO 9001</span>
+        <span class="text-slate-300 hidden md:inline">|</span>
+        <span class="text-slate-600 hidden md:inline">Guayaquil · Quito · Cuenca · Cobertura Nacional</span>
+      </div>
+      <div class="flex items-center space-x-4 font-mono text-xs">
+        <span class="text-slate-500 hidden sm:inline">Línea Directa:</span>
+        <a href="tel:+593984345891" class="font-semibold text-slate-900 hover:text-brand-navy transition discode-phone-text">+593 98 434 5891</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <div class="discode-container py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8 lg:space-x-12">
+        <a href="index.html" class="block">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-10 w-auto object-contain">
+        </a>
+        <nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-navy transition">Inicio</a>
+          <a href="productos.html" class="hover:text-brand-navy transition">Productos</a>
+          <a href="soluciones.html" class="hover:text-brand-navy transition">Soluciones</a>
+          <a href="servicio-tecnico.html" class="hover:text-brand-navy transition">Servicio Técnico</a>
+          <a href="industrias.html" class="hover:text-brand-navy transition">Industrias</a>
+          <a href="marcas.html" class="hover:text-brand-navy transition">Marcas</a>
+          <a href="casos.html" class="hover:text-brand-navy transition">Casos</a>
+          <a href="recursos.html" class="text-brand-navy font-bold">Recursos</a>
+          <a href="nosotros.html" class="hover:text-brand-navy transition">Nosotros</a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/593984345891" data-whatsapp-context="ribbons" target="_blank" class="hidden sm:inline-flex bg-brand-navy hover:bg-slate-900 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          Cotizar WhatsApp
+        </a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 border border-slate-300 text-slate-700 hover:text-slate-900" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-brand-navy py-1">Inicio</a>
+      <a href="productos.html" class="block text-slate-700 hover:text-brand-navy py-1">Productos</a>
+      <a href="soluciones.html" class="block text-slate-700 hover:text-brand-navy py-1">Soluciones</a>
+      <a href="servicio-tecnico.html" class="block text-slate-700 hover:text-brand-navy py-1">Servicio Técnico</a>
+      <a href="industrias.html" class="block text-slate-700 hover:text-brand-navy py-1">Industrias</a>
+      <a href="marcas.html" class="block text-slate-700 hover:text-brand-navy py-1">Marcas</a>
+      <a href="casos.html" class="block text-slate-700 hover:text-brand-navy py-1">Casos</a>
+      <a href="recursos.html" class="block text-brand-navy font-bold py-1">Recursos</a>
+      <a href="nosotros.html" class="block text-slate-700 hover:text-brand-navy py-1">Nosotros</a>
+      <a href="contacto.html" class="block text-slate-700 hover:text-brand-navy py-1">Contacto</a>
+    </div>
+  </header>
+
+  <!-- ENCABEZADO DE PÁGINA (PÁGINA 12 DE LA GUÍA) -->
+  <section class="py-16 md:py-20 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="max-w-4xl">
+        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-3">
+          Centro de Conocimiento Técnico
+        </span>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
+          RECURSOS Y CONOCIMIENTO
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
+          Información práctica para ayudarte a seleccionar, utilizar y mantener correctamente tus soluciones de identificación.
+        </p>
+
+        <!-- Índice rápido de artículos -->
+        <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-200 text-xs font-mono">
+          <a href="#selector-ribbon" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">01. Selector de Ribbon</a>
+          <a href="#comparativa-termica" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">02. Transferencia vs. Térmica Directa</a>
+          <a href="#elegir-impresora" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">03. Cómo Elegir Impresora</a>
+          <a href="#elegir-etiqueta" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">04. Tipo de Etiqueta</a>
+          <a href="#mejorar-trazabilidad" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">05. Trazabilidad en 6 Pasos</a>
+          <a href="#evitar-desperdicios" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">06. Evitar Desperdicio</a>
+          <a href="#mantenimiento-zebra" class="px-3.5 py-1.5 border border-slate-300 bg-slate-50 hover:bg-brand-navy hover:text-white transition">07. Mantenimiento Zebra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTE 1: SELECTOR TÉCNICO INTERACTIVO DE RIBBON (PÁGINAS 12-14 DE LA GUÍA) -->
+  <section id="selector-ribbon" class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container max-w-5xl">
+      <div class="mb-10 text-center">
+        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Herramienta Interactiva</span>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">¿Qué ribbon necesito para mis etiquetas?</h2>
+        <p class="text-sm text-slate-600 mt-2 max-w-2xl mx-auto">
+          La elección del ribbon depende principalmente del material de la etiqueta y de las condiciones a las que estará expuesta la impresión. En DISCODE contamos con Ribbons de Cera, Resina y Resina Textil.
+        </p>
+      </div>
+
+      <div class="bg-white border border-slate-300 p-8 md:p-10">
+        <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-900 mb-4">
+          Paso 1: ¿Qué material tiene tu etiqueta?
+        </label>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <button type="button" onclick="selectRibbonMaterial('papel')" id="ribbon-opt-papel" class="ribbon-select-btn text-left p-5 border border-brand-navy bg-slate-50 ring-1 ring-brand-navy transition">
+            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 01</span>
+            <span class="font-bold text-slate-950 block text-base">Papel / Cartón</span>
+            <span class="text-xs text-slate-600 block mt-1">Etiquetas de papel bond, mate o semi-brillo para logística general.</span>
+          </button>
+
+          <button type="button" onclick="selectRibbonMaterial('sintetico')" id="ribbon-opt-sintetico" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-400 transition">
+            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 02</span>
+            <span class="font-bold text-slate-950 block text-base">Sintético / Polipropileno</span>
+            <span class="text-xs text-slate-600 block mt-1">Polipropileno (BOPP), poliéster, congelación profunda y roce.</span>
+          </button>
+
+          <button type="button" onclick="selectRibbonMaterial('textil')" id="ribbon-opt-textil" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-400 transition">
+            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 03</span>
+            <span class="font-bold text-slate-950 block text-base">Textil / Ropa</span>
+            <span class="text-xs text-slate-600 block mt-1">Cintas cosidas de poliamida (nylon) o raso satín para prendas.</span>
+          </button>
+        </div>
+
+        <!-- Panel de Diagnóstico -->
+        <div class="border-t border-slate-200 pt-6">
+          <span class="font-mono text-[11px] text-brand-navy font-bold uppercase tracking-wider block" id="ribbon-result-type">
+            TIPO: WAX / CERA INDUSTRIAL
+          </span>
+          <h3 id="ribbon-result-title" class="text-xl font-bold text-slate-950 mt-1 mb-2">
+            Ribbon de Cera Formulada
+          </h3>
+          <p id="ribbon-result-desc" class="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
+            Solución eficiente y de alto rendimiento para impresión sobre etiquetas de papel. Proporciona excelente nitidez de códigos de barras para logística y almacenamiento comercial.
+          </p>
+
+          <div id="ribbon-result-specs" class="bg-slate-50 border border-slate-200 p-4 text-xs font-mono text-slate-700 space-y-2 mb-8">
+            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900">Papel mate, brillante, cartulinas</strong></div>
+            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900">Moderada (despacho general)</strong></div>
+            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900">Bodega, logística, cajas máster</strong></div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 bg-slate-50 border border-slate-200">
+            <div>
+              <strong class="text-xs font-bold text-slate-950 block uppercase tracking-wider">¿Tienes dudas sobre qué ribbon utilizar?</strong>
+              <span class="text-xs text-slate-600">Envíanos una muestra física o las especificaciones de tu equipo. Te ayudamos a identificar el adecuado.</span>
+            </div>
+            <a id="ribbon-result-cta" href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera%20para%20etiquetas%20de%20Papel" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-slate-900 text-white px-6 py-3 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+              Cotizar Ribbon por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 2: ¿TRANSFERENCIA TÉRMICA O TÉRMICA DIRECTA? (PÁGINAS 14-16 DE LA GUÍA) -->
+  <section id="comparativa-termica" class="py-20 border-b border-slate-200 bg-white">
+    <div class="discode-container">
+      <div class="max-w-4xl mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Guía Técnica Comparativa</span>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+          ¿Transferencia térmica o térmica directa?
+        </h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          La diferencia principal está en cómo se imprime la información sobre la etiqueta. En la impresión por transferencia térmica se utiliza una impresora junto con un ribbon, que transfiere la tinta desde la cinta hacia la etiqueta. En la impresión térmica directa, la etiqueta cuenta con un material termosensible que cambia de color al recibir el calor del cabezal de impresión y no necesita ribbon.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Transferencia Térmica -->
+        <div class="border border-slate-300 p-8 bg-slate-50">
+          <span class="font-mono text-xs font-bold text-brand-navy uppercase tracking-wider block mb-2">TECNOLOGÍA 01</span>
+          <h3 class="text-xl font-bold text-slate-950 mb-3">Transferencia Térmica</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-6">
+            Es una excelente opción cuando necesitas una impresión duradera y resistente, especialmente en aplicaciones industriales y de identificación de productos.
+          </p>
+          
+          <div class="border-t border-slate-200 pt-4 mb-6">
+            <span class="text-xs font-mono font-bold text-slate-900 uppercase block mb-2">Se recomienda para:</span>
+            <ul class="text-xs text-slate-700 space-y-1.5">
+              <li>· Etiquetas de papel e ilustración</li>
+              <li>· Etiquetas sintéticas y polipropileno</li>
+              <li>· Etiquetas industriales expuestas a químicos</li>
+              <li>· Códigos de barras de larga permanencia</li>
+              <li>· Identificación de activos y congelados</li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-white border border-slate-200 text-xs font-mono">
+            <strong>Necesita:</strong> Impresora + Etiqueta + Ribbon
+          </div>
+        </div>
+
+        <!-- Térmica Directa -->
+        <div class="border border-slate-300 p-8 bg-slate-50">
+          <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider block mb-2">TECNOLOGÍA 02</span>
+          <h3 class="text-xl font-bold text-slate-950 mb-3">Térmica Directa</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-6">
+            La impresión térmica directa utiliza etiquetas especialmente fabricadas para reaccionar al calor del cabezal de impresión. No utiliza ribbon, por lo que simplifica el proceso de impresión.
+          </p>
+
+          <div class="border-t border-slate-200 pt-4 mb-6">
+            <span class="text-xs font-mono font-bold text-slate-900 uppercase block mb-2">Se recomienda para:</span>
+            <ul class="text-xs text-slate-700 space-y-1.5">
+              <li>· Etiquetas logísticas y de despacho</li>
+              <li>· Etiquetas temporales de corta vida útil</li>
+              <li>· Envíos de courier y paquetería rápida</li>
+              <li>· Identificación de tránsito rápido</li>
+              <li>· Aplicaciones donde no se requiere ribbon</li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-white border border-slate-200 text-xs font-mono">
+            <strong>Necesita:</strong> Impresora + Etiqueta Térmica Directa
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabla Comparativa Técnica: ¿Cuál elegir? (Página 16 de la guía) -->
+      <div class="overflow-x-auto border border-slate-200 mb-8">
+        <table class="table-tech">
+          <thead>
+            <tr>
+              <th>Necesidad del Cliente</th>
+              <th>Tecnología Recomendada</th>
+              <th>Insumos Requeridos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium text-slate-900">Impresión de mayor duración</td>
+              <td class="font-semibold text-brand-navy">Transferencia térmica</td>
+              <td>Etiqueta + Ribbon</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Etiquetas sintéticas</td>
+              <td class="font-semibold text-brand-navy">Transferencia térmica</td>
+              <td>Etiqueta sintética + Ribbon Resina</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Polipropileno / Congelados</td>
+              <td class="font-semibold text-brand-navy">Transferencia térmica</td>
+              <td>Etiqueta freezer + Ribbon Resina</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Aplicaciones industriales severas</td>
+              <td class="font-semibold text-brand-navy">Transferencia térmica</td>
+              <td>Etiqueta industrial + Ribbon Resina</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Etiquetas textiles y confección</td>
+              <td class="font-semibold text-brand-navy">Transferencia térmica</td>
+              <td>Poliamida / Raso + Resina Textil</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Etiquetas temporales</td>
+              <td class="font-semibold text-slate-700">Térmica directa</td>
+              <td>Etiqueta térmica (sin ribbon)</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">Logística y despacho de corta duración</td>
+              <td class="font-semibold text-slate-700">Térmica directa</td>
+              <td>Etiqueta térmica (sin ribbon)</td>
+            </tr>
+            <tr>
+              <td class="font-medium text-slate-900">No quieres utilizar ribbon</td>
+              <td class="font-semibold text-slate-700">Térmica directa</td>
+              <td>Etiqueta térmica (sin ribbon)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-6 bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-slate-600 m-0">
+          ¿No sabes cuál necesitas? Cuéntanos qué producto quieres etiquetar, qué material utilizas y cuánto tiempo necesitas que dure la impresión.
+        </p>
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20tengo%20dudas%20entre%20transferencia%20t%C3%A9rmica%20y%20t%C3%A9rmica%20directa" data-whatsapp-context="default" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          COTIZAR POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 3: ¿CÓMO ELEGIR UNA IMPRESORA DE ETIQUETAS? (PÁGINAS 16-19 DE LA GUÍA) -->
+  <section id="elegir-impresora" class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container max-w-4xl">
+      <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Guía de Compra Técnica</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+        ¿Cómo elegir una impresora de etiquetas?
+      </h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">
+        Elegir una impresora de etiquetas depende de cómo, cuánto y dónde vas a imprimir. No todas las operaciones necesitan el mismo tipo de equipo. Antes de elegir una impresora, es importante considerar el volumen de impresión, el tipo de etiqueta, la tecnología de impresión y las condiciones de trabajo.
+      </p>
+
+      <div class="space-y-6">
+        
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 1: Define cuánto vas a imprimir</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">Volumen Operativo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            El volumen de impresión es uno de los primeros factores que debes considerar:
+          </p>
+          <ul class="text-xs text-slate-700 space-y-1">
+            <li>· <strong>Bajo volumen:</strong> Una impresora de escritorio puede ser suficiente (hasta 1.000 etiquetas/día).</li>
+            <li>· <strong>Volumen medio:</strong> Conviene una impresora con mayor capacidad y velocidad Semi Industrial.</li>
+            <li>· <strong>Alto volumen o producción continua:</strong> Se recomienda una impresora industrial diseñada para trabajar durante jornadas prolongadas 24/7.</li>
+          </ul>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 2: Define el tipo de etiqueta</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">Material y Dimensiones del Sustrato</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Puedes trabajar con etiquetas de papel, etiquetas térmicas, polipropileno, materiales sintéticos o etiquetas textiles. También debes considerar el ancho y largo de la etiqueta, así como el diámetro del rollo que utilizarás (buje de 1" o buje de 3").
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 3: Elige la tecnología de impresión</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">Transferencia Térmica vs. Térmica Directa</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Transferencia térmica utiliza ribbon y permite imprimir sobre diferentes materiales de etiqueta ofreciendo soluciones de mayor durabilidad. Térmica directa utiliza papel especial termosensible y no requiere ribbon.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 4: Considera dónde estará instalada</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">Ambiente de Trabajo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            No es lo mismo imprimir en una oficina que en una planta de producción. Para ambientes industriales es importante considerar frecuencia de uso, polvo, temperatura, horas de operación, espacio disponible y conectividad (USB, Ethernet, Wi-Fi o Bluetooth).
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 5 y 6: Información y Velocidad</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">Resolución y Rendimiento</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            La impresora debe ser compatible con códigos de barras, QR, lotes, fechas, numeración y logotipos (resolución de 203 DPI, 300 DPI para textos pequeños o 600 DPI para micro-rotulación). Si necesitas grandes cantidades, la velocidad del equipo evitará cuellos de botella en despacho.
+          </p>
+        </div>
+
+        <div class="border border-brand-navy bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy font-bold uppercase block mb-1">Paso 7: Evalúa el costo total de propiedad (TCO)</strong>
+          <h3 class="text-lg font-bold text-slate-950 mb-2">No evalúes únicamente el precio de compra inicial</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            También es importante evaluar: <strong>Impresora + etiquetas + ribbon + cabezal + mantenimiento + repuestos + servicio técnico</strong>. Una impresora con un precio inicial menor no necesariamente representa el menor costo para tu operación a largo plazo.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20para%20elegir%20la%20impresora%20adecuada" data-whatsapp-context="impresoras" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR ASESORÍA POR WHATSAPP
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 4: ¿QUÉ TIPO DE ETIQUETA NECESITO PARA MI PRODUCTO? (PÁGINAS 19-22 DE LA GUÍA) -->
+  <section id="elegir-etiqueta" class="py-20 border-b border-slate-200 bg-white">
+    <div class="discode-container max-w-4xl">
+      <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Guía de Materiales</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+        ¿Qué tipo de etiqueta necesito para mi producto?
+      </h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">
+        Elegir la etiqueta adecuada depende de dónde se utilizará, sobre qué superficie se colocará y a qué condiciones estará expuesta. No existe una etiqueta única para todos los productos. En DISCODE te ayudamos a seleccionar el material, adhesivo, tamaño y acabado adecuado para tu aplicación.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        <div class="border border-slate-200 p-5 bg-slate-50">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-2">1. ¿Dónde se colocará la etiqueta?</strong>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Cartón, papel, plástico, vidrio, metal, polipropileno, empaques flexibles, envases o textiles. La superficie influye directamente en la formulación del adhesivo.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-slate-50">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-2">2. ¿A qué condiciones estará expuesta?</strong>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Humedad, agua, frío o congelación profunda (-25°C), calor, manipulación frecuente, fricción, productos químicos, intemperie o transporte marítimo de exportación.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-slate-50">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-2">3. ¿Cuánto tiempo debe durar?</strong>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Etiqueta temporal (días o semanas para despacho local) vs. Etiqueta de larga duración (meses o años para activos y productos terminados).
+          </p>
+        </div>
+
+        <div class="border border-slate-200 p-5 bg-slate-50">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-2">4. ¿Qué necesitas imprimir?</strong>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Código de barras, código QR, lote, fecha de producción, caducidad, información nutricional, datos variables y logotipo corporativo.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-slate-600 m-0">
+          También puedes enviarnos una fotografía o muestra de tu producto para evaluar tu requerimiento sin costo.
+        </p>
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20sobre%20el%20tipo%20de%20etiqueta%20adecuado" data-whatsapp-context="etiquetas" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          COTIZAR POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 5: ¿CÓMO MEJORAR LA TRAZABILIDAD DE MIS PRODUCTOS? (PÁGINAS 22-25 DE LA GUÍA) -->
+  <section id="mejorar-trazabilidad" class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container max-w-4xl">
+      <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Metodología de Control Industrial</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+        ¿Cómo mejorar la trazabilidad de mis productos?
+      </h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">
+        La trazabilidad permite identificar y seguir un producto durante las diferentes etapas de un proceso, desde su producción y almacenamiento hasta su despacho y distribución. Una correcta identificación ayuda a tener mayor control, facilitar la localización de lotes y disponer de información útil para la operación.
+      </p>
+
+      <div class="space-y-4 mb-8">
+        
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">01</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Identifica cada producto correctamente</h3>
+            <p class="text-xs text-slate-600">Define qué información asociar a cada producto o unidad de producción: código de producto, lote, fecha de producción, vencimiento, orden y código GS1.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">02</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Utiliza etiquetas adecuadas</h3>
+            <p class="text-xs text-slate-600">Una etiqueta correctamente diseñada permite que la información sea visible, legible y fácilmente identificable durante las diferentes etapas de la operación.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">03</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Utiliza códigos de barras o códigos QR</h3>
+            <p class="text-xs text-slate-600">Permiten identificar productos de manera rápida y reducir errores asociados al registro manual de información: Productos ➔ Lotes ➔ Cajas ➔ Pallets ➔ Despachos.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">04</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Imprime información variable</h3>
+            <p class="text-xs text-slate-600">Incorpora información que cambia de un lote a otro (PRODUCTO: Camarón / LOTE: L20260924 / FECHA: 24/09/2026 / CÓDIGO: 123456789).</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">05</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Conecta la identificación con tus procesos</h3>
+            <p class="text-xs text-slate-600">Producción ➔ Etiquetado ➔ Bodega ➔ Despacho ➔ Cliente. Cada etapa debe permitir identificar correctamente el producto y sus datos asociados.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-5 flex items-start gap-4">
+          <span class="font-mono text-sm font-bold text-brand-navy bg-slate-100 px-3 py-1 border border-slate-200">06</span>
+          <div>
+            <h3 class="text-base font-bold text-slate-950 mb-1">Utiliza equipos y suministros adecuados</h3>
+            <p class="text-xs text-slate-600">Una solución de trazabilidad requiere que etiquetas, ribbons e impresoras sean 100% compatibles con la aplicación y condiciones de trabajo.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20deseo%20mejorar%20la%20trazabilidad%20de%20mi%20operaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-8 py-3 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          COTIZAR SOLUCIÓN DE TRAZABILIDAD
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 6: ¿CÓMO EVITAR DESPERDICIOS DE ETIQUETAS? (PÁGINAS 25-28 DE LA GUÍA) -->
+  <section id="evitar-desperdicios" class="py-20 border-b border-slate-200 bg-white">
+    <div class="discode-container max-w-4xl">
+      <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Optimización de Costos</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+        ¿Cómo evitar desperdicios de etiquetas?
+      </h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">
+        Reducir el desperdicio de etiquetas no depende únicamente de consumir menos material. Es importante revisar el diseño de la etiqueta, las dimensiones, el proceso de impresión, la configuración del equipo y la forma de utilizar los rollos.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">1. Utiliza el tamaño adecuado</strong>
+          <p class="text-xs text-slate-600">Una etiqueta sobredimensionada genera consumo innecesario. Define ancho y alto exactos para aprovechar mejor cada rollo.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">2. Aprovecha mejor el material</strong>
+          <p class="text-xs text-slate-600">Revisa la separación entre etiquetas, número de etiquetas por fila, sentido de impresión y presentación en rollo.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">3. Selecciona la impresora correcta</strong>
+          <p class="text-xs text-slate-600">Un equipo adecuado reduce errores de impresión, descalibraciones innecesarias y etiquetas descartadas.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">4. Configura correctamente el equipo</strong>
+          <p class="text-xs text-slate-600">Verifica calibración de sensor gap, velocidad de impresión, temperatura de cabezal y posición para evitar etiquetas en blanco.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">5. Utiliza el ribbon adecuado</strong>
+          <p class="text-xs text-slate-600">Evita impresiones deficientes, borrosas o con falta de anclaje que obliguen a repetir tirajes completos.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">6. Reduce errores antes de imprimir</strong>
+          <p class="text-xs text-slate-600">Protocolo previo: Diseño ➔ Datos ➔ Tamaño ➔ Material ➔ Configuración ➔ Impresión de prueba de 1 sola etiqueta.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">7. Mantén tus equipos correctamente</strong>
+          <p class="text-xs text-slate-600">Un cabezal sucio o rodillo con residuos de adhesivo desvía la etiqueta y genera atascos costosos.</p>
+        </div>
+
+        <div class="border border-slate-200 p-5">
+          <strong class="font-mono text-xs text-slate-900 uppercase block mb-1">8. Analiza el origen del desperdicio</strong>
+          <p class="text-xs text-slate-600">Identifica si la causa es diseño, dimensiones, material, adhesivo, impresora, operación o almacenamiento.</p>
+        </div>
+      </div>
+
+      <div class="p-6 bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-slate-600 m-0">
+          ¿Quieres reducir el desperdicio en tu operación? En DISCODE revisamos tu aplicación y encontramos oportunidades de ahorro.
+        </p>
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quiero%20reducir%20el%20desperdicio%20de%20etiquetas%20en%20mi%20operaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+          COTIZAR POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO 7: ¿CÓMO REALIZAR EL MANTENIMIENTO DE UNA IMPRESORA ZEBRA? (PÁGINAS 28-30 DE LA GUÍA) -->
+  <section id="mantenimiento-zebra" class="py-20 border-b border-slate-200 bg-slate-50">
+    <div class="discode-container max-w-4xl">
+      <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Protocolo Preventivo</span>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">
+        ¿Cómo realizar el mantenimiento de una impresora Zebra?
+      </h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">
+        Un mantenimiento adecuado ayuda a conservar la calidad de impresión, reducir errores y prolongar la vida útil de la impresora. La frecuencia dependerá del modelo, volumen de impresión y condiciones de trabajo.
+      </p>
+
+      <div class="space-y-6">
+        
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 1</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Limpia regularmente el cabezal de impresión</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-2">
+            El cabezal es uno de los componentes más importantes y delicados. La acumulación de residuos de cera/resina o polvo puede provocar líneas blancas o zonas sin impresión. Limpia periódicamente con toallitas o hisopos con alcohol isopropílico al 99%.
+          </p>
+          <div class="p-2.5 bg-amber-50 border-l-2 border-amber-500 text-[11px] font-mono text-amber-900">
+            Importante: No utilizar objetos metálicos ni elementos que puedan rayar o dañar el cabezal.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 2</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Limpia el rodillo de impresión (Platen Roller)</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            El rodillo entra en contacto directo con las etiquetas. La acumulación de restos de adhesivo o polvo afecta el avance regular del papel y la calidad de impresión. Límpialo haciéndolo girar manualmente con alcohol isopropílico.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 3</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Retira residuos y polvo acumulado</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            El polvo de cartón y restos de corte de etiquetas pueden acumularse dentro de los sensores de gap y reflectivos. Realiza una limpieza periódica del interior con aire comprimido seco, sensores, rodillos, ruta de etiquetas y carcasa exterior.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 4</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Utiliza el ribbon y las etiquetas adecuados</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Un consumible de mala calidad o incompatible genera fricción abrasiva y quema prematuramente los píxeles del cabezal térmico. Asegura compatibilidad garantizada con suministros DISCODE (Cera, Resina, Resina Textil).
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy uppercase block mb-1">Paso 5 y 6</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Revisa la configuración y programa mantenimiento preventivo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Una temperatura excesiva (Darkness) acorta la vida del cabezal. No esperes a que la impresora falle por completo en plena faena para intervenirla: un programa preventivo detecta desgaste temprano de cabezal, rodillo y calibración de sensores.
+          </p>
+        </div>
+
+        <div class="border-2 border-brand-navy bg-white p-6">
+          <strong class="font-mono text-xs text-brand-navy font-bold uppercase block mb-1">Paso 7: ¿Cuándo debo solicitar servicio técnico?</strong>
+          <h3 class="text-base font-bold text-slate-950 mb-2">Diagnóstico y Mantenimiento Técnico DISCODE</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Si la impresora presenta líneas continuas en la impresión, etiquetas desalineadas, problemas de alimentación o fallas que no se solucionan con una limpieza básica, solicita una revisión técnica especializada.
+          </p>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20solicito%20servicio%20t%C3%A9cnico%20para%20impresora%20Zebra" data-whatsapp-context="servicio_tecnico" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            COTIZAR SERVICIO POR WHATSAPP
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-900 mt-auto">
+    <div class="discode-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <img src="assets/images/logo.png" alt="DISCODE ECUADOR" class="h-9 w-auto brightness-0 invert object-contain">
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            DISCODE ECUADOR — Soluciones de identificación, codificación y trazabilidad para la industria. Integración de equipos, consumibles y servicio técnico especializado.
+          </p>
+          <div class="pt-2">
+            <span class="inline-block font-mono text-[11px] text-slate-300 border border-slate-800 bg-slate-900 px-3 py-1">
+              SISTEMA DE GESTIÓN CERTIFICADO ISO 9001
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Navegación</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+            <li><a href="productos.html" class="hover:text-white transition">Productos</a></li>
+            <li><a href="soluciones.html" class="hover:text-white transition">Soluciones</a></li>
+            <li><a href="servicio-tecnico.html" class="hover:text-white transition">Servicio Técnico</a></li>
+            <li><a href="industrias.html" class="hover:text-white transition">Industrias</a></li>
+            <li><a href="marcas.html" class="hover:text-white transition">Marcas</a></li>
+            <li><a href="casos.html" class="hover:text-white transition">Casos</a></li>
+            <li><a href="recursos.html" class="hover:text-white transition">Recursos</a></li>
+            <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Productos</span>
+          <ul class="space-y-2 text-slate-400 font-medium">
+            <li><a href="productos.html#etiquetas" class="hover:text-white transition">Etiquetas</a></li>
+            <li><a href="productos.html#ribbons" class="hover:text-white transition">Ribbons</a></li>
+            <li><a href="productos.html#impresoras" class="hover:text-white transition">Impresoras</a></li>
+            <li><a href="productos.html#codificadores" class="hover:text-white transition">Codificadores</a></li>
+            <li><a href="soluciones.html#comodato" class="hover:text-white transition">Comodato de Equipos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="font-mono text-xs uppercase tracking-wider text-white block mb-4">Contacto</span>
+          <div class="space-y-3">
+            <div>
+              <span class="text-slate-500 text-[11px] block">Cotización directa:</span>
+              <a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="text-white font-mono font-bold text-sm hover:text-emerald-400 transition">
+                COTIZAR POR WHATSAPP
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Teléfono / WhatsApp:</span>
+              <a href="tel:+593984345891" class="text-slate-300 font-mono hover:text-white discode-phone-text">
+                +593 98 434 5891
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-500 text-[11px] block">Correo corporativo:</span>
+              <a href="mailto:ventas@discode.ec" class="text-slate-300 hover:text-white discode-email-link">
+                ventas@discode.ec
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[11px] gap-4">
+        <div>
+          © 2026 DISCODE ECUADOR S.A. Todos los derechos reservados.
+        </div>
+        <div class="flex space-x-6 font-medium">
+          <a href="#" class="hover:text-slate-300">Política de Privacidad</a>
+          <a href="#" class="hover:text-slate-300">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
