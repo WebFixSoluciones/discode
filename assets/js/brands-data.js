@@ -23,7 +23,7 @@ const DISCODE_BRANDS = [
       { code: "JetStamp 970", desc: "Impresión de alta precisión y velocidad para líneas de empaque y lotes farmacéuticos." },
       { code: "JetStamp 990", desc: "Formato ultracompacto y ligero para marcado rápido de fechas y vencimientos." }
     ],
-    image: "assets/images/codificadores/jetstamp-1025.avif",
+    image: "assets/images/codificadores/jetstamp-1025.png",
     gallery: [
       { src: "assets/images/codificadores/jetstamp-1025-app-botellas.jpg", alt: "Reiner JetStamp Marcado de Botellas" },
       { src: "assets/images/codificadores/jetstamp-1025-app-tuberias.jpg", alt: "Reiner JetStamp Marcado de Tuberías" }
