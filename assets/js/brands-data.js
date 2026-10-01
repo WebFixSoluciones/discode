@@ -49,6 +49,11 @@ const DISCODE_BRANDS = [
       { code: "Serie de Escritorio (ZD220 / ZD421)", desc: "Operaciones comerciales, laboratorios y oficinas de despacho." },
       { code: "Serie Portátil Móvil (ZQ)", desc: "Impresión directa en bodega y punto de picking." }
     ],
+    image: "assets/images/impresoras/zebra-zt411.jpg",
+    gallery: [
+      { src: "assets/images/impresoras/zebra-zt411-empacadora.png", alt: "Zebra ZT411 en Planta Empacadora" },
+      { src: "assets/images/impresoras/zebra-zt231-costura.png", alt: "Zebra ZT231 en Confección Textil" }
+    ],
     whatsappContext: "impresoras"
   },
   {
@@ -65,9 +70,14 @@ const DISCODE_BRANDS = [
       "Bajo costo de mantenimiento preventivo y repuestos accesibles"
     ],
     keyModels: [
-      { code: "TSC MB240 / MH240", desc: "Equipos industriales compactos para jornadas extensas." },
+      { code: "TSC MB241T / MH261T", desc: "Equipos industriales compactos para jornadas extensas." },
       { code: "TSC TE200 / TE300", desc: "Líderes en impresión de escritorio para etiquetas de producto y logística." },
       { code: "TSC TTP-244 Pro", desc: "La impresora semi-industrial más probada y resistente del mercado." }
+    ],
+    image: "assets/images/impresoras/tsc-te200.jpg",
+    gallery: [
+      { src: "assets/images/impresoras/tsc-te200-laboratorio.png", alt: "TSC TE200 en Laboratorio" },
+      { src: "assets/images/impresoras/tsc-mh261t-empacadora.png", alt: "TSC MH261T en Empacadora Industrial" }
     ],
     whatsappContext: "impresoras"
   },
