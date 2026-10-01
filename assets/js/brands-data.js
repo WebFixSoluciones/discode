@@ -24,6 +24,10 @@ const DISCODE_BRANDS = [
       { code: "JetStamp 990", desc: "Formato ultracompacto y ligero para marcado rápido de fechas y vencimientos." }
     ],
     image: "assets/images/codificadores/jetstamp-1025.avif",
+    gallery: [
+      { src: "assets/images/codificadores/jetstamp-1025-app-botellas.jpg", alt: "Reiner JetStamp Marcado de Botellas" },
+      { src: "assets/images/codificadores/jetstamp-1025-app-tuberias.jpg", alt: "Reiner JetStamp Marcado de Tuberías" }
+    ],
     whatsappContext: "codificadores"
   },
   {
@@ -109,6 +113,16 @@ function renderBrandsCatalog(containerId) {
          </div>`
       : '';
 
+    const galleryHtml = (brand.gallery && brand.gallery.length > 0)
+      ? `<div class="grid grid-cols-2 gap-3 mb-6">
+           ${brand.gallery.map(img => `
+             <div class="bg-slate-50 border border-slate-200 p-1 flex items-center justify-center">
+               <img src="${img.src}" alt="${img.alt}" class="h-28 w-full object-cover">
+             </div>
+           `).join('')}
+         </div>`
+      : '';
+
     html += `
       <article class="border border-slate-200 bg-white p-8 md:p-10 transition hover:border-slate-400 flex flex-col justify-between" id="brand-${brand.id}">
         <div>
@@ -124,6 +138,7 @@ function renderBrandsCatalog(containerId) {
           </div>
 
           ${imageHtml}
+          ${galleryHtml}
 
           <p class="text-sm text-slate-600 leading-relaxed mb-6">
             ${brand.description}
