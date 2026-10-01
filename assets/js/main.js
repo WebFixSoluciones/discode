@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initWhatsAppContextLinks();
   initFloatingWhatsApp();
   initDynamicContactData();
+  initHeroBackgroundSlider();
 });
 
 /**
@@ -335,4 +336,163 @@ function initMegaMenus() {
     });
   });
 }
+
+/**
+ * Slider / Carrusel dinámico de fondo para el Banner Principal (Hero)
+ * Alterna suavemente entre las fotografías reales de planta, empaque y comodato.
+ */
+function initHeroBackgroundSlider() {
+  const heroSection = document.getElementById('hero-slider-section');
+  if (!heroSection) return;
+
+  const slides = heroSection.querySelectorAll('[data-hero-slide]');
+  if (!slides || slides.length <= 1) return;
+
+  const captionEl = document.getElementById('hero-slide-caption');
+  const tagEl = document.getElementById('hero-slide-tag');
+  const counterEl = document.getElementById('hero-slide-counter');
+  const dotsContainer = document.getElementById('hero-slider-dots');
+  const prevBtn = document.getElementById('hero-prev-btn');
+  const nextBtn = document.getElementById('hero-next-btn');
+
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+  let autoTimer = null;
+  const INTERVAL_TIME = 5500; // 5.5 segundos por foto
+
+  // Construir dots / barras indicadoras interactivas
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((slide, idx) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = `h-1.5 transition-all duration-300 rounded-xs cursor-pointer ${
+        idx === 0 ? 'w-8 bg-cyan-400' : 'w-3 bg-slate-600 hover:bg-slate-400'
+      }`;
+      dot.setAttribute('aria-label', `Ir a fotografía ${idx + 1}`);
+      dot.addEventListener('click', () => {
+        goToSlide(idx);
+        resetTimer();
+      });
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  function updateSlide(index) {
+    slides.forEach((slide, idx) => {
+      if (idx === index) {
+        slide.classList.add('opacity-100', 'active');
+        slide.classList.remove('opacity-0', 'pointer-events-none');
+        
+        // Actualizar textos informativos de la foto actual
+        const caption = slide.getAttribute('data-caption') || '';
+        const tag = slide.getAttribute('data-tag') || '';
+        if (captionEl) captionEl.textContent = caption;
+        if (tagEl) tagEl.textContent = tag;
+        if (counterEl) {
+          const currentStr = String(index + 1).padStart(2, '0');
+          const totalStr = String(totalSlides).padStart(2, '0');
+          counterEl.textContent = `${currentStr} / ${totalStr}`;
+        }
+      } else {
+        slide.classList.remove('opacity-100', 'active');
+        slide.classList.add('opacity-0', 'pointer-events-none');
+      }
+    });
+
+    // Actualizar estado activo de las barras/dots
+    if (dotsContainer) {
+      const dots = dotsContainer.querySelectorAll('button');
+      dots.forEach((dot, idx) => {
+        if (idx === index) {
+          dot.className = 'h-1.5 transition-all duration-300 rounded-xs cursor-pointer w-8 bg-cyan-400';
+        } else {
+          dot.className = 'h-1.5 transition-all duration-300 rounded-xs cursor-pointer w-3 bg-slate-600 hover:bg-slate-400';
+        }
+      });
+    }
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide(currentIndex);
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlide(currentIndex);
+  }
+
+  function startTimer() {
+    stopTimer();
+    autoTimer = setInterval(nextSlide, INTERVAL_TIME);
+  }
+
+  function stopTimer() {
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  function resetTimer() {
+    stopTimer();
+    startTimer();
+  }
+
+  // Controles manuales Anterior / Siguiente
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      prevSlide();
+      resetTimer();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      nextSlide();
+      resetTimer();
+    });
+  }
+
+  // Pausar en Hover para lectura técnica y reanudar al salir
+  heroSection.addEventListener('mouseenter', stopTimer);
+  heroSection.addEventListener('mouseleave', startTimer);
+
+  // Soporte para gestos táctiles (Swipe) en smartphones y tablets
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  heroSection.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  heroSection.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const swipeThreshold = 45;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      nextSlide();
+      resetTimer();
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      prevSlide();
+      resetTimer();
+    }
+  }
+
+  // Iniciar en slide 0
+  updateSlide(0);
+  startTimer();
+}
+
 

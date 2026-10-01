@@ -392,51 +392,130 @@
     </div>
   </header>
 
-  <!-- BANNER PRINCIPAL (HERO) -->
-  <section class="py-20 md:py-28 border-b border-slate-200 bg-white">
-    <div class="discode-container">
-      <div class="max-w-4xl">
-        <div class="inline-block border border-slate-300 bg-slate-50 text-slate-800 uppercase tracking-widest text-[11px] font-semibold px-3 py-1 mb-8">
-          Tecnología de Identificación, Codificación & Trazabilidad
+  <!-- BANNER PRINCIPAL (HERO) CON SLIDER DINÁMICO DE FONDO -->
+  <section id="hero-slider-section" class="relative overflow-hidden bg-slate-950 text-white py-20 md:py-28 border-b border-slate-800" aria-label="Banner Principal de DISCODE">
+    
+    <!-- CONTENEDOR DE IMÁGENES DE FONDO (CAROUSEL DE FOTOS REALES EN PLANTA) -->
+    <div id="hero-slider-track" class="absolute inset-0 w-full h-full overflow-hidden select-none">
+      
+      <!-- Slide 1: Planta Matriz de Producción -->
+      <div class="hero-slide active" data-hero-slide="0" data-caption="Planta Matriz de Conversión, Corte y Troquelado Discode" data-tag="FABRICACIÓN NACIONAL">
+        <img src="assets/images/soluciones/discode-planta-produccion.png" alt="Planta industrial de conversión de etiquetas Discode Ecuador" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+      <!-- Slide 2: Línea de Empaque Industrial Zebra -->
+      <div class="hero-slide" data-hero-slide="1" data-caption="Operación Continua en Línea de Empaque con Impresora Industrial Zebra ZT411" data-tag="ALTA EXIGENCIA 24/7">
+        <img src="assets/images/impresoras/zebra-zt411-empacadora.png" alt="Impresora Zebra ZT411 operando en empaque industrial" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+      <!-- Slide 3: Estación de Etiquetado en Comodato -->
+      <div class="hero-slide" data-hero-slide="2" data-caption="Estación de Trabajo y Etiquetado Industrial en Modalidad Comodato" data-tag="CERO INVERSIÓN INICIAL">
+        <img src="assets/images/soluciones/area-etiquetado-comodato.png" alt="Área y estación de etiquetado en comodato Discode" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+      <!-- Slide 4: Línea de Envasado Automatizado TSC -->
+      <div class="hero-slide" data-hero-slide="3" data-caption="Envasado y Trazabilidad Automatizada con Impresora Industrial TSC MH261T" data-tag="VELOCIDAD Y PRECISIÓN">
+        <img src="assets/images/impresoras/tsc-mh261t-empacadora.png" alt="Impresora TSC MH261T en línea de envasado" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+      <!-- Slide 5: Suministro Continuo y Cajas Discode -->
+      <div class="hero-slide" data-hero-slide="4" data-caption="Suministro Permanente de Etiquetas, Ribbons y Equipamiento a Nivel Nacional" data-tag="DISPONIBILIDAD INMEDIATA">
+        <img src="assets/images/soluciones/cajas-discode-impresora.png" alt="Cajas de suministros de etiquetas e impresora industrial Discode" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+      <!-- Slide 6: Trazabilidad Textil y Confección Zebra -->
+      <div class="hero-slide" data-hero-slide="5" data-caption="Identificación y Trazabilidad Textil de Alta Resistencia con Zebra ZT231" data-tag="SUSTRATOS ESPECIALIZADOS">
+        <img src="assets/images/impresoras/zebra-zt231-costura.png" alt="Impresora Zebra ZT231 para etiquetado textil" class="w-full h-full object-cover object-center filter brightness-95">
+      </div>
+
+    </div>
+
+    <!-- MÁSCARA / GRADIENTE DE ALTO CONTRASTE TÉCNICO -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-950/65 z-10 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-slate-950/30 z-10 pointer-events-none"></div>
+
+    <!-- CONTENIDO SUPERPUESTO (Z-20) -->
+    <div class="discode-container relative z-20">
+      
+      <!-- FILA SUPERIOR: BADGE Y CONTROL MANUAL DISCRETO -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+        <div class="inline-flex items-center gap-2 border border-slate-700 bg-slate-900/85 backdrop-blur-xs text-slate-200 uppercase tracking-widest text-[11px] font-semibold px-3 py-1 font-mono">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          <span>Tecnología de Identificación, Codificación & Trazabilidad</span>
         </div>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.12] mb-8">
+
+        <!-- INDICADOR DINÁMICO DE LA FOTO ACTUAL -->
+        <div class="hidden md:flex items-center gap-3 bg-slate-900/85 border border-slate-700 backdrop-blur-xs px-3 py-1 text-xs font-mono">
+          <span id="hero-slide-tag" class="text-cyan-400 font-bold tracking-wider text-[10px] uppercase">FABRICACIÓN NACIONAL</span>
+          <span class="text-slate-600">|</span>
+          <span id="hero-slide-counter" class="text-white font-bold">01 / 06</span>
+          <span class="text-slate-600">|</span>
+          <span id="hero-slide-caption" class="text-slate-300 text-[11px] truncate max-w-sm">Planta Matriz de Conversión, Corte y Troquelado Discode</span>
+        </div>
+      </div>
+
+      <!-- TITULAR Y TEXTO PRINCIPAL -->
+      <div class="max-w-4xl">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] mb-6 drop-shadow-sm">
           SOLUCIONES DE IDENTIFICACIÓN, CODIFICACIÓN Y TRAZABILIDAD PARA LA INDUSTRIA
         </h1>
-        <p class="text-base sm:text-lg md:text-xl text-slate-600 font-normal leading-relaxed mb-10 max-w-3xl">
+        <p class="text-base sm:text-lg md:text-xl text-slate-200 font-normal leading-relaxed mb-10 max-w-3xl">
           Etiquetas, ribbons, impresoras, codificadores y servicio técnico para que tus productos estén correctamente identificados en cada etapa de tu operación.
         </p>
 
+        <!-- BOTONES DE ACCIÓN -->
         <div class="flex flex-wrap items-center gap-4 mb-8">
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="bg-brand-navy hover:bg-slate-900 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
-            COTIZAR
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" data-whatsapp-context="default" target="_blank" class="bg-brand-navy hover:bg-slate-900 border border-brand-navy hover:border-slate-700 text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm inline-flex items-center gap-2 shadow-lg">
+            <span>COTIZAR POR WHATSAPP</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           </a>
-          <a href="productos.html" class="border border-slate-300 hover:border-slate-900 text-slate-900 px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
-            VER PRODUCTOS
+          <a href="productos.html" class="bg-white/10 hover:bg-white hover:text-slate-950 text-white border border-white/30 backdrop-blur-xs px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
+            VER CATÁLOGO TÉCNICO
+          </a>
+          <a href="solucion-comodato.html" class="text-cyan-300 hover:text-cyan-200 font-mono text-xs uppercase tracking-wider underline underline-offset-4 py-3.5 transition">
+            Modalidad Comodato →
           </a>
         </div>
 
-        <p class="text-xs uppercase tracking-wider font-mono text-slate-500">
+        <p class="text-xs uppercase tracking-wider font-mono text-slate-400">
           Todo lo que necesitas para identificar, imprimir y controlar tus productos, en un solo lugar.
         </p>
       </div>
 
-      <!-- CIFRAS / BENCHMARKS TÉCNICOS: ALTO CONTRASTE Y LÍNEAS LIMPIAS -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-12 border-t border-slate-200">
-        <div>
-          <span class="block font-mono text-2xl font-bold text-slate-950">ISO 9001</span>
-          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Calidad Certificada</span>
+      <!-- BARRA DE CONTROL DEL SLIDER Y PROGRESO -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mt-12 pt-6 border-t border-slate-800/80">
+        
+        <!-- Indicadores / Dots interactivos -->
+        <div class="flex items-center gap-2" id="hero-slider-dots"></div>
+
+        <!-- Botones Anterior / Siguiente -->
+        <div class="flex items-center gap-2">
+          <button id="hero-prev-btn" type="button" class="p-2 border border-slate-700 bg-slate-900/80 hover:bg-white hover:text-slate-950 text-slate-300 transition text-xs font-mono cursor-pointer" aria-label="Fotografía anterior">
+            ← ANT
+          </button>
+          <button id="hero-next-btn" type="button" class="p-2 border border-slate-700 bg-slate-900/80 hover:bg-white hover:text-slate-950 text-slate-300 transition text-xs font-mono cursor-pointer" aria-label="Siguiente fotografía">
+            SIG →
+          </button>
         </div>
-        <div>
-          <span class="block font-mono text-2xl font-bold text-slate-950">4 LÍNEAS</span>
-          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Insumos y Maquinaria</span>
+      </div>
+
+      <!-- CIFRAS / BENCHMARKS TÉCNICOS: ALTO CONTRASTE -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-8 pt-8 border-t border-slate-800/80 text-white">
+        <div class="border-l-2 border-cyan-500 pl-4">
+          <span class="block font-mono text-2xl font-bold text-white">ISO 9001</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-300 mt-1">Calidad Certificada</span>
         </div>
-        <div>
-          <span class="block font-mono text-2xl font-bold text-slate-950">REINER</span>
-          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Tecnología Alemana</span>
+        <div class="border-l-2 border-cyan-400 pl-4">
+          <span class="block font-mono text-2xl font-bold text-white">4 LÍNEAS</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-300 mt-1">Insumos y Maquinaria</span>
         </div>
-        <div>
-          <span class="block font-mono text-2xl font-bold text-slate-950">COBERTURA</span>
-          <span class="block text-xs uppercase tracking-wider text-slate-600 mt-1">Soporte Técnico Nacional</span>
+        <div class="border-l-2 border-cyan-500 pl-4">
+          <span class="block font-mono text-2xl font-bold text-white">REINER</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-300 mt-1">Tecnología Alemana</span>
+        </div>
+        <div class="border-l-2 border-cyan-400 pl-4">
+          <span class="block font-mono text-2xl font-bold text-white">COBERTURA</span>
+          <span class="block text-xs uppercase tracking-wider text-slate-300 mt-1">Soporte Técnico Nacional</span>
         </div>
       </div>
     </div>
