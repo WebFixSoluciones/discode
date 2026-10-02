@@ -367,7 +367,7 @@ function initHeroBackgroundSlider() {
       const dot = document.createElement('button');
       dot.type = 'button';
       dot.className = `h-1.5 transition-all duration-300 rounded-xs cursor-pointer ${
-        idx === 0 ? 'w-8 bg-cyan-400' : 'w-3 bg-slate-600 hover:bg-slate-400'
+        idx === 0 ? 'w-8 bg-brand-navy' : 'w-3 bg-slate-600 hover:bg-slate-400'
       }`;
       dot.setAttribute('aria-label', `Ir a fotografía ${idx + 1}`);
       dot.addEventListener('click', () => {
@@ -405,7 +405,7 @@ function initHeroBackgroundSlider() {
       const dots = dotsContainer.querySelectorAll('button');
       dots.forEach((dot, idx) => {
         if (idx === index) {
-          dot.className = 'h-1.5 transition-all duration-300 rounded-xs cursor-pointer w-8 bg-cyan-400';
+          dot.className = 'h-1.5 transition-all duration-300 rounded-xs cursor-pointer w-8 bg-brand-navy';
         } else {
           dot.className = 'h-1.5 transition-all duration-300 rounded-xs cursor-pointer w-3 bg-slate-600 hover:bg-slate-400';
         }
