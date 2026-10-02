@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -647,242 +647,312 @@
   <div class="discode-container py-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A PRODUCTOS -->
-      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
-        <div class="mb-6 pb-4 border-b border-slate-200">
-          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CATÁLOGO EXCLUSIVO</span>
-          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Productos DISCODE</h2>
-        </div>
-
-        <nav class="space-y-4 text-xs">
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
-            <a href="productos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
-              · Índice de Productos
-            </a>
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A PRODUCTOS (ESTILO MEGAMENÚ MINIMALISTA) -->
+      <aside class="lg:col-span-3 sticky top-28 space-y-6">
+        <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.04)] p-5 sm:p-6">
+          <div class="pb-4 mb-4 border-b border-slate-100">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Catálogo Técnico</span>
+            <h2 class="text-base font-bold text-slate-900 tracking-tight">Productos DISCODE</h2>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Líneas de Suministros:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="producto-etiquetas.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  1. Etiquetas Adhesivas
+          <nav class="space-y-4 text-xs">
+            <!-- Grupo 1: Suministros -->
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Suministros de Identificación
+              </span>
+              <div class="space-y-1">
+                <!-- Etiquetas Adhesivas -->
+                <a href="producto-etiquetas.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Etiquetas Adhesivas</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">Térmicas, BOPP y Frío</span>
+                  </div>
                 </a>
-              </li>
-              <li>
-                <a href="producto-ribbons.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
-                  2. Ribbons Térmicos
+
+                <!-- Ribbons Térmicos (ACTIVO) -->
+                <a href="producto-ribbons.html" class="bg-gradient-to-r from-blue-50/90 to-blue-50/40 border border-blue-200/80 rounded-2xl p-2.5 flex items-center gap-3 shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-bold text-blue-950 block truncate">Ribbons Térmicos</span>
+                    <span class="text-[11px] text-blue-600/80 font-medium block truncate">Cera, Resina y Textil</span>
+                  </div>
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            <!-- Grupo 2: Hardware Industrial -->
+            <div class="pt-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Equipamiento Industrial
+              </span>
+              <div class="space-y-1">
+                <!-- Impresoras -->
+                <a href="producto-impresoras.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Impresoras Industriales</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">Zebra & TSC 24/7</span>
+                  </div>
+                </a>
+
+                <!-- Codificadores -->
+                <a href="producto-codificadores.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Codificadores Reiner</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">TIJ Alemán Portátil</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Grupo 3: Catálogo General -->
+            <div class="pt-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Catálogo General
+              </span>
+              <a href="productos.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Ver Todo el Catálogo</span>
+                  <span class="text-[11px] text-slate-400 block truncate">Todas las familias</span>
+                </div>
+              </a>
+            </div>
+          </nav>
+
+          <!-- Asistencia Comercial / Técnica -->
+          <div class="mt-6 pt-5 border-t border-slate-100">
+            <div class="bg-gradient-to-b from-blue-50/70 via-slate-50/40 to-blue-50/30 rounded-2xl p-4 border border-blue-100/70 flex flex-col gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 leading-tight">¿Compatibilidad Ribbon?</h4>
+                  <p class="text-[11px] text-slate-500 leading-tight">Asesoría química gratuita</p>
+                </div>
+              </div>
+              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs transition duration-150">
+                <span>Cotizar Ribbons</span>
+                <span class="text-xs">→</span>
+              </a>
+            </div>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2 pt-2 border-t border-slate-200">Equipamiento Industrial:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="producto-impresoras.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  3. Impresoras de Etiquetas
-                </a>
-              </li>
-              <li>
-                <a href="producto-codificadores.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  4. Codificadores Reiner
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="mt-8 pt-6 border-t border-slate-200">
-          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">ATENCIÓN COMERCIAL</span>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            Cotizar Ribbons
-          </a>
         </div>
       </aside>
 
       <!-- CONTENIDO PRINCIPAL: RIBBONS DE TRANSFERENCIA TÉRMICA -->
-      <main class="lg:col-span-9 bg-white">
+      <main class="lg:col-span-9 bg-white space-y-10">
         
-        <!-- Breadcrumb -->
-        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
-          <a href="index.html" class="hover:underline">Inicio</a>
-          <span>/</span>
-          <a href="productos.html" class="hover:underline">Productos</a>
-          <span>/</span>
-          <span class="text-slate-900 font-semibold">Ribbons Térmicos</span>
-        </div>
-
-        <div class="mb-8">
-          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
-            CATEGORÍA 2 — TRANSFERENCIA TÉRMICA
+        <!-- Breadcrumb & Header -->
+        <div>
+          <div class="flex items-center gap-2 text-xs text-slate-400 mb-4">
+            <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+            <span>›</span>
+            <a href="productos.html" class="hover:text-blue-600 transition">Productos</a>
+            <span>›</span>
+            <span class="text-slate-900 font-semibold">Ribbons Térmicos</span>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-3">
-            RIBBONS DE TRANSFERENCIA TÉRMICA
+
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100/80 mb-3.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span>Transferencia Térmica · Formulaciones Certificadas</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mb-3">
+            Ribbons de Transferencia Térmica
           </h1>
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
             Suministramos ribbons formulados para diferentes aplicaciones de impresión térmica, garantizando máxima compatibilidad con sustratos, alta resolución y durabilidad frente a congelación y fricción.
           </p>
         </div>
 
-        <!-- LOS 3 TIPOS DE RIBBON DETALLADOS (PÁGINA 5 DE LA GUÍA) -->
-        <div class="space-y-6 mb-10">
+        <!-- LOS 3 TIPOS DE RIBBON DETALLADOS (ESTILO TARJETAS ELEVADAS) -->
+        <div class="space-y-6">
           
           <!-- Ribbon de Cera -->
-          <div class="border border-slate-200 p-6 bg-slate-50">
-            <div class="flex flex-wrap justify-between items-start gap-2 mb-4">
+          <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all p-6 sm:p-8">
+            <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
               <div>
-                <span class="font-mono text-[11px] text-brand-navy font-bold uppercase tracking-wider block">FORMULACIÓN 01</span>
-                <h2 class="text-xl font-bold text-slate-950">Ribbon de Cera (Wax)</h2>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100/80 mb-2 inline-block">
+                  Formulación 01
+                </span>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Ribbon de Cera (Wax)</h2>
               </div>
-              <span class="text-xs font-mono bg-white border border-slate-200 px-2.5 py-1 text-slate-700">
+              <span class="text-xs font-semibold text-slate-600 bg-slate-50 border border-slate-200/70 px-3 py-1.5 rounded-full">
                 Uso General & Logística
               </span>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-5">
               <div class="md:col-span-8">
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   Recomendado principalmente para etiquetas de papel utilizadas en aplicaciones donde la impresión no estará sometida a condiciones extremas de humedad o químicos. Solución eficiente para impresión sobre etiquetas de papel con excelente nitidez en códigos de barras y datos variables.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-3 border-t border-slate-200">
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Sustratos Idóneos:</strong>
-                    <span class="text-slate-600">Etiquetas de papel bond, mate, semi-brillante, cartulinas.</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-3 border-t border-slate-100">
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Sustratos Idóneos:</strong>
+                    <span class="text-slate-500">Etiquetas de papel bond, mate, semi-brillante, cartulinas.</span>
                   </div>
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Aplicaciones:</strong>
-                    <span class="text-slate-600">Identificación de productos, cajas corrugadas, bodegas y logística.</span>
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Aplicaciones:</strong>
+                    <span class="text-slate-500">Identificación de productos, cajas corrugadas, bodegas y logística.</span>
                   </div>
                 </div>
               </div>
-              <div class="md:col-span-4 bg-white border border-slate-200 p-3 flex items-center justify-center h-44">
-                <img src="assets/images/ribbons/ribbon-cera.png" alt="Rollo de Ribbon de Cera DISCODE" class="max-h-36 w-auto object-contain">
+              <div class="md:col-span-4 bg-slate-50/70 rounded-2xl p-4 flex items-center justify-center aspect-[4/3]">
+                <img src="assets/images/ribbons/ribbon-cera.png" alt="Rollo de Ribbon de Cera DISCODE" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
               </div>
             </div>
 
-            <div class="mt-2 pt-3 flex justify-end border-t border-slate-200">
-              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera" data-whatsapp-context="ribbon_cera" target="_blank" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono">
-                Cotizar Ribbon de Cera →
+            <div class="pt-4 flex justify-end border-t border-slate-100">
+              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera" data-whatsapp-context="ribbon_cera" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold text-xs rounded-xl transition">
+                <span>Cotizar Ribbon de Cera</span>
+                <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Ribbon de Resina -->
-          <div class="border-2 border-brand-navy p-6 bg-white">
-            <div class="flex flex-wrap justify-between items-start gap-2 mb-4">
+          <div class="bg-white rounded-3xl border border-blue-200/80 shadow-[0_4px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all p-6 sm:p-8">
+            <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
               <div>
-                <span class="font-mono text-[11px] text-brand-navy font-bold uppercase tracking-wider block">FORMULACIÓN 02</span>
-                <h2 class="text-xl font-bold text-slate-950">Ribbon de Resina (Resin)</h2>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 px-3 py-1 rounded-full mb-2 inline-block shadow-xs">
+                  Formulación 02 · Máxima Exigencia
+                </span>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Ribbon de Resina Pura (Resin)</h2>
               </div>
-              <span class="text-xs font-mono bg-brand-navy text-white px-2.5 py-1 font-bold">
-                Alta Exigencia Industrial
+              <span class="text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full">
+                Resistente a Congelación -25°C
               </span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-5">
               <div class="md:col-span-8">
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   Recomendado para etiquetas sintéticas y aplicaciones que requieren mayor resistencia. La resina proporciona una impresión de máxima durabilidad frente al roce, humedad, bajas temperaturas y agentes químicos.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-3 border-t border-slate-100">
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Sustratos Idóneos:</strong>
-                    <span class="text-slate-600">Polipropileno (BOPP), poliéster, materiales sintéticos y películas plásticas.</span>
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Sustratos Idóneos:</strong>
+                    <span class="text-slate-500">Polipropileno (BOPP), poliéster, materiales sintéticos y películas plásticas.</span>
                   </div>
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Aplicaciones:</strong>
-                    <span class="text-slate-600">Camaroneras (-25°C), pesca, químicos, intemperie y activos de alta exigencia.</span>
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Aplicaciones:</strong>
+                    <span class="text-slate-500">Camaroneras (-25°C), pesca, químicos, intemperie y activos de alta exigencia.</span>
                   </div>
                 </div>
               </div>
-              <div class="md:col-span-4 bg-slate-50 border border-slate-200 p-3 flex items-center justify-center h-44">
-                <img src="assets/images/ribbons/ribbon-resina.png" alt="Rollos de Ribbon de Resina Pura DISCODE" class="max-h-36 w-auto object-contain">
+              <div class="md:col-span-4 bg-slate-50/70 rounded-2xl p-4 flex items-center justify-center aspect-[4/3]">
+                <img src="assets/images/ribbons/ribbon-resina.png" alt="Rollos de Ribbon de Resina Pura DISCODE" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
               </div>
             </div>
 
-            <div class="mt-2 pt-3 flex justify-end border-t border-slate-100">
-              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina" data-whatsapp-context="ribbon_resina" target="_blank" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono">
-                Cotizar Ribbon de Resina →
+            <div class="pt-4 flex justify-end border-t border-slate-100">
+              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina" data-whatsapp-context="ribbon_resina" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-xl shadow-xs transition">
+                <span>Cotizar Ribbon de Resina</span>
+                <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Ribbon de Resina Textil -->
-          <div class="border border-slate-200 p-6 bg-slate-50">
-            <div class="flex flex-wrap justify-between items-start gap-2 mb-4">
+          <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all p-6 sm:p-8">
+            <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
               <div>
-                <span class="font-mono text-[11px] text-brand-navy font-bold uppercase tracking-wider block">FORMULACIÓN 03</span>
-                <h2 class="text-xl font-bold text-slate-950">Ribbon de Resina Textil (Textile Resin)</h2>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-3 py-1 rounded-full border border-purple-100 mb-2 inline-block">
+                  Formulación 03
+                </span>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Ribbon de Resina Textil (HL35)</h2>
               </div>
-              <span class="text-xs font-mono bg-white border border-slate-200 px-2.5 py-1 text-slate-700">
-                Lavado Severo & Ropa
+              <span class="text-xs font-semibold text-slate-600 bg-slate-50 border border-slate-200/70 px-3 py-1.5 rounded-full">
+                Lavado Severo & Tintorería
               </span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-5">
               <div class="md:col-span-8">
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   Diseñado específicamente para etiquetas y materiales textiles que requieren una impresión resistente y legible durante su manipulación, uso y ciclos repetidos de lavado industrial y planchado.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-3 border-t border-slate-200">
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Sustratos Idóneos:</strong>
-                    <span class="text-slate-600">Cintas de poliamida (nylon tafetán), raso y satín textil.</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-3 border-t border-slate-100">
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Sustratos Idóneos:</strong>
+                    <span class="text-slate-500">Cintas de poliamida (nylon tafetán), raso y satín textil.</span>
                   </div>
-                  <div>
-                    <strong class="text-slate-900 block font-mono">Aplicaciones:</strong>
-                    <span class="text-slate-600">Confección de ropa, uniformes de trabajo, prendas y calzado.</span>
+                  <div class="bg-slate-50/70 rounded-xl p-3 border border-slate-100">
+                    <strong class="text-slate-900 block font-semibold mb-1">Aplicaciones:</strong>
+                    <span class="text-slate-500">Confección de ropa, uniformes de trabajo, prendas y calzado.</span>
                   </div>
                 </div>
               </div>
-              <div class="md:col-span-4 bg-white border border-slate-200 p-3 flex items-center justify-center h-44">
-                <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon de Resina Textil y Especial DISCODE" class="max-h-36 w-auto object-contain">
+              <div class="md:col-span-4 bg-slate-50/70 rounded-2xl p-4 flex items-center justify-center aspect-[4/3]">
+                <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon de Resina Textil y Especial DISCODE" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
               </div>
             </div>
 
-            <div class="mt-2 pt-3 flex justify-end border-t border-slate-200">
-              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina%20Textil" data-whatsapp-context="ribbon_textil" target="_blank" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono">
-                Cotizar Resina Textil →
+            <div class="pt-4 flex justify-end border-t border-slate-100">
+              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina%20Textil" data-whatsapp-context="ribbon_textil" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold text-xs rounded-xl transition">
+                <span>Cotizar Resina Textil</span>
+                <span>→</span>
               </a>
             </div>
           </div>
 
         </div>
 
-        <!-- APLICACIONES CLAVE SEGÚN PÁGINA 5 DE LA GUÍA -->
-        <div class="border border-slate-200 p-6 bg-white mb-10">
-          <span class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 block mb-3">
-            Resumen de Aplicaciones:
-          </span>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-medium text-slate-700">
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Etiquetas de papel</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Etiquetas sintéticas</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Polipropileno</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Poliéster</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Aplicaciones industriales</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Identificación logística</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Productos de alta exigencia</div>
-            <div class="p-2.5 bg-slate-50 border border-slate-200">· Sector textil y confección</div>
+        <!-- RESUMEN DE APLICACIONES (ESTILO TARJETAS LIMPIAS) -->
+        <div class="bg-slate-50/70 rounded-3xl border border-slate-150/80 p-6 sm:p-7 shadow-xs">
+          <div class="flex justify-between items-center mb-5">
+            <h3 class="text-base font-bold text-slate-900 tracking-tight">
+              Compatibilidad Química por Sustrato
+            </h3>
+            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+              Rendimiento Garantizado
+            </span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Etiquetas de papel</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Etiquetas sintéticas</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Polipropileno (BOPP)</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Poliéster y metalizados</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Aplicaciones industriales</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Identificación logística</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Productos congelados</div>
+            <div class="bg-white rounded-xl p-3 border border-slate-100 text-slate-700 font-medium">· Sector textil y confección</div>
           </div>
         </div>
 
-        <!-- LLAMADO A LA ACCIÓN -->
-        <div class="bg-slate-50 border border-slate-300 p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div>
-            <span class="font-mono text-xs font-bold text-brand-navy uppercase tracking-wider block">¿No sabes qué ribbon necesita tu impresora?</span>
-            <p class="text-xs text-black mt-1 max-w-xl">
-              Prueba nuestro selector interactivo o envíanos una muestra de tu material para darte la recomendación química exacta.
+        <!-- LLAMADO A LA ACCIÓN CONTEXTUAL -->
+        <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl text-white">
+          <div class="max-w-xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-1">Asesoría Técnica</span>
+            <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">¿Dudas sobre qué ribbon necesita tu impresora?</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Prueba nuestro selector técnico interactivo o solicita una prueba de impresión con tu material sin costo de diagnóstico.
             </p>
           </div>
-          <div class="flex gap-3">
-            <a href="recursos.html#selector-ribbon" class="px-5 py-3 border border-slate-300 hover:border-slate-900 text-slate-900 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-              Selector
+          <div class="flex flex-wrap gap-3">
+            <a href="recurso-selector-ribbon.html" class="inline-flex items-center justify-center px-5 py-3 border border-slate-600 hover:border-slate-400 bg-white/5 hover:bg-white/10 text-white text-xs font-bold uppercase tracking-wider transition rounded-xl">
+              Selector Técnico
             </a>
-            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
-              COTIZAR RIBBON
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-lg hover:shadow-blue-500/25">
+              Cotizar Ribbons →
             </a>
           </div>
         </div>

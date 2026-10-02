@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -647,256 +647,329 @@
   <div class="discode-container py-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A PRODUCTOS -->
-      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
-        <div class="mb-6 pb-4 border-b border-slate-200">
-          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CATÁLOGO EXCLUSIVO</span>
-          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Productos DISCODE</h2>
-        </div>
-
-        <nav class="space-y-4 text-xs">
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
-            <a href="productos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
-              · Índice de Productos
-            </a>
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A PRODUCTOS (ESTILO MEGAMENÚ MINIMALISTA) -->
+      <aside class="lg:col-span-3 sticky top-28 space-y-6">
+        <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.04)] p-5 sm:p-6">
+          <div class="pb-4 mb-4 border-b border-slate-100">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Catálogo Técnico</span>
+            <h2 class="text-base font-bold text-slate-900 tracking-tight">Productos DISCODE</h2>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Líneas de Suministros:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="producto-etiquetas.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
-                  1. Etiquetas Adhesivas
+          <nav class="space-y-4 text-xs">
+            <!-- Grupo 1: Suministros -->
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Suministros de Identificación
+              </span>
+              <div class="space-y-1">
+                <!-- Etiquetas Adhesivas (ACTIVO) -->
+                <a href="producto-etiquetas.html" class="bg-gradient-to-r from-blue-50/90 to-blue-50/40 border border-blue-200/80 rounded-2xl p-2.5 flex items-center gap-3 shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-bold text-blue-950 block truncate">Etiquetas Adhesivas</span>
+                    <span class="text-[11px] text-blue-600/80 font-medium block truncate">Térmicas, BOPP y Frío</span>
+                  </div>
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
                 </a>
-              </li>
-              <li>
-                <a href="producto-ribbons.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  2. Ribbons Térmicos
+
+                <!-- Ribbons Térmicos -->
+                <a href="producto-ribbons.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Ribbons Térmicos</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">Cera, Resina y Textil</span>
+                  </div>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            <!-- Grupo 2: Hardware Industrial -->
+            <div class="pt-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Equipamiento Industrial
+              </span>
+              <div class="space-y-1">
+                <!-- Impresoras -->
+                <a href="producto-impresoras.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Impresoras Industriales</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">Zebra & TSC 24/7</span>
+                  </div>
+                </a>
+
+                <!-- Codificadores -->
+                <a href="producto-codificadores.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Codificadores Reiner</span>
+                    <span class="text-[11px] text-slate-400 group-hover:text-slate-500 block truncate transition">TIJ Alemán Portátil</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Grupo 3: Catálogo General -->
+            <div class="pt-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block px-2 mb-2">
+                Catálogo General
+              </span>
+              <a href="productos.html" class="group flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200/60 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100 flex items-center justify-center flex-shrink-0 transition">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="text-xs font-semibold text-slate-700 group-hover:text-blue-600 block truncate transition">Ver Todo el Catálogo</span>
+                  <span class="text-[11px] text-slate-400 block truncate">Todas las familias</span>
+                </div>
+              </a>
+            </div>
+          </nav>
+
+          <!-- Asistencia Comercial / Técnica -->
+          <div class="mt-6 pt-5 border-t border-slate-100">
+            <div class="bg-gradient-to-b from-blue-50/70 via-slate-50/40 to-blue-50/30 rounded-2xl p-4 border border-blue-100/70 flex flex-col gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 leading-tight">¿Asesoría en Planta?</h4>
+                  <p class="text-[11px] text-slate-500 leading-tight">Atención directa con ingenieros</p>
+                </div>
+              </div>
+              <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs transition duration-150">
+                <span>Cotizar Etiquetas</span>
+                <span class="text-xs">→</span>
+              </a>
+            </div>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2 pt-2 border-t border-slate-200">Equipamiento Industrial:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="producto-impresoras.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  3. Impresoras de Etiquetas
-                </a>
-              </li>
-              <li>
-                <a href="producto-codificadores.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  4. Codificadores Reiner
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="mt-8 pt-6 border-t border-slate-200">
-          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">ATENCIÓN COMERCIAL</span>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            Cotizar Etiquetas
-          </a>
         </div>
       </aside>
 
       <!-- CONTENIDO PRINCIPAL: ETIQUETAS ADHESIVAS -->
-      <main class="lg:col-span-9 bg-white">
+      <main class="lg:col-span-9 bg-white space-y-10">
         
-        <!-- Breadcrumb -->
-        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
-          <a href="index.html" class="hover:underline">Inicio</a>
-          <span>/</span>
-          <a href="productos.html" class="hover:underline">Productos</a>
-          <span>/</span>
-          <span class="text-slate-900 font-semibold">Etiquetas Adhesivas</span>
-        </div>
-
-        <div class="mb-8">
-          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
-            CATEGORÍA 1 — SUMINISTROS DE IDENTIFICACIÓN
+        <!-- Breadcrumb & Header -->
+        <div>
+          <div class="flex items-center gap-2 text-xs text-slate-400 mb-4">
+            <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+            <span>›</span>
+            <a href="productos.html" class="hover:text-blue-600 transition">Productos</a>
+            <span>›</span>
+            <span class="text-slate-900 font-semibold">Etiquetas Adhesivas</span>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-3">
-            ETIQUETAS ADHESIVAS
+
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100/80 mb-3.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            <span>Suministros de Identificación · Grado Industrial</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mb-3">
+            Etiquetas Adhesivas
           </h1>
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
-            Fabricamos y comercializamos etiquetas adhesivas para diferentes aplicaciones, productos y procesos, adaptándonos a los materiales, dimensiones y especificaciones técnicas de cada cliente.
+            Fabricamos y comercializamos etiquetas adhesivas para diferentes aplicaciones, productos y procesos, adaptándonos con precisión a los materiales, dimensiones y exigencias operativas de cada cliente.
           </p>
         </div>
 
-        <!-- ESPECIFICACIONES TÉCNICAS -->
-        <div class="border border-slate-200 mb-10">
-          <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
-            <span class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider">Ficha Técnica de Fabricación</span>
-            <span class="font-mono text-[11px] text-slate-500">HOMOLOGACIÓN ISO 9001</span>
+        <!-- ESPECIFICACIONES TÉCNICAS (ESTILO FICHA MODERNA MINIMALISTA) -->
+        <div class="bg-slate-50/70 rounded-3xl border border-slate-150/80 p-6 sm:p-7 shadow-xs">
+          <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-200/60">
+            <div class="flex items-center gap-2.5">
+              <div class="w-7 h-7 rounded-lg bg-blue-100/80 text-blue-700 flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900 tracking-tight">Ficha Técnica de Fabricación</h3>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-600 bg-white px-3 py-1 rounded-full border border-slate-200/70 shadow-2xs">
+              Homologación ISO 9001
+            </span>
           </div>
-          <div class="divide-y divide-slate-100 text-xs">
-            <div class="grid grid-cols-1 sm:grid-cols-3 p-4 gap-2">
-              <span class="font-mono text-slate-500">Sustratos disponibles:</span>
-              <span class="sm:col-span-2 text-slate-900 font-medium">Papel térmico directo, papel ilustración (transferencia térmica), polipropileno blanco brillante y mate (BOPP), poliéster, materiales destructibles y cartulinas.</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-2xs">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1.5">Sustratos Disponibles</span>
+              <p class="text-slate-600 leading-relaxed">Papel térmico directo, papel ilustración (transferencia térmica), polipropileno blanco brillante y mate (BOPP), poliéster y cartulinas.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 p-4 gap-2">
-              <span class="font-mono text-slate-500">Formulaciones de adhesivo:</span>
-              <span class="sm:col-span-2 text-slate-900 font-medium">Hotmelt permanente para corrugados, acrílico base agua para vidrio y metal, removible sin residuo, y grado congelación profunda (-25°C a -30°C) para exportación de perecibles.</span>
+            <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-2xs">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1.5">Formulaciones de Adhesivo</span>
+              <p class="text-slate-600 leading-relaxed">Hotmelt permanente para corrugados, acrílico base agua para vidrio y metal, removible sin residuo y grado congelación profunda (-25°C a -30°C).</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 p-4 gap-2">
-              <span class="font-mono text-slate-500">Formatos y rollos:</span>
-              <span class="sm:col-span-2 text-slate-900 font-medium">Rollos para impresoras industriales (buje de 3" / 76mm), rollos de escritorio (buje de 1" / 25mm), plegado continuo (fanfold) con perforación intermedia.</span>
+            <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-2xs">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1.5">Formatos y Bobinado</span>
+              <p class="text-slate-600 leading-relaxed">Rollos para impresoras industriales (buje de 3" / 76mm), rollos de escritorio (buje de 1" / 25mm) y plegado continuo (fanfold) con precorte.</p>
             </div>
           </div>
         </div>
 
         <!-- GALERÍA DE PRODUCTO Y APLICACIONES REALES -->
-        <div class="mb-12">
-          <div class="flex justify-between items-center mb-4 pb-2 border-b border-slate-200">
-            <span class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
-              Galería de Fabricación y Presentaciones
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 tracking-tight">
+                Galería de Fabricación y Presentaciones
+              </h3>
+              <p class="text-xs text-slate-500 mt-0.5">Formatos estandarizados e industriales listos para despacho</p>
+            </div>
+            <span class="hidden sm:inline-block text-xs font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-200/60">
+              Certificación de Calidad
             </span>
-            <span class="font-mono text-xs text-slate-500">FORMATOS EN FIRME</span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- Foto 1: Rollos Blancos -->
-            <div class="border border-slate-200 bg-white p-3 flex flex-col justify-between">
-              <div class="bg-slate-50 border border-slate-100 p-2 mb-3 flex items-center justify-center">
-                <img src="assets/images/etiquetas/etiqueta-rollos-blancos.png" alt="Rollos de etiquetas adhesivas troqueladas blancas" class="h-48 w-full object-cover">
-              </div>
+            <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col justify-between">
               <div>
-                <span class="font-mono text-[10px] text-brand-navy font-bold uppercase tracking-wider block mb-1">INSPECCIÓN DE CORTE</span>
-                <h4 class="text-sm font-bold text-slate-950 mb-1">Rollos Blancos Troquelados</h4>
-                <p class="text-xs text-black leading-relaxed">Bobinas con separación homogénea, listas para impresión térmica directa y transferencia.</p>
+                <div class="bg-slate-50/70 rounded-2xl overflow-hidden p-3 mb-3.5 flex items-center justify-center aspect-[4/3]">
+                  <img src="assets/images/etiquetas/etiqueta-rollos-blancos.png" alt="Rollos de etiquetas adhesivas troqueladas blancas" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Inspección de Corte</span>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Rollos Blancos Troquelados</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Bobinas con separación homogénea, listas para impresión térmica directa y transferencia.</p>
               </div>
             </div>
 
             <!-- Foto 2: Bobinas Industriales -->
-            <div class="border border-slate-200 bg-white p-3 flex flex-col justify-between">
-              <div class="bg-slate-50 border border-slate-100 p-2 mb-3 flex items-center justify-center">
-                <img src="assets/images/etiquetas/etiqueta-rollos-industriales.png" alt="Bobinas industriales de polipropileno y papel" class="h-48 w-full object-cover">
-              </div>
+            <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col justify-between">
               <div>
-                <span class="font-mono text-[10px] text-brand-navy font-bold uppercase tracking-wider block mb-1">SUSTRATOS MIXTOS</span>
-                <h4 class="text-sm font-bold text-slate-950 mb-1">Bobinas para Alto Volumen</h4>
-                <p class="text-xs text-black leading-relaxed">Buje de 3 pulgadas (76 mm) con bobinado exterior e interior para impresoras industriales Zebra y TSC.</p>
+                <div class="bg-slate-50/70 rounded-2xl overflow-hidden p-3 mb-3.5 flex items-center justify-center aspect-[4/3]">
+                  <img src="assets/images/etiquetas/etiqueta-rollos-industriales.png" alt="Bobinas industriales de polipropileno y papel" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Sustratos Mixtos</span>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Bobinas para Alto Volumen</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Buje de 3 pulgadas (76 mm) con bobinado exterior e interior para impresoras industriales Zebra y TSC.</p>
               </div>
             </div>
 
             <!-- Foto 3: Retail y Góndolas -->
-            <div class="border border-slate-200 bg-white p-3 flex flex-col justify-between">
-              <div class="bg-slate-50 border border-slate-100 p-2 mb-3 flex items-center justify-center">
-                <img src="assets/images/etiquetas/etiquetas-aplicacion-retail.png" alt="Etiquetas aplicadas en retail y góndolas comerciales" class="h-48 w-full object-cover">
-              </div>
+            <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col justify-between">
               <div>
-                <span class="font-mono text-[10px] text-brand-navy font-bold uppercase tracking-wider block mb-1">COMERCIO & PUNTOS DE VENTA</span>
-                <h4 class="text-sm font-bold text-slate-950 mb-1">Etiquetado en Retail & Góndolas</h4>
-                <p class="text-xs text-black leading-relaxed">Adhesión limpia y lectura instantánea de precios, promociones y códigos EAN en baldas y estanterías.</p>
+                <div class="bg-slate-50/70 rounded-2xl overflow-hidden p-3 mb-3.5 flex items-center justify-center aspect-[4/3]">
+                  <img src="assets/images/etiquetas/etiquetas-aplicacion-retail.png" alt="Etiquetas aplicadas en retail y góndolas comerciales" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Comercio & Puntos de Venta</span>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Etiquetado en Retail & Góndolas</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Adhesión limpia y lectura instantánea de precios, promociones y códigos EAN en baldas y estanterías.</p>
               </div>
             </div>
 
             <!-- Foto 4: Trazabilidad QR / GS1 -->
-            <div class="border border-slate-200 bg-white p-3 flex flex-col justify-between">
-              <div class="bg-slate-50 border border-slate-100 p-2 mb-3 flex items-center justify-center">
-                <img src="assets/images/etiquetas/etiquetas-codigo-qr-trazabilidad.png" alt="Etiquetas técnicas con código QR y trazabilidad GS1" class="h-48 w-full object-cover">
-              </div>
+            <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col justify-between">
               <div>
-                <span class="font-mono text-[10px] text-brand-navy font-bold uppercase tracking-wider block mb-1">DATOS VARIABLES & TRAZABILIDAD</span>
-                <h4 class="text-sm font-bold text-slate-950 mb-1">Códigos 1D, DataMatrix y QR</h4>
-                <p class="text-xs text-black leading-relaxed">Resolución nítida para lectura óptica a alta velocidad en líneas automáticas y despachos de exportación.</p>
+                <div class="bg-slate-50/70 rounded-2xl overflow-hidden p-3 mb-3.5 flex items-center justify-center aspect-[4/3]">
+                  <img src="assets/images/etiquetas/etiquetas-codigo-qr-trazabilidad.png" alt="Etiquetas técnicas con código QR y trazabilidad GS1" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Datos Variables & Trazabilidad</span>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Códigos 1D, DataMatrix y QR</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Resolución nítida para lectura óptica a alta velocidad en líneas automáticas y despachos de exportación.</p>
               </div>
             </div>
 
             <!-- Foto 5: Cajas y Presentación de Despacho -->
-            <div class="border border-slate-200 bg-white p-3 flex flex-col justify-between sm:col-span-2 lg:col-span-2">
-              <div class="bg-slate-50 border border-slate-100 p-2 mb-3 flex items-center justify-center">
-                <img src="assets/images/etiquetas/etiqueta-presentacion-caja.png" alt="Cajas y empaque de despacho de bobinas DISCODE" class="h-48 w-full object-cover">
-              </div>
+            <div class="bg-white rounded-3xl border border-slate-150/70 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col justify-between sm:col-span-2">
               <div>
-                <span class="font-mono text-[10px] text-brand-navy font-bold uppercase tracking-wider block mb-1">LOGÍSTICA & DESPACHO</span>
-                <h4 class="text-sm font-bold text-slate-950 mb-1">Empaque y Protección de Bobinas para Planta</h4>
-                <p class="text-xs text-black leading-relaxed">Embalaje reforzado con film termoencogible que previene humedad, suciedad o daños en los bordes durante el flete nacional.</p>
+                <div class="bg-slate-50/70 rounded-2xl overflow-hidden p-3 mb-3.5 flex items-center justify-center aspect-[21/9]">
+                  <img src="assets/images/etiquetas/etiqueta-presentacion-caja.png" alt="Cajas y empaque de despacho de bobinas DISCODE" class="max-h-36 w-auto object-contain transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Logística & Despacho</span>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Empaque y Protección de Bobinas para Planta</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Embalaje reforzado con film termoencogible que previene humedad, suciedad o daños en los bordes durante el flete nacional.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- APLICACIONES CLAVE DETALLADAS (PÁGINA 4 DE LA GUÍA) -->
-        <div class="mb-10">
-          <div class="flex justify-between items-center mb-4">
-            <span class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
-              Aplicaciones de Uso en Operación:
+        <!-- APLICACIONES CLAVE DETALLADAS -->
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 tracking-tight">
+                Aplicaciones de Uso en Operación
+              </h3>
+              <p class="text-xs text-slate-500 mt-0.5">Soluciones para cada etapa del proceso productivo</p>
+            </div>
+            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+              9 Aplicaciones Certificadas
             </span>
-            <span class="font-mono text-xs text-slate-500">9 APLICACIONES ESPECÍFICAS</span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">01</span>
-              <strong class="text-slate-900 block font-bold mb-1">Identificación de productos</strong>
-              <p class="text-slate-600 leading-snug">Rotulación técnica de envases primarios, frascos y botellas.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">01 · Envases</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Identificación de productos</strong>
+              <p class="text-slate-500 leading-snug">Rotulación técnica de envases primarios, frascos y botellas.</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">02</span>
-              <strong class="text-slate-900 block font-bold mb-1">Etiquetado de cajas</strong>
-              <p class="text-slate-600 leading-snug">Identificación de corrugados, empaques secundarios y bultos.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">02 · Embalaje</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Etiquetado de cajas</strong>
+              <p class="text-slate-500 leading-snug">Identificación de corrugados, empaques secundarios y bultos.</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">03</span>
-              <strong class="text-slate-900 block font-bold mb-1">Etiquetado logístico</strong>
-              <p class="text-slate-600 leading-snug">Rotulación de pallets, estibas, zonas de almacenaje y despachos.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">03 · Bodegas</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Etiquetado logístico</strong>
+              <p class="text-slate-500 leading-snug">Rotulación de pallets, estibas, zonas de almacenaje y despachos.</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">04</span>
-              <strong class="text-slate-900 block font-bold mb-1">Código de barras</strong>
-              <p class="text-slate-600 leading-snug">Códigos 1D (EAN13, Code 128) y bidimensionales (DataMatrix, QR).</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">04 · Codificación</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Código de barras</strong>
+              <p class="text-slate-500 leading-snug">Códigos 1D (EAN13, Code 128) y bidimensionales (DataMatrix, QR).</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">05</span>
-              <strong class="text-slate-900 block font-bold mb-1">Trazabilidad</strong>
-              <p class="text-slate-600 leading-snug">Control de número de lote, fecha de elaboración y vencimiento.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">05 · Calidad</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Trazabilidad GS1</strong>
+              <p class="text-slate-500 leading-snug">Control de número de lote, fecha de elaboración y vencimiento.</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">06</span>
-              <strong class="text-slate-900 block font-bold mb-1">Exportación</strong>
-              <p class="text-slate-600 leading-snug">Cumplimiento estricto de normativas de aduana y estándares GS1.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">06 · Comercio Exterior</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Exportación</strong>
+              <p class="text-slate-500 leading-snug">Cumplimiento estricto de normativas de aduana y estándares GS1.</p>
             </div>
 
-            <div class="border-2 border-brand-navy p-4 bg-white">
-              <span class="font-mono text-[10px] text-brand-navy font-bold block mb-1">07 / ESPECIALIDAD</span>
-              <strong class="text-slate-950 block font-bold mb-1">Etiquetas para congelados</strong>
+            <div class="bg-blue-50/60 rounded-2xl p-4 border border-blue-200/80 shadow-xs">
+              <span class="text-[10px] font-bold text-blue-700 block mb-1">07 · Especialidad</span>
+              <strong class="text-slate-900 block font-bold mb-1">Etiquetas para congelados</strong>
               <p class="text-slate-600 leading-snug">Adhesivos especiales resistentes a condensación y congelación (-25°C).</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">08</span>
-              <strong class="text-slate-900 block font-bold mb-1">Identificación interna</strong>
-              <p class="text-slate-600 leading-snug">Control de producto en proceso, activos fijos y componentes.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">08 · Control Interno</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Identificación interna</strong>
+              <p class="text-slate-500 leading-snug">Control de producto en proceso, activos fijos y componentes.</p>
             </div>
 
-            <div class="border border-slate-200 p-4 bg-slate-50">
-              <span class="font-mono text-[10px] text-slate-400 block mb-1">09</span>
-              <strong class="text-slate-900 block font-bold mb-1">Etiquetado industrial</strong>
-              <p class="text-slate-600 leading-snug">Ambientes severos, fricción, polvo y exposición a químicos en planta.</p>
+            <div class="bg-slate-50/70 hover:bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-100 hover:shadow-xs transition duration-150">
+              <span class="text-[10px] font-bold text-blue-600 block mb-1">09 · Planta Pesada</span>
+              <strong class="text-slate-900 block font-semibold mb-1">Etiquetado industrial</strong>
+              <p class="text-slate-500 leading-snug">Ambientes severos, fricción, polvo y exposición a químicos en planta.</p>
             </div>
           </div>
         </div>
 
-        <!-- LLAMADO A LA ACCIÓN CONTEXTUAL -->
-        <div class="bg-slate-50 border border-slate-300 p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div>
-            <span class="font-mono text-xs font-bold text-brand-navy uppercase tracking-wider block">¿Requieres etiquetas a la medida de tu producto?</span>
-            <p class="text-xs text-black mt-1 max-w-xl">
-              Fabricamos rollos en cualquier dimensión y acabado. Envíanos tu requerimiento o muestra para cotizar con entrega a nivel nacional.
+        <!-- LLAMADO A LA ACCIÓN CONTEXTUAL (ESTILO BANNER MODERNO DISCODE) -->
+        <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl text-white">
+          <div class="max-w-xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-1">Producción a Medida</span>
+            <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">¿Requieres etiquetas a la medida de tu producto?</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Fabricamos rollos en cualquier dimensión y acabado. Envíanos tu requerimiento o muestra física para cotizar con entrega garantizada a nivel nacional.
             </p>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
-            COTIZAR ETIQUETAS
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-lg hover:shadow-blue-500/25">
+            Cotizar Etiquetas por WhatsApp →
           </a>
         </div>
 
