@@ -184,3 +184,20 @@ header nav a:hover,
 header nav button:hover {
   color: var(--discode-navy) !important;
 }
+
+/* Carrusel Continuo de Marcas (Slider Marquee) */
+@keyframes marqueeBrands {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.brands-slider-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeBrands 28s linear infinite;
+}
+
+.brands-slider-track:hover {
+  animation-play-state: paused;
+}
+
