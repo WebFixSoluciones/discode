@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -112,162 +112,167 @@
 
     <!-- PANELES DE MEGAMENÚ (DESKTOP) -->
     <!-- Megamenú Productos -->
-    <div id="megamenu-productos" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-t border-slate-200 shadow-xl transition-all duration-150 z-40">
-      <div class="discode-container py-8">
-        <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-6">
-          <div>
-            <span class="text-[11px] font-mono uppercase tracking-widest text-slate-400 block">CATÁLOGO TÉCNICO</span>
-            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-950 mt-0.5">Línea Completa de Insumos y Equipos de Identificación</h3>
-          </div>
-          <a href="productos.html" class="text-xs font-bold text-brand-navy hover:underline font-mono uppercase tracking-wider">
-            Ver Todo el Catálogo de Productos →
-          </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div id="megamenu-productos" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-slate-100 shadow-2xl transition-all duration-150 z-40">
+      <div class="discode-container py-7">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
           <!-- Col 1: Etiquetas -->
-          <a href="producto-etiquetas.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">01 / Insumos</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Etiquetas Técnicas</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Papel térmico directo, transferencia, polipropileno BOPP, congelación -25°C y cajas corrugadas. Bujes 1" y 3".</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Ficha Técnica & Modelos →</span>
+          <a href="producto-etiquetas.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Etiquetas Adhesivas</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Térmicas, transferencia, polipropileno BOPP y grado congelación.</p>
           </a>
 
           <!-- Col 2: Ribbons -->
-          <a href="producto-ribbons.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">02 / Cintas Térmicas</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Ribbons Térmicos</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Cera formulada, mezcla cera/resina, resina pura para intemperie/químicos y resina textil HL35 lavable.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Ficha Técnica & Modelos →</span>
+          <a href="producto-ribbons.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Ribbons Térmicos</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Cera formulada, mezcla cera-resina y resina textil lavable HL35.</p>
           </a>
 
           <!-- Col 3: Impresoras -->
-          <a href="producto-impresoras.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">03 / Hardware</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Impresoras Térmicas</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Zebra y TSC. Líneas industrial 24/7 (ZT411), semi-industrial (ZT231), escritorio (ZD220/ZD421) y móviles.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Ficha Técnica & Modelos →</span>
+          <a href="producto-impresoras.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Impresoras Industriales</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Zebra y TSC. Líneas industrial 24/7, semi-industrial y móviles.</p>
           </a>
 
           <!-- Col 4: Codificadores -->
-          <a href="producto-codificadores.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400">04 / Marcado Directo</span>
-              <span class="text-[9px] font-mono font-bold bg-brand-navy text-white px-1.5 py-0.5">REINER</span>
+          <a href="producto-codificadores.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
             </div>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Codificadores Móviles</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">JetStamp 1025 (25 mm), 970 Graphic y 990. Fechado y lotes en metal, vidrio, plástico, cartón y empaques.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Ficha Técnica & Modelos →</span>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Codificadores TIJ</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Reiner JetStamp. Marcado directo en empaques sin contacto mecánico.</p>
           </a>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4 text-xs">
-          <span class="font-mono text-slate-500">¿Requieres validar la compatibilidad entre cabezal, sustrato y ribbon para tu línea?</span>
-          <div class="flex items-center gap-4">
-            <a href="recurso-selector-ribbon.html" class="text-slate-700 hover:text-brand-navy font-semibold underline">Usar Selector de Ribbons</a>
-            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesoria%20tecnica%20de%20productos" target="_blank" class="bg-brand-navy hover:bg-slate-900 text-white px-4 py-2 text-[11px] font-semibold uppercase tracking-wider">Consultar Asesor →</a>
-          </div>
+        <div class="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500">
+          <a href="productos.html" class="font-bold text-brand-navy hover:text-blue-700 transition flex items-center gap-1.5">
+            <span>Ver catálogo completo de productos</span>
+            <span>→</span>
+          </a>
+          <a href="recurso-selector-ribbon.html" class="hover:text-brand-navy transition">
+            Selector interactivo de ribbons →
+          </a>
         </div>
       </div>
     </div>
 
     <!-- Megamenú Soluciones -->
-    <div id="megamenu-soluciones" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-t border-slate-200 shadow-xl transition-all duration-150 z-40">
-      <div class="discode-container py-8">
-        <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-6">
-          <div>
-            <span class="text-[11px] font-mono uppercase tracking-widest text-slate-400 block">MODELOS OPERATIVOS DISCODE</span>
-            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-950 mt-0.5">Soluciones Integrales y Continuidad Operativa en Planta</h3>
-          </div>
-          <a href="soluciones.html" class="text-xs font-bold text-brand-navy hover:underline font-mono uppercase tracking-wider">
-            Ver Todas las Soluciones →
-          </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div id="megamenu-soluciones" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-slate-100 shadow-2xl transition-all duration-150 z-40">
+      <div class="discode-container py-7">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
           <!-- Solución 1 -->
-          <a href="solucion-integral.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">01 / Consolidación</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Solución Integral</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Consolidación total de etiquetas, ribbons, impresoras y soporte bajo un único proveedor responsable. Cero desajustes técnicos.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Detalles del Modelo →</span>
+          <a href="solucion-integral.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Solución Integral</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Consolidación total de insumos, hardware y soporte técnico.</p>
           </a>
 
           <!-- Solución 2 -->
-          <a href="solucion-servicio-absoluto.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">02 / Cero Paradas</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Servicio Absoluto</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Mantenimiento preventivo periódico, calibración de cabezales y disponibilidad de impresoras de respaldo para producción continua.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Detalles del Servicio →</span>
+          <a href="solucion-servicio-absoluto.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Servicio Absoluto</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Mantenimiento preventivo, calibración y cero paradas de planta.</p>
           </a>
 
           <!-- Solución 3 -->
-          <a href="solucion-comodato.html" class="group block p-4 border border-slate-200 bg-slate-50 hover:bg-white hover:border-slate-400 transition">
-            <span class="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">03 / Cero Capex</span>
-            <h4 class="text-sm font-bold text-slate-950 group-hover:text-brand-navy mb-1.5">Modalidad Comodato</h4>
-            <p class="text-xs text-black leading-relaxed mb-3">Instalación de equipamiento industrial sin inversión inicial de capital, sujeto exclusivamente al consumo periódico de insumos.</p>
-            <span class="text-[11px] font-mono font-bold text-brand-navy group-hover:underline">Detalles de Comodato →</span>
+          <a href="solucion-comodato.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Modalidad Comodato</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Instalación de maquinaria industrial sin inversión inicial de capital.</p>
           </a>
 
-          <!-- Columna Guardia & Asistencia -->
-          <div class="p-4 border border-slate-300 bg-slate-900 text-white flex flex-col justify-between">
-            <div>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-brand-navy block mb-1">SOPORTE DE FÁBRICA</span>
-              <h4 class="text-sm font-bold text-white mb-2">Diagnóstico Técnico en Planta</h4>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                Evaluamos tu línea de etiquetado o codificación sin costo para detectar cuellos de botella y mermas.
-              </p>
+          <!-- Solución 4 -->
+          <a href="servicio-tecnico.html" class="group block p-4 rounded-xl hover:bg-slate-50 transition">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-navy flex items-center justify-center mb-3 group-hover:bg-brand-navy group-hover:text-white transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
-            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20un%20diagnostico%20tecnico%20en%20planta" target="_blank" class="mt-4 inline-block text-center bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white py-2.5 px-4 text-xs font-bold uppercase tracking-wider rounded-lg transition shadow-sm">
-              Solicitar Diagnóstico WhatsApp →
-            </a>
-          </div>
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-slate-900 group-hover:text-brand-navy transition">Servicio Técnico</h4>
+              <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all text-xs">→</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Diagnóstico en planta, calibración y repuestos originales.</p>
+          </a>
+        </div>
+
+        <div class="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500">
+          <a href="soluciones.html" class="font-bold text-brand-navy hover:text-blue-700 transition flex items-center gap-1.5">
+            <span>Ver todas las soluciones operativas</span>
+            <span>→</span>
+          </a>
+          <a href="contacto.html" class="hover:text-brand-navy transition">
+            Solicitar diagnóstico técnico en planta →
+          </a>
         </div>
       </div>
     </div>
 
     <!-- Megamenú Recursos -->
-    <div id="megamenu-recursos" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-t border-slate-200 shadow-xl transition-all duration-150 z-40">
-      <div class="discode-container py-8">
-        <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-6">
-          <div>
-            <span class="text-[11px] font-mono uppercase tracking-widest text-slate-400 block">CENTRO TÉCNICO DISCODE</span>
-            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-950 mt-0.5">Guías de Ingeniería, Trazabilidad y Selección de Insumos</h3>
-          </div>
-          <a href="recursos.html" class="text-xs font-bold text-brand-navy hover:underline font-mono uppercase tracking-wider">
-            Ver Todos los Recursos Técnicos →
-          </a>
-        </div>
-
+    <div id="megamenu-recursos" data-megamenu-panel class="hidden absolute left-0 right-0 top-full bg-white border-b border-slate-100 shadow-2xl transition-all duration-150 z-40">
+      <div class="discode-container py-7">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Col 1: Selección y Especificación -->
           <div>
-            <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-900 block border-b border-slate-200 pb-2 mb-3">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-400 block mb-3">
               Selección & Especificación
             </span>
-            <ul class="space-y-2.5 text-xs">
+            <ul class="space-y-2 text-xs">
               <li>
-                <a href="recurso-selector-ribbon.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· Selector Interactivo de Ribbons</strong>
-                  <span class="text-[11px] text-slate-500">Matriz de compatibilidad cera, resina y resina textil</span>
+                <a href="recurso-selector-ribbon.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">Selector Interactivo de Ribbons</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
               <li>
-                <a href="recurso-transferencia-vs-directa.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· Transferencia Térmica vs Térmico Directo</strong>
-                  <span class="text-[11px] text-slate-500">Comparativa técnica de costos, vida útil y aplicaciones</span>
+                <a href="recurso-transferencia-vs-directa.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">Transferencia Térmica vs. Directa</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
               <li>
-                <a href="recurso-como-elegir-impresora.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· Cómo Elegir tu Impresora Industrial</strong>
-                  <span class="text-[11px] text-slate-500">7 factores de dimensionamiento: volumen, DPI y conectividad</span>
+                <a href="recurso-como-elegir-impresora.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">Cómo Elegir tu Impresora Industrial</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
               <li>
-                <a href="recurso-tipo-de-etiqueta.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· Tipos de Etiquetas y Adhesivos</strong>
-                  <span class="text-[11px] text-slate-500">Sustratos, adhesivo criogénico (-25°C) y corrugados</span>
+                <a href="recurso-tipo-de-etiqueta.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">Tipos de Etiquetas y Adhesivos</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
             </ul>
@@ -275,44 +280,52 @@
 
           <!-- Col 2: Operación y Mantenimiento -->
           <div>
-            <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-900 block border-b border-slate-200 pb-2 mb-3">
-              Eficiencia Operativa & Trazabilidad
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-400 block mb-3">
+              Operación & Trazabilidad
             </span>
-            <ul class="space-y-2.5 text-xs">
+            <ul class="space-y-2 text-xs">
               <li>
-                <a href="recurso-mejorar-trazabilidad.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· 6 Pasos para Mejorar la Trazabilidad</strong>
-                  <span class="text-[11px] text-slate-500">Identificación primaria, secundaria y terciaria SSCC GS1</span>
+                <a href="recurso-mejorar-trazabilidad.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">6 Pasos para Mejorar Trazabilidad</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
               <li>
-                <a href="recurso-evitar-desperdicios.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· 8 Formas de Evitar Desperdicio de Insumos</strong>
-                  <span class="text-[11px] text-slate-500">Estrategias prácticas para reducir mermas hasta un 35%</span>
+                <a href="recurso-evitar-desperdicios.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">8 Formas de Evitar Desperdicio</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
               <li>
-                <a href="recurso-mantenimiento-zebra.html" class="group block hover:text-brand-navy">
-                  <strong class="text-slate-900 group-hover:text-brand-navy block font-semibold">· Mantenimiento de Cabezales Zebra & TSC</strong>
-                  <span class="text-[11px] text-slate-500">Protocolos de limpieza con alcohol isopropílico y rodillos</span>
+                <a href="recurso-mantenimiento-zebra.html" class="group flex items-center justify-between py-1 text-slate-800 hover:text-brand-navy transition">
+                  <span class="font-medium">Mantenimiento Zebra & TSC</span>
+                  <span class="text-slate-300 group-hover:text-brand-navy group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
               </li>
             </ul>
           </div>
 
-          <!-- Col 3: Herramienta Destacada -->
-          <div class="p-5 border border-slate-200 bg-slate-50 flex flex-col justify-between">
+          <!-- Col 3: Herramienta Destacada Minimalista -->
+          <div class="p-4 rounded-xl bg-slate-50 flex flex-col justify-between">
             <div>
-              <span class="text-[10px] font-mono uppercase tracking-wider text-brand-navy font-bold block mb-1">HERRAMIENTA EN LÍNEA</span>
-              <h4 class="text-sm font-bold text-slate-950 mb-2">Selector Interactivo de Ribbons</h4>
-              <p class="text-xs text-black leading-relaxed mb-4">
-                Selecciona tu sustrato (papel, sintético o textil) y obtén de inmediato la recomendación técnica exacta de ribbon y requerimientos de temperatura.
+              <span class="text-[10px] font-mono uppercase tracking-wider text-brand-navy font-bold block mb-1">HERRAMIENTA TÉCNICA</span>
+              <h4 class="text-sm font-bold text-slate-900 mb-1.5">Selector de Ribbons</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Determina la formulación química exacta para tu sustrato y temperatura en 3 pasos.
               </p>
             </div>
-            <a href="recurso-selector-ribbon.html" class="inline-block text-center bg-brand-navy hover:bg-slate-900 text-white py-2.5 px-4 text-xs font-semibold uppercase tracking-wider">
-              Abrir Selector de Ribbons →
+            <a href="recurso-selector-ribbon.html" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-brand-navy hover:text-blue-700 transition">
+              <span>Abrir selector interactivo</span>
+              <span>→</span>
             </a>
           </div>
+        </div>
+
+        <div class="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500">
+          <a href="recursos.html" class="font-bold text-brand-navy hover:text-blue-700 transition flex items-center gap-1.5">
+            <span>Ver todos los recursos técnicos</span>
+            <span>→</span>
+          </a>
         </div>
       </div>
     </div>
