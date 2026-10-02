@@ -5,7 +5,7 @@
  */
 
 :root {
-  --discode-navy: #00337F;
+  --discode-navy: #0052CC;
   --discode-dark: #0A1128;
   --discode-slate: #1E293B;
   --discode-border: #E2E8F0;
@@ -25,7 +25,7 @@
 /* Tipografía de precisión */
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #0F172A;
+  color: #000000;
   background-color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -69,8 +69,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #0F172A;
-  border-color: #0F172A;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .btn-outline {
@@ -78,7 +78,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: #0F172A;
+  color: #000000;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -90,7 +90,7 @@ body {
 }
 
 .btn-outline:hover {
-  border-color: #0F172A;
+  border-color: #000000;
   background-color: #F8FAFC;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .table-tech th {
   background-color: #F1F5F9;
-  color: #0F172A;
+  color: #000000;
   font-weight: 700;
   text-align: left;
   padding: 0.75rem 1rem;
@@ -166,3 +166,23 @@ html {
   }
 }
 
+
+/* Tipografía corporativa de alto contraste DISCODE */
+body {
+  color: #000000 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+/* Enlaces y botones del menú principal en negro nítido de alto contraste */
+header nav a:not(.text-brand-navy),
+header nav button {
+  color: #000000 !important;
+}
+
+header nav a:hover,
+header nav button:hover {
+  color: var(--discode-navy) !important;
+}
