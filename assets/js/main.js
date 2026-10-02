@@ -358,9 +358,9 @@ function initHeroBackgroundSlider() {
   let currentIndex = 0;
   const totalSlides = slides.length;
   let autoTimer = null;
-  const INTERVAL_TIME = 5500; // 5.5 segundos por foto
+  const INTERVAL_TIME = 4500; // 4.5 segundos por foto con avance automático continuo
 
-  // Construir dots / barras indicadoras interactivas
+  // Construir dots / barras indicadoras si el contenedor existe
   if (dotsContainer) {
     dotsContainer.innerHTML = '';
     slides.forEach((slide, idx) => {
@@ -400,7 +400,7 @@ function initHeroBackgroundSlider() {
       }
     });
 
-    // Actualizar estado activo de las barras/dots
+    // Actualizar estado activo de las barras/dots si existen
     if (dotsContainer) {
       const dots = dotsContainer.querySelectorAll('button');
       dots.forEach((dot, idx) => {
@@ -445,7 +445,7 @@ function initHeroBackgroundSlider() {
     startTimer();
   }
 
-  // Controles manuales Anterior / Siguiente
+  // Controles manuales Anterior / Siguiente (Flechas blancas laterales)
   if (prevBtn) {
     prevBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -461,10 +461,6 @@ function initHeroBackgroundSlider() {
       resetTimer();
     });
   }
-
-  // Pausar en Hover para lectura técnica y reanudar al salir
-  heroSection.addEventListener('mouseenter', stopTimer);
-  heroSection.addEventListener('mouseleave', startTimer);
 
   // Soporte para gestos táctiles (Swipe) en smartphones y tablets
   let touchStartX = 0;
@@ -490,7 +486,7 @@ function initHeroBackgroundSlider() {
     }
   }
 
-  // Iniciar en slide 0
+  // Iniciar en slide 0 y activar rotación automática continua
   updateSlide(0);
   startTimer();
 }
