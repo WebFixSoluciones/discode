@@ -49,24 +49,49 @@ body {
   background-color: #F8FAFC;
 }
 
-/* Botones técnicos de acción */
+/* Botones técnicos de acción - Estilo Estandarizado DISCODE */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   background-color: var(--discode-navy);
   color: #FFFFFF;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2px;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--discode-navy);
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .btn-primary:hover {
+  background-color: #2563EB;
+  border-color: #2563EB;
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #020617;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #0F172A;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-dark:hover {
   background-color: #000000;
   border-color: #000000;
 }
@@ -75,21 +100,46 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   background-color: transparent;
   color: #000000;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2px;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
   border: 1px solid #CBD5E1;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-outline:hover {
-  border-color: #000000;
+  border-color: var(--discode-navy);
+  color: var(--discode-navy);
   background-color: #F8FAFC;
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #E2E8F0;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-light:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
 }
 
 /* Tablas técnicas de especificaciones */
