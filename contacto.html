@@ -389,21 +389,27 @@
     </div>
   </header>
 
-  <!-- ENCABEZADO DE PÁGINA (PÁGINA 31 DE LA GUÍA) -->
-  <section class="py-16 md:py-20 bg-white">
-    <div class="discode-container">
-      <div class="max-w-4xl">
-        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-3">
+  <!-- ENCABEZADO DE PÁGINA: HERO TÉCNICO CON IMAGEN DE FONDO -->
+  <section class="relative overflow-hidden bg-slate-950 text-white py-12 md:py-16">
+    <!-- Imagen de fondo con overlay técnico suave -->
+    <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none select-none">
+      <img src="assets/images/soluciones/cajas-discode-impresora.png" alt="Atención Comercial DISCODE" class="w-full h-full object-cover object-center opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/70"></div>
+    </div>
+
+    <div class="discode-container relative z-10">
+      <div class="max-w-3xl">
+        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
           Atención Comercial y Soporte
         </span>
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">
           COTIZA CON DISCODE
         </h1>
-        <p class="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed max-w-3xl font-medium mb-4">
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mb-2.5">
           Cuéntanos qué producto o solución necesitas y contáctanos directamente por WhatsApp.
         </p>
-        <div class="mt-8">
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." data-whatsapp-context="default" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
+        <div class="mt-6">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." data-whatsapp-context="default" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-blue-400/40 text-white px-6 py-2.5 text-xs font-bold uppercase tracking-normal transition rounded-lg shadow-sm">
             COTIZAR POR WHATSAPP
           </a>
         </div>
