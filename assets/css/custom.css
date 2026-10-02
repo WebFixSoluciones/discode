@@ -35,16 +35,14 @@ body {
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-/* Estilo de Catálogo Técnico: Bordes limpios de 1px sin sombras flotantes */
+/* Estilo de Catálogo: Limpio y espacioso sin líneas de separación */
 .catalog-grid {
-  border-top: 1px solid var(--discode-border);
-  border-left: 1px solid var(--discode-border);
+  border: none;
 }
 
 .catalog-cell {
-  border-right: 1px solid var(--discode-border);
-  border-bottom: 1px solid var(--discode-border);
-  transition: background-color 0.15s ease;
+  border: none;
+  transition: all 0.2s ease;
 }
 
 .catalog-cell:hover {
