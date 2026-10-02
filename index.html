@@ -40,7 +40,7 @@
   </script>
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen">
+<body class="bg-white text-slate-900 antialiased selection:bg-brand-navy selection:text-white flex flex-col min-h-screen overflow-x-hidden">
 
     <!-- BARRA TÉCNICA SUPERIOR: MINIMALISTA Y DISCRETA -->
   <div class="border-b border-slate-100 bg-slate-50/70 py-1.5 text-[11px] font-mono text-slate-500">
@@ -412,7 +412,7 @@
   </header>
 
   <!-- BANNER PRINCIPAL (HERO) CON SLIDER DINÁMICO DE FONDO -->
-  <section id="hero-slider-section" class="relative overflow-hidden bg-slate-950 text-white py-20 md:py-28" aria-label="Banner Principal de DISCODE">
+  <section id="hero-slider-section" class="relative overflow-hidden bg-slate-950 text-white pt-20 md:pt-28 pb-28 md:pb-36" aria-label="Banner Principal de DISCODE">
     
     <!-- CONTENEDOR DE IMÁGENES DE FONDO (CAROUSEL DE FOTOS REALES EN PLANTA) -->
     <div id="hero-slider-track" class="absolute inset-0 w-full h-full overflow-hidden select-none">
@@ -515,8 +515,8 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: ¿POR QUÉ DISCODE? (MINIMALISTA, OXIGENADA Y MENOS ALTURA) -->
-  <section class="py-12 md:py-14 bg-brand-navy text-white">
+  <!-- SECCIÓN: ¿POR QUÉ DISCODE? (MINIMALISTA, OXIGENADA Y CON TRANSICIÓN CURVA) -->
+  <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-brand-navy text-white pt-14 md:pt-18 pb-16 md:pb-20 shadow-2xl overflow-hidden">
     <div class="discode-container">
       
       <!-- Encabezado de Sección con Texto Oficial Original -->
@@ -585,8 +585,8 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: NUESTROS PRODUCTOS (4 BLOQUES) -->
-  <section class="py-24 bg-white">
+  <!-- SECCIÓN: NUESTROS PRODUCTOS (TRANSICIÓN CURVA HOMOGÉNEA) -->
+  <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-white pt-20 md:pt-28 pb-24 md:pb-28 shadow-[0_-20px_40px_rgba(0,0,0,0.08)] border-t border-slate-100 overflow-hidden">
     <div class="discode-container">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-slate-200">
         <div>
@@ -695,8 +695,8 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: SOLUCIONES DISCODE (3 BLOQUES) -->
-  <section class="py-24 bg-slate-50">
+  <!-- SECCIÓN: SOLUCIONES DISCODE (TRANSICIÓN CURVA HOMOGÉNEA) -->
+  <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-slate-50 pt-20 md:pt-28 pb-24 md:pb-28 border-t border-slate-200/80 shadow-[0_-15px_35px_rgba(0,0,0,0.04)] overflow-hidden">
     <div class="discode-container">
       <div class="max-w-3xl mb-16">
         <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Integración de Servicios</span>
@@ -769,8 +769,8 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: INDUSTRIAS (MINIMALISTA CON IMÁGENES REFERENCIALES) -->
-  <section class="py-20 md:py-24 bg-slate-950 text-white relative">
+  <!-- SECCIÓN: INDUSTRIAS (MINIMALISTA CON IMÁGENES REFERENCIALES Y TRANSICIÓN CURVA) -->
+  <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-slate-950 text-white pt-20 md:pt-28 pb-24 md:pb-28 shadow-[0_-25px_50px_rgba(0,0,0,0.45)] border-t border-white/10 overflow-hidden">
     <div class="discode-container">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-white/10">
         <div>
@@ -887,8 +887,8 @@
     </div>
   </section>
 
-  <!-- SECCIÓN FINAL DE INICIO (CALL TO ACTION DIRECTO) -->
-  <section class="py-24 bg-slate-50">
+  <!-- SECCIÓN FINAL DE INICIO (CALL TO ACTION DIRECTO CON TRANSICIÓN CURVA) -->
+  <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-white pt-20 md:pt-28 pb-24 md:pb-28 shadow-2xl border-t border-slate-100 overflow-hidden">
     <div class="discode-container text-center max-w-4xl">
       <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-3 font-mono">Asesoría Técnica Inmediata</span>
       <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-950 mb-6">
@@ -905,8 +905,8 @@
     </div>
   </section>
 
-  <!-- FOOTER DE TODA LA WEB (UNIFICADO SEGÚN PÁGINAS 31-32 DE LA GUÍA) -->
-  <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-900">
+  <!-- FOOTER DE TODA LA WEB (UNIFICADO CON TRANSICIÓN CURVA) -->
+  <footer class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-slate-950 text-slate-400 pt-20 pb-16 text-xs border-t border-slate-800 shadow-[0_-25px_50px_rgba(0,0,0,0.5)] overflow-hidden">
     <div class="discode-container">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
         
