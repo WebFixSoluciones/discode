@@ -769,174 +769,119 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: INDUSTRIAS (16 TARJETAS TÉCNICAS) -->
-  <section class="py-24 bg-white">
+  <!-- SECCIÓN: INDUSTRIAS (MINIMALISTA CON IMÁGENES REFERENCIALES) -->
+  <section class="py-20 md:py-24 bg-slate-950 text-white relative">
     <div class="discode-container">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-slate-200">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-white/10">
         <div>
-          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Cobertura Multisectorial</span>
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">SOLUCIONES PARA DIFERENTES INDUSTRIAS</h2>
-          <p class="text-base text-slate-600 mt-4 leading-relaxed max-w-2xl">
-            Conocemos que cada industria tiene necesidades diferentes de identificación, etiquetado, codificación y trazabilidad. Por eso desarrollamos soluciones adaptadas a cada operación.
+          <span class="text-xs uppercase tracking-widest font-semibold text-cyan-400 block mb-2 font-mono">Cobertura Multisectorial</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">SOLUCIONES PARA DIFERENTES INDUSTRIAS</h2>
+          <p class="text-sm md:text-base text-slate-400 mt-3 leading-relaxed max-w-2xl">
+            Conocemos que cada industria tiene necesidades diferentes de identificación, etiquetado, codificación y trazabilidad. Desarrollamos soluciones a la medida de cada proceso productivo.
           </p>
         </div>
-        <a href="industrias.html" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono mt-4 md:mt-0">
-          VER TODAS LAS INDUSTRIAS →
+        <a href="industrias.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-cyan-400 uppercase tracking-wider font-mono mt-4 md:mt-0 transition">
+          <span>VER TODAS LAS INDUSTRIAS</span>
+          <span>→</span>
         </a>
       </div>
 
-      <!-- Grilla de 16 tarjetas -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+      <!-- Grilla de 8 tarjetas de industria fotográficas -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
         
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-01</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Camaronera</h4>
-            <p class="text-xs text-black leading-snug">Empacadoras, bajas temperaturas y congelación.</p>
+        <!-- 1. Camaronera -->
+        <a href="industrias.html#camaronera" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/impresoras/zebra-zt411-empacadora.png" alt="Industria Camaronera" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              CAMARONERA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-02</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Pesquera</h4>
-            <p class="text-xs text-black leading-snug">Atuneras, empaques y trazabilidad marítima.</p>
+        <!-- 2. Pesquera & Atunera -->
+        <a href="industrias.html#pesquera" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/impresoras/tsc-mh261t-empacadora.png" alt="Industria Pesquera y Atunera" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              PESQUERA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-03</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Alimenticia</h4>
-            <p class="text-xs text-black leading-snug">Lotes, fechas, códigos de barras y normativas.</p>
+        <!-- 3. Alimenticia & Bebidas -->
+        <a href="industrias.html#alimenticia" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/codificadores/jetstamp-1025-app-botellas.jpg" alt="Industria Alimenticia y Bebidas" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              ALIMENTICIA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-04</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Agrícola</h4>
-            <p class="text-xs text-black leading-snug">Cajas, empaques y cadena agroexportadora.</p>
+        <!-- 4. Agrícola & Bananera -->
+        <a href="industrias.html#agricola" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/soluciones/area-etiquetado-comodato.png" alt="Sector Agrícola y Bananero" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              AGRÍCOLA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-05</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Florícola</h4>
-            <p class="text-xs text-black leading-snug">Exportación de flores, empaques y cuartos fríos.</p>
+        <!-- 5. Florícola -->
+        <a href="industrias.html#floricola" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/etiquetas/etiqueta-presentacion-caja.png" alt="Sector Florícola" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              FLORÍCOLA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-06</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Textil</h4>
-            <p class="text-xs text-black leading-snug">Etiquetas cosidas, inventarios y resina textil.</p>
+        <!-- 6. Textil -->
+        <a href="industrias.html#textil" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/impresoras/zebra-zt231-costura.png" alt="Industria Textil y Confección" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              TEXTIL
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-07</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Manufactura</h4>
-            <p class="text-xs text-black leading-snug">Componentes, cajas y procesos de ensamblaje.</p>
+        <!-- 7. Farmacéutica & Laboratorios -->
+        <a href="industrias.html#farmaceutica" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/impresoras/tsc-te200-laboratorio.png" alt="Industria Farmacéutica y Laboratorios" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              FARMACÉUTICA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-08</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Plásticos</h4>
-            <p class="text-xs text-black leading-snug">Rotulación directa, resinas y envases.</p>
+        <!-- 8. Logística y Distribución -->
+        <a href="industrias.html#logistica" class="group relative overflow-hidden rounded-xl border border-white/10 hover:border-cyan-400/60 transition-all duration-300 shadow-lg hover:shadow-2xl aspect-[4/3] flex items-center justify-center bg-slate-900">
+          <img src="assets/images/codificadores/jetstamp-970-barcode.jpg" alt="Logística y Distribución" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 filter brightness-75 contrast-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:from-slate-950/75 group-hover:via-slate-950/35 transition-all duration-300"></div>
+          <div class="relative z-10 p-4 text-center">
+            <span class="block text-white font-extrabold text-sm sm:text-base md:text-lg uppercase tracking-wider group-hover:text-cyan-300 transition-colors duration-200 drop-shadow-md">
+              LOGÍSTICA
+            </span>
           </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-09</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Logística y distribución</h4>
-            <p class="text-xs text-black leading-snug">Almacenamiento, pallets, despacho y control.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-10</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Retail</h4>
-            <p class="text-xs text-black leading-snug">Etiquetado de precios, inventarios y góndolas.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-11</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Laboratorios</h4>
-            <p class="text-xs text-black leading-snug">Información controlada, química y legible.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-12</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Cosmética</h4>
-            <p class="text-xs text-black leading-snug">Frascos, cajas y presentación de alta calidad.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-13</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Farmacéutica</h4>
-            <p class="text-xs text-black leading-snug">Trazabilidad estricta, registros sanitarios y lotes.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-14</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Bebidas</h4>
-            <p class="text-xs text-black leading-snug">Embotellado continuo, tapas, botellas y cajas.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-15</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Avícola</h4>
-            <p class="text-xs text-black leading-snug">Cadenas de frío, bandejas y despachos seguros.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
-
-        <div class="border border-slate-200 p-5 bg-white hover:border-brand-navy transition flex flex-col justify-between">
-          <div>
-            <span class="font-mono text-[10px] text-slate-400 block mb-2">SEC-16</span>
-            <h4 class="font-bold text-slate-950 text-sm mb-1">Exportadores</h4>
-            <p class="text-xs text-black leading-snug">Normativas aduaneras, estándares GS1 y control.</p>
-          </div>
-          <span class="text-[11px] font-mono text-brand-navy font-semibold mt-4 block">Ver solución →</span>
-        </div>
+        </a>
 
       </div>
 
       <div class="mt-12 text-center">
-        <a href="industrias.html" class="inline-block bg-slate-950 hover:bg-brand-navy text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition rounded-sm">
-          VER INDUSTRIAS
+        <a href="industrias.html" class="inline-block bg-brand-navy hover:bg-blue-600 text-white font-bold px-8 py-3.5 text-xs uppercase tracking-wider transition rounded shadow-lg shadow-blue-900/30">
+          VER TODAS LAS INDUSTRIAS
         </a>
       </div>
     </div>
