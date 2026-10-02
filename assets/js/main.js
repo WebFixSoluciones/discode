@@ -299,14 +299,14 @@ function initMegaMenus() {
     const parentContainer = trigger.closest('.megamenu-parent') || trigger.parentElement;
     if (parentContainer) {
       parentContainer.addEventListener('mouseleave', () => {
-        closeTimeout = setTimeout(closeAll, 150);
+        closeTimeout = setTimeout(closeAll, 220);
       });
     }
 
     if (panel) {
       panel.addEventListener('mouseenter', () => clearTimeout(closeTimeout));
       panel.addEventListener('mouseleave', () => {
-        closeTimeout = setTimeout(closeAll, 150);
+        closeTimeout = setTimeout(closeAll, 220);
       });
     }
 
