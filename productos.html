@@ -678,114 +678,188 @@
           Soluciones de identificación, impresión y codificación para diferentes aplicaciones industriales y comerciales.
         </p>
 
-        <!-- Barra de navegación rápida por categorías -->
-        <div class="flex flex-wrap gap-2 mt-6 pt-5 border-t border-white/10 text-xs font-mono">
-          <a href="#etiquetas" class="px-4 py-2 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">01. Etiquetas Adhesivas</a>
-          <a href="#ribbons" class="px-4 py-2 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">02. Ribbons Térmicos</a>
-          <a href="#impresoras" class="px-4 py-2 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">03. Impresoras de Etiquetas</a>
-          <a href="#codificadores" class="px-4 py-2 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">04. Codificación Directa</a>
+        <!-- Barra de navegación rápida por categorías (Estilo HOME / Megamenú Minimalista) -->
+        <div class="flex flex-wrap gap-2.5 mt-8 pt-6 border-t border-white/10 text-xs">
+          <a href="#etiquetas" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-brand-navy border border-white/15 backdrop-blur-xs font-semibold transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.02]">
+            <span class="w-5 h-5 rounded-md bg-white/15 text-[10px] font-mono font-bold flex items-center justify-center">01</span>
+            <span>Etiquetas Adhesivas</span>
+          </a>
+          <a href="#ribbons" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-brand-navy border border-white/15 backdrop-blur-xs font-semibold transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.02]">
+            <span class="w-5 h-5 rounded-md bg-white/15 text-[10px] font-mono font-bold flex items-center justify-center">02</span>
+            <span>Ribbons Térmicos</span>
+          </a>
+          <a href="#impresoras" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-brand-navy border border-white/15 backdrop-blur-xs font-semibold transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.02]">
+            <span class="w-5 h-5 rounded-md bg-white/15 text-[10px] font-mono font-bold flex items-center justify-center">03</span>
+            <span>Impresoras Térmicas</span>
+          </a>
+          <a href="#codificadores" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-brand-navy border border-white/15 backdrop-blur-xs font-semibold transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.02]">
+            <span class="w-5 h-5 rounded-md bg-white/15 text-[10px] font-mono font-bold flex items-center justify-center">04</span>
+            <span>Codificación Directa</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CATEGORÍA 1 — ETIQUETAS ADHESIVAS -->
-  <section id="etiquetas" class="py-20 bg-white">
+  <!-- CATEGORÍA 1 — ETIQUETAS ADHESIVAS (TRANSICIÓN CURVA HOMOGÉNEA ESTILO HOME) -->
+  <section id="etiquetas" class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2.5rem] md:rounded-t-[3.5rem] py-20 md:py-24 bg-white shadow-[0_-20px_40px_rgba(0,0,0,0.06)] overflow-hidden">
     <div class="discode-container">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         
-        <div class="lg:col-span-5">
-          <span class="font-mono text-xs text-brand-navy uppercase tracking-widest font-semibold block mb-2">CATEGORÍA 1</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">ETIQUETAS ADHESIVAS</h2>
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">
-            Fabricamos y comercializamos etiquetas adhesivas para diferentes aplicaciones, productos y procesos.
-          </p>
-          <p class="text-sm text-slate-600 leading-relaxed mb-6">
-            Trabajamos con diferentes materiales, dimensiones y configuraciones para adaptarnos a los requerimientos de cada cliente.
-          </p>
-          
-          <div class="p-5 bg-slate-50 border border-slate-200 mb-6">
-            <span class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider block mb-2">Especificaciones de Fabricación:</span>
-            <ul class="text-xs text-black space-y-1.5 font-medium mb-4">
-              <li>· Sustratos: Papel térmico, papel ilustración, polipropileno (BOPP), poliéster, destructibles.</li>
-              <li>· Adhesivos: Hotmelt permanente, acrílico, removible y grado congelación profunda (-30°C).</li>
-              <li>· Presentación: Rollos para impresoras industriales (buje 3" y 1"), zigzag y hojas.</li>
-            </ul>
-            <div class="border border-slate-200 bg-white p-2">
-              <img src="assets/images/etiquetas/etiqueta-rollos-blancos.png" alt="Fabricación de rollos de etiquetas adhesivas DISCODE" class="w-full h-44 object-cover">
+        <!-- Columna Izquierda: Información de Fabricación -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono tracking-wider bg-blue-50 text-brand-navy uppercase mb-3">
+              Categoría 01
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 mb-4">
+              ETIQUETAS ADHESIVAS
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-3">
+              Fabricamos y comercializamos etiquetas adhesivas para diferentes aplicaciones, productos y procesos.
+            </p>
+            <p class="text-sm text-slate-500 leading-relaxed mb-6">
+              Trabajamos con diferentes materiales, dimensiones y configuraciones para adaptarnos a los requerimientos de cada cliente.
+            </p>
+            
+            <!-- Tarjeta de Especificaciones de Fabricación (Estilo Minimalista) -->
+            <div class="p-6 bg-slate-50/70 rounded-3xl border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] mb-8">
+              <span class="text-xs font-bold text-slate-900 uppercase tracking-wider block mb-4 flex items-center gap-2">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Especificaciones de Fabricación:
+              </span>
+              
+              <div class="space-y-2.5 text-xs text-slate-700 mb-5">
+                <div class="flex items-start gap-2">
+                  <span class="font-bold text-slate-900 min-w-20">Sustratos:</span>
+                  <span class="text-slate-600">Papel térmico, papel ilustración, polipropileno (BOPP), poliéster, destructibles.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="font-bold text-slate-900 min-w-20">Adhesivos:</span>
+                  <span class="text-slate-600">Hotmelt permanente, acrílico, removible y grado congelación profunda (-30°C).</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="font-bold text-slate-900 min-w-20">Presentación:</span>
+                  <span class="text-slate-600">Rollos para impresoras industriales (buje 3" y 1"), zigzag y hojas.</span>
+                </div>
+              </div>
+
+              <div class="rounded-2xl bg-white p-3 border border-slate-100 shadow-2xs overflow-hidden flex items-center justify-center">
+                <img src="assets/images/etiquetas/etiqueta-rollos-blancos.png" alt="Fabricación de rollos de etiquetas adhesivas DISCODE" class="w-full h-44 object-contain hover:scale-105 transition-transform duration-300">
+              </div>
             </div>
           </div>
 
           <div class="flex flex-wrap gap-3">
-            <a href="producto-etiquetas.html" class="inline-block border border-slate-300 bg-white hover:bg-slate-100 text-slate-900 px-6 py-3 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-              Ver Catálogo y Ficha de Etiquetas →
+            <a href="producto-etiquetas.html" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-6 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-2xs hover:border-slate-300">
+              <span>Catálogo y Ficha de Etiquetas</span>
+              <span>→</span>
             </a>
-            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="inline-flex items-center justify-center bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white font-bold px-7 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-md hover:shadow-lg">
               COTIZAR ETIQUETAS
             </a>
           </div>
         </div>
 
+        <!-- Columna Derecha: 9 Áreas de Aplicación Industrial (Tarjetas Estilizadas) -->
         <div class="lg:col-span-7">
-          <div class="border border-slate-200 p-8 bg-slate-50">
-            <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-200">
-              <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">Aplicaciones Industriales</h3>
-              <span class="text-xs font-mono text-slate-500">9 ÁREAS DE APLICACIÓN</span>
+          <div class="rounded-3xl p-6 sm:p-8 bg-slate-50/70 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-5 mb-6 border-b border-slate-200/80 gap-2">
+              <div>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  Aplicaciones Industriales
+                </h3>
+                <p class="text-xs text-slate-500 mt-0.5">Soluciones diseñadas para cada etapa del empaque y logística</p>
+              </div>
+              <span class="self-start sm:self-auto px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-white text-slate-600 border border-slate-200/80 shadow-2xs">
+                9 ÁREAS TÉCNICAS
+              </span>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-01</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Identificación de productos</strong>
-                <p class="text-xs text-black">Rotulación técnica de envases primarios, frascos y botellas.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <!-- APL 01 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">01</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Identificación de productos</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Rotulación técnica de envases primarios, frascos y botellas.</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-02</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Etiquetado de cajas</strong>
-                <p class="text-xs text-black">Identificación de corrugados, empaques secundarios y bultos.</p>
+              <!-- APL 02 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">02</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Etiquetado de cajas</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Identificación de corrugados, empaques secundarios y bultos.</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-03</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Etiquetado logístico</strong>
-                <p class="text-xs text-black">Rotulación de pallets, estibas, zonas de almacenaje y despachos.</p>
+              <!-- APL 03 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">03</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Etiquetado logístico</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Rotulación de pallets, estibas, zonas de almacenaje y despachos.</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-04</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Código de barras</strong>
-                <p class="text-xs text-black">Códigos 1D (EAN13, Code 128) y bidimensionales (DataMatrix, QR).</p>
+              <!-- APL 04 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">04</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Código de barras</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Códigos 1D (EAN13, Code 128) y bidimensionales (DataMatrix, QR).</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-05</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Trazabilidad</strong>
-                <p class="text-xs text-black">Control de número de lote, fecha de elaboración y vencimiento.</p>
+              <!-- APL 05 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">05</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Trazabilidad</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Control de número de lote, fecha de elaboración y vencimiento.</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-06</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Exportación</strong>
-                <p class="text-xs text-black">Cumplimiento estricto de normativas de aduana y estándares GS1.</p>
+              <!-- APL 06 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">06</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Exportación</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Cumplimiento estricto de normativas de aduana y estándares GS1.</p>
+                </div>
               </div>
 
-              <div class="border-2 border-brand-navy bg-white p-4">
-                <span class="font-mono text-[10px] text-brand-navy font-bold block mb-1">APL-07 / ESPECIALIDAD</span>
-                <strong class="text-sm font-semibold text-slate-950 block mb-1">Etiquetas para congelados</strong>
-                <p class="text-xs text-black">Adhesivos especiales resistentes a condensación y congelación (-25°C).</p>
+              <!-- APL 07 / ESPECIALIDAD -->
+              <div class="bg-gradient-to-br from-blue-50/90 to-white rounded-2xl p-4 border border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3 ring-1 ring-blue-500/10">
+                <span class="w-7 h-7 rounded-lg bg-brand-navy text-white font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0">07</span>
+                <div>
+                  <div class="flex items-center gap-2 mb-0.5">
+                    <strong class="text-sm font-bold text-slate-950 block">Etiquetas para congelados</strong>
+                    <span class="text-[9px] font-mono uppercase bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">Especialidad</span>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-snug">Adhesivos especiales resistentes a condensación y congelación (-25°C).</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-08</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Identificación interna</strong>
-                <p class="text-xs text-black">Control de producto en proceso, activos fijos y componentes.</p>
+              <!-- APL 08 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">08</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Identificación interna</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Control de producto en proceso, activos fijos y componentes.</p>
+                </div>
               </div>
 
-              <div class="border border-slate-200 bg-white p-4 sm:col-span-2">
-                <span class="font-mono text-[10px] text-slate-400 block mb-1">APL-09</span>
-                <strong class="text-sm font-semibold text-slate-900 block mb-1">Etiquetado industrial</strong>
-                <p class="text-xs text-black">Ambientes severos, fricción, polvo y exposición a químicos en planta.</p>
+              <!-- APL 09 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-100 hover:border-blue-200 hover:shadow-md transition duration-200 group flex items-start gap-3 sm:col-span-2">
+                <span class="w-7 h-7 rounded-lg bg-blue-50 text-brand-navy font-mono text-[11px] font-bold flex items-center justify-center flex-shrink-0 group-hover:bg-brand-navy group-hover:text-white transition">09</span>
+                <div>
+                  <strong class="text-sm font-bold text-slate-900 group-hover:text-brand-navy block mb-0.5 transition">Etiquetado industrial severo</strong>
+                  <p class="text-xs text-slate-500 leading-snug">Ambientes exigentes, fricción, humedad, polvo y exposición a químicos en planta.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -795,105 +869,133 @@
     </div>
   </section>
 
-  <!-- CATEGORÍA 2 — RIBBONS DE TRANSFERENCIA TÉRMICA -->
-  <section id="ribbons" class="py-20 bg-slate-50">
+  <!-- CATEGORÍA 2 — RIBBONS DE TRANSFERENCIA TÉRMICA (TRANSICIÓN CURVA HOMOGÉNEA ESTILO HOME) -->
+  <section id="ribbons" class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2.5rem] md:rounded-t-[3.5rem] py-20 md:py-24 bg-slate-50 shadow-[0_-20px_40px_rgba(0,0,0,0.03)] overflow-hidden">
     <div class="discode-container">
-      <div class="max-w-3xl mb-12">
-        <span class="font-mono text-xs text-brand-navy uppercase tracking-widest font-semibold block mb-2">CATEGORÍA 2</span>
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">RIBBONS DE TRANSFERENCIA TÉRMICA</h2>
-        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+      <div class="max-w-3xl mb-12 md:mb-14">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono tracking-wider bg-blue-50 text-brand-navy uppercase mb-3">
+          Categoría 02
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 mb-4">
+          RIBBONS DE TRANSFERENCIA TÉRMICA
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-3">
           Contamos con ribbons para diferentes aplicaciones de impresión y materiales de etiquetas.
         </p>
-        <p class="text-sm text-slate-600 leading-relaxed">
+        <p class="text-sm text-slate-500 leading-relaxed">
           La correcta selección del ribbon permite obtener una impresión de calidad y mejorar la resistencia y legibilidad de la información impresa.
         </p>
       </div>
 
-      <!-- Tipos de Ribbon (Cera, Resina, Resina Textil) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <!-- Tipos de Ribbon (Cera, Resina, Resina Textil) — Tarjetas Estilizadas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
         
-        <div class="border border-slate-300 bg-white p-6 flex flex-col justify-between">
+        <!-- Ribbon 1: Cera -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-2">TIPO 01</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/ribbons/ribbon-cera.png" alt="Ribbon de Cera DISCODE" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-3">
+              Tipo 01
+            </span>
+            <div class="bg-slate-50/80 rounded-2xl p-4 mb-5 flex items-center justify-center h-48 border border-slate-100/60 overflow-hidden">
+              <img src="assets/images/ribbons/ribbon-cera.png" alt="Ribbon de Cera DISCODE" class="max-h-40 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Ribbon de Cera</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
+            <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Ribbon de Cera
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Recomendado para etiquetas de papel utilizadas en aplicaciones donde la impresión no estará sometida a condiciones extremas.
             </p>
-            <div class="border-t border-slate-100 pt-3 text-xs text-slate-700 space-y-1 mb-6">
-              <div><strong>Sustratos:</strong> Etiquetas de papel bond, mate, brillante.</div>
-              <div><strong>Uso:</strong> Logística, bodegas, despacho, cajas.</div>
-              <div><strong>Ventaja:</strong> Impresión económica de alto contraste.</div>
+            <div class="border-t border-slate-100/80 pt-4 text-xs space-y-2 mb-6 text-slate-600">
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Sustratos:</strong> <span class="text-right">Papel bond, mate, brillante</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Uso:</strong> <span class="text-right">Logística, bodegas, cajas</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Ventaja:</strong> <span class="text-brand-navy font-semibold text-right">Económico de alto contraste</span></div>
             </div>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera" data-whatsapp-context="ribbon_cera" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera" data-whatsapp-context="ribbon_cera" target="_blank" class="w-full text-center py-3.5 text-xs font-bold uppercase tracking-wider bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 hover:border-slate-300 transition rounded-xl shadow-2xs block">
             Cotizar Cera
           </a>
         </div>
 
-        <div class="border-2 border-brand-navy bg-white p-6 flex flex-col justify-between">
+        <!-- Ribbon 2: Resina (Destacado) -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-brand-navy shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative">
           <div>
-            <div class="flex justify-between items-center mb-2">
-              <span class="font-mono text-xs text-brand-navy font-bold">TIPO 02</span>
-              <span class="text-[10px] font-mono uppercase bg-brand-navy text-white px-2 py-0.5 font-bold">Alta Exigencia</span>
+            <div class="flex justify-between items-center mb-3">
+              <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-blue-100/80 text-brand-navy">
+                Tipo 02
+              </span>
+              <span class="text-[10px] font-mono uppercase bg-brand-navy text-white px-2.5 py-0.5 rounded-full font-bold shadow-xs">
+                Alta Exigencia
+              </span>
             </div>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/ribbons/ribbon-resina.png" alt="Ribbon de Resina DISCODE" class="max-h-36 w-auto object-contain">
+            <div class="bg-slate-50/80 rounded-2xl p-4 mb-5 flex items-center justify-center h-48 border border-slate-100/60 overflow-hidden">
+              <img src="assets/images/ribbons/ribbon-resina.png" alt="Ribbon de Resina DISCODE" class="max-h-40 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Ribbon de Resina</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
+            <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Ribbon de Resina
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Recomendado para etiquetas sintéticas y aplicaciones que requieren máxima resistencia física, ambiental o química.
             </p>
-            <div class="border-t border-slate-100 pt-3 text-xs text-slate-700 space-y-1 mb-6">
-              <div><strong>Sustratos:</strong> Polipropileno (BOPP), Poliéster, Sintéticos.</div>
-              <div><strong>Uso:</strong> Congelación, intemperie, químicos, activos.</div>
-              <div><strong>Ventaja:</strong> Resistencia extrema al roce, humedad y frío.</div>
+            <div class="border-t border-slate-100/80 pt-4 text-xs space-y-2 mb-6 text-slate-600">
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Sustratos:</strong> <span class="text-right">BOPP, Poliéster, Sintéticos</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Uso:</strong> <span class="text-right">Congelación, intemperie, químicos</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Ventaja:</strong> <span class="text-blue-600 font-semibold text-right">Máxima resistencia química</span></div>
             </div>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina" data-whatsapp-context="ribbon_resina" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white transition rounded-lg shadow-sm">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina" data-whatsapp-context="ribbon_resina" target="_blank" class="w-full text-center py-3.5 text-xs font-bold uppercase tracking-wider bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white transition rounded-xl shadow-md hover:shadow-lg block">
             Cotizar Resina
           </a>
         </div>
 
-        <div class="border border-slate-300 bg-white p-6 flex flex-col justify-between">
+        <!-- Ribbon 3: Resina Textil -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-2">TIPO 03</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon de Resina Textil DISCODE" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-3">
+              Tipo 03
+            </span>
+            <div class="bg-slate-50/80 rounded-2xl p-4 mb-5 flex items-center justify-center h-48 border border-slate-100/60 overflow-hidden">
+              <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon de Resina Textil DISCODE" class="max-h-40 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Ribbon de Resina Textil</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
+            <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Ribbon de Resina Textil
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Diseñado específicamente para etiquetas y materiales textiles que requieren impresión resistente al lavado continuo.
             </p>
-            <div class="border-t border-slate-100 pt-3 text-xs text-slate-700 space-y-1 mb-6">
-              <div><strong>Sustratos:</strong> Poliamida, Nylon, Satín, Raso.</div>
-              <div><strong>Uso:</strong> Confección textil, ropa, uniformes, calzado.</div>
-              <div><strong>Ventaja:</strong> Resiste agua caliente, vapor y tintorería.</div>
+            <div class="border-t border-slate-100/80 pt-4 text-xs space-y-2 mb-6 text-slate-600">
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Sustratos:</strong> <span class="text-right">Poliamida, Nylon, Satín, Raso</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Uso:</strong> <span class="text-right">Confección, ropa, uniformes</span></div>
+              <div class="flex justify-between gap-2"><strong class="text-slate-900">Ventaja:</strong> <span class="text-brand-navy font-semibold text-right">Resiste agua caliente y vapor</span></div>
             </div>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina%20Textil" data-whatsapp-context="ribbon_textil" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Resina%20Textil" data-whatsapp-context="ribbon_textil" target="_blank" class="w-full text-center py-3.5 text-xs font-bold uppercase tracking-wider bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 hover:border-slate-300 transition rounded-xl shadow-2xs block">
             Cotizar Resina Textil
           </a>
         </div>
 
       </div>
 
-      <!-- Banner de apoyo para selección de Ribbon -->
-      <div class="bg-white border border-slate-300 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>
-          <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block">¿Tienes dudas sobre qué ribbon utilizar?</span>
-          <p class="text-xs text-black mt-1">Utiliza nuestro selector técnico en la sección de recursos o solicita asesoría con una muestra física de tu material.</p>
+      <!-- Banner de apoyo para selección de Ribbon (Estilo HOME) -->
+      <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 text-white relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="max-w-xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/10 text-blue-300 mb-3 backdrop-blur-xs">
+            Asesoría Técnica Especializada
+          </span>
+          <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
+            ¿Tienes dudas sobre qué ribbon utilizar?
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Utiliza nuestro selector técnico en la sección de recursos o solicita asesoría con una muestra física de tu material.
+          </p>
         </div>
-        <div class="flex flex-wrap gap-3">
-          <a href="producto-ribbons.html" class="px-5 py-2.5 border border-slate-300 hover:border-slate-900 text-slate-900 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            Ver Catálogo Ribbons →
+        <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
+          <a href="producto-ribbons.html" class="px-5 py-3 bg-white/10 hover:bg-white text-white hover:text-slate-950 border border-white/20 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-xs whitespace-nowrap">
+            Catálogo Ribbons →
           </a>
-          <a href="recursos.html#selector-ribbon" class="px-5 py-2.5 border border-slate-300 hover:border-slate-900 text-slate-900 text-xs font-bold uppercase tracking-wider transition rounded-lg">
+          <a href="recurso-selector-ribbon.html" class="px-5 py-3 bg-white/10 hover:bg-white text-white hover:text-slate-950 border border-white/20 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-xs whitespace-nowrap">
             Probar Selector
           </a>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbon" data-whatsapp-context="ribbons" target="_blank" class="px-5 py-2.5 bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-sm">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbon" data-whatsapp-context="ribbons" target="_blank" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-md hover:shadow-lg whitespace-nowrap">
             COTIZAR RIBBON
           </a>
         </div>
@@ -901,105 +1003,167 @@
     </div>
   </section>
 
-  <!-- CATEGORÍA 3 — IMPRESORAS DE ETIQUETAS -->
-  <section id="impresoras" class="py-20 bg-white">
+  <!-- CATEGORÍA 3 — IMPRESORAS DE ETIQUETAS (TRANSICIÓN CURVA HOMOGÉNEA ESTILO HOME) -->
+  <section id="impresoras" class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2.5rem] md:rounded-t-[3.5rem] py-20 md:py-24 bg-white shadow-[0_-20px_40px_rgba(0,0,0,0.03)] overflow-hidden">
     <div class="discode-container">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-slate-200">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-slate-100 gap-4">
         <div>
-          <span class="font-mono text-xs text-brand-navy uppercase tracking-widest font-semibold block mb-2">CATEGORÍA 3</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-2">IMPRESORAS DE ETIQUETAS</h2>
-          <p class="text-sm text-slate-600 max-w-2xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono tracking-wider bg-blue-50 text-brand-navy uppercase mb-3">
+            Categoría 03
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 mb-2">
+            IMPRESORAS DE ETIQUETAS
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed">
             Encuentra la impresora adecuada para tu operación según volumen de impresión, tipo de etiqueta, ambiente de trabajo y aplicación.
           </p>
         </div>
-        <div class="mt-4 md:mt-0 font-mono text-xs text-black">
-          MARCAS: ZEBRA | TSC | OTRAS MARCAS
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="text-xs font-mono text-slate-400 font-semibold mr-1">MARCAS OFICIALES:</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold font-mono border border-slate-200/80">ZEBRA</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold font-mono border border-slate-200/80">TSC</span>
         </div>
       </div>
 
-      <!-- 4 Categorías de Impresoras -->
+      <!-- 4 Categorías de Impresoras — Tarjetas Estilizadas Minimalistas -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         
-        <div class="border border-slate-200 p-6 hover:border-slate-400 transition flex flex-col justify-between">
+        <!-- Impresora 1: Industriales -->
+        <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-[11px] text-slate-400 block mb-3">01 / VOLUMEN PESADO</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/impresoras/zebra-zt411.jpg" alt="Impresora Industrial Zebra ZT411" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+              01 / Volumen Pesado
+            </span>
+            <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
+              <img src="assets/images/impresoras/zebra-zt411.jpg" alt="Impresora Industrial Zebra ZT411" class="max-h-36 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Impresoras Industriales</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
+            <h3 class="text-lg font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Impresoras Industriales
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
               Diseñadas para operaciones de alto volumen y ambientes industriales exigentes.
             </p>
-            <ul class="text-xs text-black space-y-1.5 font-medium border-t border-slate-100 pt-3 mb-6">
-              <li>· Chasis metálico sellado contra polvo.</li>
-              <li>· Capacidad para turnos 24/7 ininterrumpidos.</li>
-              <li>· Rollos de gran diámetro y velocidad máxima.</li>
+            <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200/80 pt-4 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Chasis metálico sellado contra polvo.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Capacidad para turnos 24/7 continuos.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Rollos de gran diámetro y velocidad.</span>
+              </li>
             </ul>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20industrial%20de%20alto%20volumen" data-whatsapp-context="impresora_industrial" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20industrial%20de%20alto%20volumen" data-whatsapp-context="impresora_industrial" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-xl shadow-2xs block">
             Cotizar Industrial
           </a>
         </div>
 
-        <div class="border border-slate-200 p-6 hover:border-slate-400 transition flex flex-col justify-between">
+        <!-- Impresora 2: Semi-Industriales -->
+        <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-[11px] text-slate-400 block mb-3">02 / MEDIO VOLUMEN</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/impresoras/zebra-zt231.jpg" alt="Impresora Semi-Industrial Zebra ZT231" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+              02 / Medio Volumen
+            </span>
+            <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
+              <img src="assets/images/impresoras/zebra-zt231.jpg" alt="Impresora Semi-Industrial Zebra ZT231" class="max-h-36 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Impresoras Semi - Industriales</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
-              Diseñadas para operaciones de medio volumen y ambientes de producción principalmente usadas en sector textil.
+            <h3 class="text-lg font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Semi - Industriales
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Diseñadas para operaciones de medio volumen y producción textil especializada.
             </p>
-            <ul class="text-xs text-black space-y-1.5 font-medium border-t border-slate-100 pt-3 mb-6">
-              <li>· Balance idóneo entre robustez y espacio.</li>
-              <li>· Excelente tracción para cintas textiles y raso.</li>
-              <li>· Gran resolución en textos pequeños y códigos.</li>
+            <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200/80 pt-4 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Balance idóneo entre robustez y espacio.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Excelente tracción para cintas textiles.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Gran resolución en textos pequeños.</span>
+              </li>
             </ul>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20semi-industrial" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20semi-industrial" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-xl shadow-2xs block">
             Cotizar Semi-Ind
           </a>
         </div>
 
-        <div class="border border-slate-200 p-6 hover:border-slate-400 transition flex flex-col justify-between">
+        <!-- Impresora 3: Escritorio -->
+        <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-[11px] text-slate-400 block mb-3">03 / COMERCIAL & OFICINA</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/impresoras/tsc-te200.jpg" alt="Impresora de Escritorio TSC TE200" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+              03 / Comercial & Oficina
+            </span>
+            <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
+              <img src="assets/images/impresoras/tsc-te200.jpg" alt="Impresora de Escritorio TSC TE200" class="max-h-36 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Impresoras de Escritorio</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
-              Una alternativa práctica para operaciones comerciales, administrativas y despacho diario.
+            <h3 class="text-lg font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Impresoras de Escritorio
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Una alternativa práctica para operaciones comerciales, oficinas y despacho.
             </p>
-            <ul class="text-xs text-black space-y-1.5 font-medium border-t border-slate-100 pt-3 mb-6">
-              <li>· Formato compacto y fácil recarga de ribbon.</li>
-              <li>· Conexión USB, Ethernet o Bluetooth.</li>
-              <li>· Ideal para puntos de venta y bodega ligera.</li>
+            <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200/80 pt-4 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Formato compacto y fácil carga de ribbon.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Conexión USB, Ethernet o Bluetooth.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Ideal para puntos de venta y bodega.</span>
+              </li>
             </ul>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20escritorio" data-whatsapp-context="impresora_escritorio" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20escritorio" data-whatsapp-context="impresora_escritorio" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-xl shadow-2xs block">
             Cotizar Escritorio
           </a>
         </div>
 
-        <div class="border border-slate-200 p-6 hover:border-slate-400 transition flex flex-col justify-between">
+        <!-- Impresora 4: Móviles -->
+        <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="font-mono text-[11px] text-slate-400 block mb-3">04 / MOVILIDAD EN BODEGA</span>
-            <div class="bg-slate-50 border border-slate-100 p-2 mb-4 flex items-center justify-center h-40">
-              <img src="assets/images/impresoras/impresoras-moviles.png" alt="Impresoras Portátiles Móviles DISCODE" class="max-h-36 w-auto object-contain">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+              04 / Movilidad en Bodega
+            </span>
+            <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
+              <img src="assets/images/impresoras/impresoras-moviles.png" alt="Impresoras Portátiles Móviles DISCODE" class="max-h-36 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
-            <h3 class="text-lg font-bold text-slate-950 mb-2">Impresoras Móviles</h3>
-            <p class="text-xs text-black leading-relaxed mb-4">
+            <h3 class="text-lg font-bold text-slate-950 group-hover:text-brand-navy transition mb-2">
+              Impresoras Móviles
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
               Impresión directamente en el punto donde se realiza la operación y despacho.
             </p>
-            <ul class="text-xs text-black space-y-1.5 font-medium border-t border-slate-100 pt-3 mb-6">
-              <li>· Batería de iones de litio de alta duración.</li>
-              <li>· Comunicación inalámbrica Wi-Fi y Bluetooth.</li>
-              <li>· Resistencia a caídas y portabilidad al cinto.</li>
+            <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200/80 pt-4 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Batería de iones de litio de alta duración.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Comunicación Wi-Fi y Bluetooth.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Resistencia a caídas y portabilidad al cinto.</span>
+              </li>
             </ul>
           </div>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20impresoras%20m%C3%B3viles" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider border border-slate-300 hover:border-brand-navy text-slate-900 transition rounded-lg shadow-xs">
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20impresoras%20m%C3%B3viles" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-xl shadow-2xs block">
             Cotizar Móvil
           </a>
         </div>
@@ -1007,127 +1171,193 @@
       </div>
 
       <div class="text-center flex flex-wrap justify-center gap-4">
-        <a href="producto-impresoras.html" class="inline-block border border-slate-300 bg-white hover:bg-slate-100 text-slate-900 px-8 py-3 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-          Ver Ficha y Modelos de Impresoras →
+        <a href="producto-impresoras.html" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-8 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-2xs hover:border-slate-300">
+          <span>Ver Ficha y Modelos de Impresoras</span>
+          <span>→</span>
         </a>
-        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20etiquetas" data-whatsapp-context="impresoras" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20etiquetas" data-whatsapp-context="impresoras" target="_blank" class="inline-flex items-center justify-center bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white font-bold px-8 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-md hover:shadow-lg">
           COTIZAR IMPRESORA
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CATEGORÍA 4 — CODIFICADORES DIRECTOS (TECNOLOGÍA ALEMANA REINER) -->
-  <section id="codificadores" class="py-20 bg-slate-50">
+  <!-- CATEGORÍA 4 — CODIFICADORES DIRECTOS (TRANSICIÓN CURVA HOMOGÉNEA ESTILO HOME) -->
+  <section id="codificadores" class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2.5rem] md:rounded-t-[3.5rem] py-20 md:py-24 bg-slate-50 shadow-[0_-20px_40px_rgba(0,0,0,0.03)] overflow-hidden">
     <div class="discode-container">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         
-        <div class="lg:col-span-5">
-          <span class="font-mono text-xs text-brand-navy uppercase tracking-widest font-semibold block mb-2">CATEGORÍA 4</span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 mb-4">CODIFICACIÓN DIRECTA</h2>
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">
-            Soluciones de codificación para imprimir información variable directamente sobre productos, empaques y diferentes superficies.
-          </p>
-          <p class="text-sm text-slate-600 leading-relaxed mb-6">
-            De la mano de la tecnología alemana con los equipos <strong>Reiner JetStamp</strong>, contamos con repuestos, servicio técnico y respaldo de la marca.
-          </p>
+        <!-- Columna Izquierda: Información de Codificación Directa -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono tracking-wider bg-blue-50 text-brand-navy uppercase mb-3">
+              Categoría 04
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 mb-4">
+              CODIFICACIÓN DIRECTA
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-3">
+              Soluciones de codificación para imprimir información variable directamente sobre productos, empaques y diferentes superficies.
+            </p>
+            <p class="text-sm text-slate-500 leading-relaxed mb-6">
+              De la mano de la tecnología alemana con los equipos <strong class="text-slate-800">Reiner JetStamp</strong>, contamos con repuestos, servicio técnico y respaldo de la marca.
+            </p>
 
-          <div class="border border-slate-300 bg-white p-6 mb-6">
-            <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Aplicaciones de Marcado:</h4>
-            <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 font-medium">
-              <div>· Fechas de vencimiento</div>
-              <div>· Números de lote</div>
-              <div>· Códigos 1D y QR</div>
-              <div>· Numeración secuencial</div>
-              <div>· Información variable</div>
-              <div>· Trazabilidad de origen</div>
+            <!-- Tarjeta de Aplicaciones de Marcado (Estilo Minimalista) -->
+            <div class="rounded-3xl bg-white p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] mb-8">
+              <span class="text-xs font-bold text-slate-900 uppercase tracking-wider block mb-4 flex items-center gap-2">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Aplicaciones de Marcado TIJ:
+              </span>
+              <div class="grid grid-cols-2 gap-2.5 text-xs text-slate-700 font-medium">
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Fechas de vencimiento</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Números de lote</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Códigos 1D y QR</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Numeración secuencial</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Información variable</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-slate-50 border border-slate-100/80">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  <span>Trazabilidad de origen</span>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="flex flex-wrap gap-3">
-            <a href="producto-codificadores.html" class="inline-block border border-slate-300 bg-white hover:bg-slate-100 text-slate-900 px-6 py-3 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-              Ver Catálogo Reiner JetStamp →
+            <a href="producto-codificadores.html" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-6 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-2xs hover:border-slate-300">
+              <span>Catálogo Reiner JetStamp</span>
+              <span>→</span>
             </a>
-            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20codificadores%20directos%20Reiner" data-whatsapp-context="codificadores" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
+            <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20codificadores%20directos%20Reiner" data-whatsapp-context="codificadores" target="_blank" class="inline-flex items-center justify-center bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white font-bold px-7 py-3.5 text-xs uppercase tracking-wider transition rounded-xl shadow-md hover:shadow-lg">
               COTIZAR CODIFICADOR
             </a>
           </div>
         </div>
 
-        <div class="lg:col-span-7 space-y-6">
-          <span class="font-mono text-xs text-slate-500 uppercase tracking-wider block">Modelos Disponibles Reiner JetStamp</span>
+        <!-- Columna Derecha: Modelos Disponibles Reiner (Tarjetas Estilizadas) -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="flex items-center justify-between pb-2">
+            <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+              Modelos Disponibles Reiner JetStamp
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-blue-50 text-brand-navy border border-blue-100/80">
+              Tecnología Alemana
+            </span>
+          </div>
           
           <!-- Modelo 1025 -->
-          <div class="border border-slate-200 bg-white p-6">
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group">
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
               <div class="sm:col-span-8">
-                <div class="flex justify-between items-start mb-2">
+                <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="font-mono text-xs text-brand-navy font-bold">MODELO 01 / GRAN FORMATO</span>
-                    <h3 class="text-xl font-bold text-slate-950 mt-0.5">Reiner JetStamp 1025</h3>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                      Modelo 01 / Gran Formato
+                    </span>
+                    <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
+                      Reiner JetStamp 1025
+                    </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-slate-100 border border-slate-300 px-2 py-0.5 font-bold">25 mm Altura</span>
+                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                    25 mm Altura
+                  </span>
                 </div>
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   Impresión de gran tamaño con altura de hasta 25 milímetros. Permite imprimir logotipos, códigos de barras legibles, textos de varias líneas y datos variables con pantalla táctil integrada.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono">Superficies: Cartón, madera, metal, plástico</span>
-                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%201025" data-whatsapp-context="reiner_1025" target="_blank" class="font-bold text-brand-navy hover:underline">Cotizar 1025 →</a>
+                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Cartón, madera, metal, plástico</span>
+                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%201025" data-whatsapp-context="reiner_1025" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
+                    <span>Cotizar 1025</span>
+                    <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="sm:col-span-4 bg-slate-50 border border-slate-100 p-3 flex items-center justify-center">
-                <img src="assets/images/codificadores/jetstamp-1025.png" alt="Reiner JetStamp 1025" class="h-28 w-auto object-contain">
+              <div class="sm:col-span-4 bg-slate-50/80 rounded-2xl border border-slate-100/60 p-3 flex items-center justify-center h-36 overflow-hidden">
+                <img src="assets/images/codificadores/jetstamp-1025.png" alt="Reiner JetStamp 1025" class="h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
               </div>
             </div>
           </div>
 
           <!-- Modelo 970 -->
-          <div class="border border-slate-200 bg-white p-6">
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group">
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
               <div class="sm:col-span-8">
-                <div class="flex justify-between items-start mb-2">
+                <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="font-mono text-xs text-brand-navy font-bold">MODELO 02 / PRECISIÓN Y VELOCIDAD</span>
-                    <h3 class="text-xl font-bold text-slate-950 mt-0.5">Reiner JetStamp 970</h3>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                      Modelo 02 / Precisión y Velocidad
+                    </span>
+                    <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
+                      Reiner JetStamp 970
+                    </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-slate-100 border border-slate-300 px-2 py-0.5 font-bold">Inyección Rápida</span>
+                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                    Inyección Rápida
+                  </span>
                 </div>
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   Tecnología de inyección de tinta térmica para marcado rápido de lotes y fechas de alta resolución sobre superficies absorbentes y no absorbentes con tintas de secado instantáneo.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono">Superficies: Vidrio, envases plásticos, tapas</span>
-                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20970" data-whatsapp-context="reiner_970" target="_blank" class="font-bold text-brand-navy hover:underline">Cotizar 970 →</a>
+                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Vidrio, envases plásticos, tapas</span>
+                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20970" data-whatsapp-context="reiner_970" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
+                    <span>Cotizar 970</span>
+                    <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="sm:col-span-4 bg-slate-50 border border-slate-100 p-3 flex items-center justify-center">
-                <img src="assets/images/codificadores/jetstamp-970.png" alt="Reiner JetStamp 970" class="h-28 w-auto object-contain">
+              <div class="sm:col-span-4 bg-slate-50/80 rounded-2xl border border-slate-100/60 p-3 flex items-center justify-center h-36 overflow-hidden">
+                <img src="assets/images/codificadores/jetstamp-970.png" alt="Reiner JetStamp 970" class="h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
               </div>
             </div>
           </div>
 
           <!-- Modelo 990 -->
-          <div class="border border-slate-200 bg-white p-6">
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group">
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
               <div class="sm:col-span-8">
-                <div class="flex justify-between items-start mb-2">
+                <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="font-mono text-xs text-brand-navy font-bold">MODELO 03 / ULTRA COMPACTO</span>
-                    <h3 class="text-xl font-bold text-slate-950 mt-0.5">Reiner JetStamp 990</h3>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                      Modelo 03 / Ultra Compacto
+                    </span>
+                    <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
+                      Reiner JetStamp 990
+                    </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-slate-100 border border-slate-300 px-2 py-0.5 font-bold">Fechador Móvil</span>
+                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                    Fechador Móvil
+                  </span>
                 </div>
-                <p class="text-xs text-black leading-relaxed mb-4">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                   El codificador más compacto y ligero de la línea. Ideal para dos líneas de texto (ejemplo: FAB / VENC y LOTE) con posicionamiento exacto sobre espacios reducidos.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono">Superficies: Empaques pequeños, etiquetas, tapas</span>
-                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20990" data-whatsapp-context="reiner_990" target="_blank" class="font-bold text-brand-navy hover:underline">Cotizar 990 →</a>
+                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Empaques pequeños, etiquetas, tapas</span>
+                  <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20990" data-whatsapp-context="reiner_990" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
+                    <span>Cotizar 990</span>
+                    <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="sm:col-span-4 bg-slate-50 border border-slate-100 p-3 flex items-center justify-center">
-                <img src="assets/images/codificadores/jetstamp-990.png" alt="Reiner JetStamp 990" class="h-28 w-auto object-contain">
+              <div class="sm:col-span-4 bg-slate-50/80 rounded-2xl border border-slate-100/60 p-3 flex items-center justify-center h-36 overflow-hidden">
+                <img src="assets/images/codificadores/jetstamp-990.png" alt="Reiner JetStamp 990" class="h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
               </div>
             </div>
           </div>
