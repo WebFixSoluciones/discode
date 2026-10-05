@@ -10,7 +10,7 @@ const DISCODE_CONFIG = {
   whatsappNumber: "593984345891",
   phoneFormatted: "+593 98 434 5891",
   phoneTel: "+593984345891",
-  email: "ventas@discode.ec",
+  email: "ventas@discode.net",
   address: "Guayaquil · Quito · Cuenca · Cobertura Industrial en todo el Ecuador",
   hours: "Lunes a Viernes: 08:30 - 17:30",
   iso: "Certificación ISO 9001 — Sistema de Gestión de Calidad",
