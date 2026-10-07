@@ -109,8 +109,8 @@
     const heroContent = document.querySelector('#hero-slider-section .discode-container');
     const heroSection = document.getElementById('hero-slider-section');
 
-    // Subpáginas: Hero con imagen de fondo
-    const subpageHeroImgs = document.querySelectorAll('section.bg-slate-950 img.object-cover');
+    // Subpáginas: Solo la imagen de fondo de cabecera de subpáginas (nunca tarjetas de industrias ni cuadrículas)
+    const subpageHeroImgs = document.querySelectorAll('section[data-parallax-section="true"] > div.absolute > img.object-cover');
     
     // Elementos con atributo data-parallax
     const customParallaxEls = document.querySelectorAll('[data-parallax]');
@@ -137,8 +137,12 @@
         }
       }
 
-      // 3.2 Parallax en imágenes de encabezado de subpáginas
+      // 3.2 Parallax en imágenes de encabezado de subpáginas (excluyendo terminantemente tarjetas de industrias)
       subpageHeroImgs.forEach(img => {
+        if (img.closest('#seccion-industrias') || img.closest('[data-no-parallax]') || img.closest('.grid') || img.closest('a')) {
+          img.style.transform = '';
+          return;
+        }
         const parentSec = img.closest('section');
         if (!parentSec) return;
         const rect = parentSec.getBoundingClientRect();
