@@ -427,9 +427,13 @@ header nav button:hover {
    EXPERIENCIA MÓVIL DE PRÓXIMA GENERACIÓN (APP-LIKE UX PARA SMARTPHONES)
    ========================================================================== */
 
-/* 1. Eliminación de recuadro tosco en tap de móviles */
+/* 1. Eliminación de recuadro tosco en tap de móviles y ocultamiento de menús legacy */
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+#mobile-menu {
+  display: none !important;
 }
 
 /* 2. Microinteracciones de presión táctil elástica */

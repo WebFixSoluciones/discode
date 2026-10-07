@@ -420,12 +420,23 @@
     enhanceTechnicalTables() {
       const tables = document.querySelectorAll('table');
       tables.forEach(table => {
+        // Asegurar ancho mínimo ergonómico para evitar que columnas técnicas se compriman
+        if (!table.classList.contains('min-w-full') && !table.style.minWidth) {
+          table.classList.add('min-w-[520px]');
+        }
         const parent = table.parentElement;
         if (!parent.classList.contains('overflow-x-auto')) {
           const wrapper = document.createElement('div');
-          wrapper.className = 'w-full overflow-x-auto touch-momentum scrollbar-none rounded-xl my-4';
+          wrapper.className = 'w-full overflow-x-auto touch-momentum scrollbar-none rounded-xl my-3 border border-slate-200/70 shadow-2xs';
+          
           parent.insertBefore(wrapper, table);
           wrapper.appendChild(table);
+
+          // Indicador visual discreto de scroll horizontal para teléfonos
+          const hint = document.createElement('div');
+          hint.className = 'text-[10px] text-slate-400 font-medium py-1 px-1 text-right block sm:hidden select-none -mt-2 mb-3';
+          hint.textContent = 'Desliza para ver tabla completa ↔';
+          wrapper.parentElement.insertBefore(hint, wrapper.nextSibling);
         }
       });
     },
