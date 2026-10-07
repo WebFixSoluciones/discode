@@ -423,3 +423,102 @@ header nav button:hover {
   }
 }
 
+/* ==========================================================================
+   EXPERIENCIA MÓVIL DE PRÓXIMA GENERACIÓN (APP-LIKE UX PARA SMARTPHONES)
+   ========================================================================== */
+
+/* 1. Eliminación de recuadro tosco en tap de móviles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 2. Microinteracciones de presión táctil elástica */
+.touch-press {
+  transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.touch-press:active {
+  transform: scale(0.96) !important;
+}
+
+/* 3. Inercia táctil nativa y ocultamiento de barras de scroll */
+.touch-momentum {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-none::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.scrollbar-none,
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* 4. Bloqueo de scroll cuando el Drawer está activo */
+body.mobile-drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* 5. Telón de fondo (Backdrop) del Drawer */
+.mobile-drawer-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mobile-drawer-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 6. Panel lateral deslizante del Drawer */
+.mobile-drawer-panel {
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.mobile-drawer-panel.is-open {
+  transform: translate3d(0, 0, 0);
+}
+
+/* 7. Barra Inferior Táctil (App Bottom Tab Bar) */
+#discode-bottom-bar {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  will-change: transform;
+}
+
+#discode-bottom-bar.bottom-bar-hidden {
+  transform: translate3d(0, 110%, 0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Compensación de espacio inferior seguro en smartphones */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  /* Ajuste de posición del botón flotante de WhatsApp para no solapar la barra inferior */
+  #discode-floating-wa {
+    bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) !important;
+    right: 1rem !important;
+  }
+}
+
+/* 8. Acordeones fluidos con animación de altura y chevrón */
+.mobile-acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-acc-btn.is-active .mobile-acc-arrow {
+  transform: rotate(180deg);
+}
+
