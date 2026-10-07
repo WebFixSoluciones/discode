@@ -5,6 +5,18 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof DiscodeMobileUI !== 'undefined') {
+    DiscodeMobileUI.init();
+  } else {
+    // Carga progresiva de mobile-ui.js si no estaba en el DOM
+    const s = document.createElement('script');
+    s.src = 'assets/js/mobile-ui.js';
+    s.onload = () => {
+      if (window.DiscodeMobileUI) window.DiscodeMobileUI.init();
+    };
+    document.head.appendChild(s);
+  }
+
   initMobileMenu();
   initMegaMenus();
   initActiveNavLink();
@@ -15,15 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Control del menú hamburguesa en dispositivos móviles
+ * Control del menú hamburguesa en dispositivos móviles (conectado con Drawer)
  */
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  if (toggleBtn && mobileMenu) {
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', (e) => {
+      if (window.DiscodeMobileUI && typeof window.DiscodeMobileUI.openDrawer === 'function') {
+        e.preventDefault();
+        window.DiscodeMobileUI.openDrawer();
+      } else if (mobileMenu) {
+        mobileMenu.classList.toggle('hidden');
+      }
     });
   }
 }
