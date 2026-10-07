@@ -255,3 +255,171 @@ header nav button:hover {
   animation-play-state: paused;
 }
 
+/* ==============================================================================
+ * SISTEMA GLOBAL DE ANIMACIONES, PARALLAX SCROLLING E INTERACTIVIDAD DISCODE
+ * ============================================================================== */
+
+/* Barra de progreso de scroll interactiva en el tope de la pantalla */
+#discode-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #0052CC 0%, #0284C7 50%, #38BDF8 100%);
+  z-index: 9999;
+  pointer-events: none;
+  transition: width 0.1s cubic-bezier(0.1, 0.9, 0.2, 1);
+  box-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
+}
+
+/* Clases base de Scroll Reveal (Entrada suave en scroll) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variantes direccionales de reveal */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-35px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(35px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-fade.is-revealed {
+  opacity: 1;
+}
+
+/* Delays escalonados (Stagger) */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* Tarjetas interactivas con elevación y micro-sombra al cursor */
+.interactive-card, .tilt-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  will-change: transform, box-shadow;
+}
+
+.interactive-card:hover, .tilt-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(0, 82, 204, 0.1), 0 10px 20px -10px rgba(10, 17, 40, 0.06);
+}
+
+/* Efecto Parallax en imágenes y fondos */
+.parallax-layer {
+  will-change: transform;
+}
+
+.parallax-hero-img {
+  will-change: transform;
+  transform: scale(1.1);
+}
+
+/* Efecto de pulso interactivo para insignias y botones clave */
+@keyframes softPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 82, 204, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 82, 204, 0);
+  }
+}
+
+.pulse-glow {
+  animation: softPulseGlow 3s infinite ease-in-out;
+}
+
+/* Micro-animación de brillo técnico sobre botones y tarjetas */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.15) 35%,
+    transparent 50%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  transition: transform 0.75s ease-in-out;
+  pointer-events: none;
+}
+
+.shine-effect:hover::after {
+  transform: rotate(25deg) translateY(100%);
+}
+
+/* Respeto por preferencias de movimiento reducido del usuario */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .reveal-fade {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .parallax-layer,
+  .parallax-hero-img {
+    transform: none !important;
+  }
+  .brands-slider-track {
+    animation: none !important;
+  }
+}
+
