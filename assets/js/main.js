@@ -32,21 +32,22 @@ function initMobileMenu() {
  * Resalta el enlace activo de navegación según la URL actual
  */
 function initActiveNavLink() {
-  const currentPath = window.location.pathname;
-  const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
+  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  const pageName = currentPath === '/' ? '/' : currentPath.substring(currentPath.lastIndexOf('/') + 1).replace('.html', '');
   
   const navLinks = document.querySelectorAll('header nav a, #mobile-menu a');
   navLinks.forEach(link => {
-    const href = link.getAttribute('href');
+    let href = link.getAttribute('href');
     if (!href) return;
+    // Limpiar hash, .html y trailing slashes
+    const cleanHref = href.split('#')[0].replace('.html', '').replace(/\/$/, '') || '/';
     
-    // Normalizar si tiene .html o URL limpia
-    const cleanHref = href.replace('.html', '');
-    const cleanPage = pageName.replace('.html', '');
+    const isHome = (currentPath === '/' || pageName === 'index' || pageName === '') && (cleanHref === '/' || cleanHref === '/index' || cleanHref === 'index' || cleanHref === '');
+    const isCurrent = !isHome && (cleanHref === currentPath || cleanHref === `/${pageName}` || cleanHref === pageName);
 
-    if (href === pageName || (cleanHref && cleanPage === cleanHref) || (pageName === '' && href === 'index.html')) {
+    if (isHome || isCurrent) {
       link.classList.add('text-brand-navy', 'font-bold');
-      link.classList.remove('text-slate-700');
+      link.classList.remove('text-black', 'text-slate-700');
     }
   });
 }

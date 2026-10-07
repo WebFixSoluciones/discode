@@ -1,0 +1,14 @@
+# ==============================================================================
+# robots.txt para DISCODE ECUADOR
+# Dominio Oficial: https://www.discode.net
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /.superpowers/
+Disallow: /*.zip$
+Disallow: /*.docx$
+Disallow: /scratch/
+
+# Sitemap XML Oficial
+Sitemap: https://www.discode.net/sitemap.xml

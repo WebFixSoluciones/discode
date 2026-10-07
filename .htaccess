@@ -1,56 +1,110 @@
 # ==============================================================================
-# DISCODE ECUADOR — Configuración de Servidor Apache para cPanel
-# Optimización de URLs limpias, compresión de alto rendimiento y caché estática
+# DISCODE ECUADOR — Configuración de Servidor Apache para cPanel / Producción
+# Dominio Oficial: https://www.discode.net
+# Optimización SEO Profesional: URLs limpias, redirecciones 301, canonical,
+# compresión Gzip, caché de navegador y cabeceras de seguridad.
 # ==============================================================================
 
-# 1. Habilitar Motor de Reescritura
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Permitir acceso directo a archivos existentes sin modificar
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
+  # ----------------------------------------------------------------------
+  # 1. CANONICALIZACIÓN DE DOMINIO Y PROTOCOLO (HTTPS & WWW)
+  # ----------------------------------------------------------------------
+  # Redirigir http -> https para discode.net
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} ^(www\.)?discode\.net$ [NC]
+  RewriteRule ^(.*)$ https://www.discode.net/$1 [R=301,L]
 
-  # Reescribir URLs limpias sin .html (ej: discode.ec/productos -> discode.ec/productos.html)
+  # Redirigir discode.net sin www -> https://www.discode.net
+  RewriteCond %{HTTP_HOST} ^discode\.net$ [NC]
+  RewriteRule ^(.*)$ https://www.discode.net/$1 [R=301,L]
+
+  # ----------------------------------------------------------------------
+  # 2. ELIMINACIÓN DE /index.html (301 REDIRECT A LA RAÍZ /)
+  # ----------------------------------------------------------------------
+  # Evita contenido duplicado entre https://www.discode.net/ y /index.html
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html(?:\?[^\ ]*)?\ HTTP/ [NC]
+  RewriteRule ^index\.html$ https://www.discode.net/ [R=301,L]
+
+  # ----------------------------------------------------------------------
+  # 3. REDIRECCIÓN 301 DE RUTAS .html A RUTAS LIMPIAS
+  # ----------------------------------------------------------------------
+  # Si un usuario o bot solicita /pagina.html, redirige a /pagina
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([a-zA-Z0-9_-]+)\.html(?:\?[^\ ]*)?\ HTTP/ [NC]
+  RewriteRule ^([a-zA-Z0-9_-]+)\.html$ https://www.discode.net/$1 [R=301,L]
+
+  # ----------------------------------------------------------------------
+  # 4. REESCRITURA INTERNA DE RUTAS LIMPIAS A ARCHIVOS .html
+  # ----------------------------------------------------------------------
+  # Si se solicita /pagina y no es directorio ni archivo existente,
+  # pero existe pagina.html, sírvelo silenciosamente sin alterar la URL.
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME}.html -f
-  RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [L]
+  RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [L,QSA]
+
 </IfModule>
 
-# 2. Codificación por Defecto UTF-8
+# ----------------------------------------------------------------------
+# 5. CODIFICACIÓN PREDETERMINADA UTF-8
+# ----------------------------------------------------------------------
 AddDefaultCharset UTF-8
 <IfModule mod_mime.c>
-  AddCharset UTF-8 .html .css .js .json .xml
+  AddCharset UTF-8 .html .css .js .json .xml .svg
 </IfModule>
 
-# 3. Compresión GZIP / Deflate para Máxima Velocidad en cPanel
+# ----------------------------------------------------------------------
+# 6. COMPRESIÓN GZIP / DEFLATE PARA MÁXIMA VELOCIDAD (Core Web Vitals)
+# ----------------------------------------------------------------------
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/css
   AddOutputFilterByType DEFLATE text/plain
   AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
   AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE application/x-javascript
   AddOutputFilterByType DEFLATE application/json
   AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
 </IfModule>
 
-# 4. Políticas de Caché para Archivos Estáticos
+# ----------------------------------------------------------------------
+# 7. POLÍTICA DE CACHÉ DE NAVEGADOR (Browser Caching)
+# ----------------------------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
   ExpiresByType text/html "access plus 1 hour"
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
 </IfModule>
 
-# 5. Encabezados de Seguridad Básicos
+# ----------------------------------------------------------------------
+# 8. CABECERAS DE SEGURIDAD Y PRIVACIDAD
+# ----------------------------------------------------------------------
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
+
+# ----------------------------------------------------------------------
+# 9. PÁGINA DE ERROR 404 PERSONALIZADA
+# ----------------------------------------------------------------------
+ErrorDocument 404 /
