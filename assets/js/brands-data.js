@@ -99,7 +99,7 @@ function renderBrandsCatalog(containerId) {
             <div>
               ${brand.logoSvg}
             </div>
-            <span class="text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 bg-slate-100 text-slate-700 font-bold rounded-full border border-slate-200/80">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 bg-slate-100 text-slate-700 rounded-full border border-slate-200/80">
               ${brand.origin}
             </span>
           </div>
@@ -114,7 +114,7 @@ function renderBrandsCatalog(containerId) {
             <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
               ${brand.name}
             </h3>
-            <span class="text-xs font-semibold text-blue-600 font-mono block mt-0.5">
+            <span class="text-xs font-semibold text-blue-600 block mt-0.5">
               ${brand.category}
             </span>
           </div>

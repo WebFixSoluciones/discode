@@ -22,17 +22,21 @@
   margin-right: auto;
 }
 
-/* Tipografía de precisión */
-body {
+/* Tipografía de precisión: Plus Jakarta Sans para todo el sitio web */
+html, body, *, ::before, ::after {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   color: #000000;
   background-color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-mono {
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+code, pre, kbd, samp, .font-mono {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 /* Estilo de Catálogo: Limpio y espacioso sin líneas de separación */
@@ -156,7 +160,7 @@ body {
   text-align: left;
   padding: 0.75rem 1rem;
   border-bottom: 2px solid #CBD5E1;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;

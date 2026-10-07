@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -17,7 +17,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -595,8 +595,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="productos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Productos</a>
-          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir productos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir productos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-productos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -612,8 +612,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="soluciones.html" class="text-slate-800 hover:text-brand-navy font-semibold">Soluciones</a>
-          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir soluciones">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir soluciones">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-soluciones" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -628,8 +628,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="recursos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Recursos</a>
-          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir recursos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir recursos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-recursos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -668,7 +668,7 @@
 
     <div class="discode-container relative z-10">
       <div class="max-w-3xl">
-        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
+        <span class="text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
           Respaldo y Soporte Especializado
         </span>
         <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 drop-shadow-sm">
@@ -685,7 +685,7 @@
   <section class="py-20 bg-slate-50">
     <div class="discode-container">
       <div class="max-w-3xl mb-12">
-        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-2">
+        <span class="text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-2">
           Protocolos de Intervención
         </span>
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">
@@ -701,7 +701,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/impresoras/tsc-te200-laboratorio.png" alt="Mantenimiento preventivo en laboratorio técnico" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-slate-400 block mb-1">SRV-01</span>
+            <span class="text-xs text-slate-400 block mb-1">SRV-01</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Mantenimiento preventivo</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Revisión periódica para ayudar a mantener el correcto funcionamiento del equipo.
@@ -724,7 +724,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/impresoras/zebra-zt411-empacadora.png" alt="Reparación y mantenimiento correctivo de impresoras" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-slate-400 block mb-1">SRV-02</span>
+            <span class="text-xs text-slate-400 block mb-1">SRV-02</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Mantenimiento correctivo</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Diagnóstico y solución de problemas que afectan el funcionamiento del equipo.
@@ -747,7 +747,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/soluciones/cajas-discode-impresora.png" alt="Instalación y configuración de impresoras industriales" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-slate-400 block mb-1">SRV-03</span>
+            <span class="text-xs text-slate-400 block mb-1">SRV-03</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Instalación y configuración</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Puesta en funcionamiento y configuración de equipos de acuerdo con la aplicación.
@@ -770,7 +770,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/soluciones/asistente-discode.png" alt="Soporte técnico y asistencia remota o presencial" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-slate-400 block mb-1">SRV-04</span>
+            <span class="text-xs text-slate-400 block mb-1">SRV-04</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Soporte técnico</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Atención de incidencias relacionadas con equipos y procesos de impresión.
@@ -793,7 +793,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/soluciones/discode-planta-produccion.png" alt="Capacitación y entrenamiento a operarios en planta" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-slate-400 block mb-1">SRV-05</span>
+            <span class="text-xs text-slate-400 block mb-1">SRV-05</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Capacitación</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Orientación para el correcto uso y operación de los equipos.
@@ -816,7 +816,7 @@
             <div class="bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden mb-4">
               <img src="assets/images/impresoras/zebra-zt231.jpg" alt="Guía técnica de mantenimiento Zebra" class="h-36 w-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
             </div>
-            <span class="font-mono text-xs text-brand-navy font-bold block mb-1">GUÍA TÉCNICA RECOMENDADA</span>
+            <span class="text-xs text-brand-navy font-bold block mb-1">GUÍA TÉCNICA RECOMENDADA</span>
             <h3 class="text-lg font-bold text-slate-950 mb-2">Mantenimiento de Impresora Zebra</h3>
             <p class="text-xs text-black leading-relaxed mb-4">
               Aprende cómo limpiar adecuadamente el cabezal, rodillo y sensores para prolongar la vida útil de tus equipos en 7 pasos clave.
@@ -842,7 +842,7 @@
         
         <!-- Columna de Texto y Llamado Principal -->
         <div class="lg:col-span-7 text-left">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold uppercase tracking-wider mb-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-bold uppercase tracking-wider mb-4">
             <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
             Cobertura Nacional Garantizada
           </div>
@@ -861,15 +861,15 @@
           <!-- 3 Ventajas Técnicas Directas -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
             <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
-              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1 font-mono">01. En Planta</div>
+              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">01. En Planta</div>
               <p class="text-xs text-slate-300 leading-snug">Atención técnica in situ y calibración en laboratorio especializado.</p>
             </div>
             <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
-              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1 font-mono">02. Repuestos</div>
+              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">02. Repuestos</div>
               <p class="text-xs text-slate-300 leading-snug">Cabezales térmicos, rodillos y componentes 100% originales en stock.</p>
             </div>
             <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
-              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1 font-mono">03. Continuidad</div>
+              <div class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">03. Continuidad</div>
               <p class="text-xs text-slate-300 leading-snug">Equipos de respaldo en comodato para evitar paradas en tu línea.</p>
             </div>
           </div>
@@ -893,7 +893,7 @@
             <img src="assets/images/impresoras/tsc-te200-laboratorio.png" alt="Técnico DISCODE calibrando impresora térmica en laboratorio" class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-5 text-left">
-              <span class="inline-block px-2.5 py-1 rounded bg-blue-600 text-white text-[11px] font-mono font-bold uppercase tracking-wider mb-2">
+              <span class="inline-block px-2.5 py-1 rounded bg-blue-600 text-white text-[11px] font-bold uppercase tracking-wider mb-2">
                 Laboratorio Técnico DISCODE
               </span>
               <h3 class="text-lg font-bold text-white leading-snug">
@@ -914,7 +914,7 @@
   <section class="py-20 bg-white">
     <div class="discode-container max-w-4xl">
       <div class="border border-slate-300 p-8 md:p-12">
-        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-2">
+        <span class="text-xs uppercase tracking-widest text-brand-navy font-semibold block mb-2">
           Mesa de Soporte Industrial
         </span>
         <h3 class="text-2xl font-bold tracking-tight text-slate-950 mb-4">
@@ -959,7 +959,7 @@
           </div>
 
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-200">
-            <span class="text-xs text-slate-500 font-mono">Respuesta técnica ágil a nivel nacional</span>
+            <span class="text-xs text-slate-500">Respuesta técnica ágil a nivel nacional</span>
             <button type="submit" class="w-full sm:w-auto bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
               Enviar Solicitud a WhatsApp →
             </button>
@@ -1069,7 +1069,7 @@
             <li><a href="nosotros.html#calidad" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Sistema ISO 9001</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Guayaquil · Quito · Cuenca</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Contacto & Cotizaciones</a></li>
-            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-mono font-bold text-base tracking-wider">+593 98 434 5891</a></li>
+            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-bold text-base tracking-wider">+593 98 434 5891</a></li>
           </ul>
         </div>
 

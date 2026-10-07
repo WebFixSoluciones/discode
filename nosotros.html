@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -17,7 +17,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -595,8 +595,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="productos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Productos</a>
-          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir productos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir productos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-productos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -612,8 +612,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="soluciones.html" class="text-slate-800 hover:text-brand-navy font-semibold">Soluciones</a>
-          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir soluciones">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir soluciones">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-soluciones" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -628,8 +628,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="recursos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Recursos</a>
-          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir recursos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir recursos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-recursos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -668,7 +668,7 @@
 
     <div class="discode-container relative z-10">
       <div class="max-w-3xl">
-        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
+        <span class="text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
           Perfil Corporativo y Valores
         </span>
         <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 drop-shadow-sm">
@@ -690,15 +690,15 @@
         <div class="border border-slate-300 bg-white p-2">
           <img src="assets/images/soluciones/discode-planta-produccion.png" alt="Planta de conversión y rebobinado DISCODE Ecuador" class="w-full h-64 object-cover">
           <div class="p-3 bg-slate-50 border-t border-slate-200 flex justify-between items-center text-xs">
-            <span class="font-mono text-slate-800 font-bold">PLANTA DE CONVERSIÓN & CORTE</span>
-            <span class="font-mono text-slate-500">PRODUCCIÓN NACIONAL</span>
+            <span class="text-slate-800 font-bold">PLANTA DE CONVERSIÓN & CORTE</span>
+            <span class="text-slate-500">PRODUCCIÓN NACIONAL</span>
           </div>
         </div>
         <div class="border border-slate-300 bg-white p-2">
           <img src="assets/images/soluciones/cajas-discode-impresora.png" alt="Empaque y distribución de suministros DISCODE" class="w-full h-64 object-cover">
           <div class="p-3 bg-slate-50 border-t border-slate-200 flex justify-between items-center text-xs">
-            <span class="font-mono text-slate-800 font-bold">CONTROL DE CALIDAD & EMBALAJE</span>
-            <span class="font-mono text-slate-500">DESPACHO A TODO EL ECUADOR</span>
+            <span class="text-slate-800 font-bold">CONTROL DE CALIDAD & EMBALAJE</span>
+            <span class="text-slate-500">DESPACHO A TODO EL ECUADOR</span>
           </div>
         </div>
       </div>
@@ -707,7 +707,7 @@
         
         <div class="border border-slate-300 bg-white p-8 md:p-10 flex flex-col justify-between">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-3">TRAYECTORIA Y CAPACIDAD</span>
+            <span class="text-xs text-slate-400 block mb-3">TRAYECTORIA Y CAPACIDAD</span>
             <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-4">Nuestra experiencia</h2>
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
               A través de nuestra experiencia hemos desarrollado soluciones para empresas de diferentes sectores productivos, adaptándonos a sus necesidades específicas y acompañándolas en sus procesos de identificación y trazabilidad.
@@ -717,13 +717,13 @@
             </p>
           </div>
           <div class="pt-6 border-t border-slate-100 mt-6">
-            <span class="text-xs font-mono text-brand-navy font-semibold">PRESENCIA NACIONAL · RESPUESTA TÉCNICA RÁPIDA</span>
+            <span class="text-xs text-brand-navy font-semibold">PRESENCIA NACIONAL · RESPUESTA TÉCNICA RÁPIDA</span>
           </div>
         </div>
 
         <div class="border border-slate-300 bg-white p-8 md:p-10 flex flex-col justify-between">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-3">ENFOQUE DE NEGOCIO</span>
+            <span class="text-xs text-slate-400 block mb-3">ENFOQUE DE NEGOCIO</span>
             <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-4">Nuestro compromiso</h2>
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
               Buscamos construir relaciones comerciales de largo plazo, basadas en la confianza, la calidad de nuestros productos y el respaldo que brindamos a nuestros clientes.
@@ -733,7 +733,7 @@
             </p>
           </div>
           <div class="pt-6 border-t border-slate-100 mt-6">
-            <span class="text-xs font-mono text-brand-navy font-semibold">RELACIONES COMERCIALES DURADERAS</span>
+            <span class="text-xs text-brand-navy font-semibold">RELACIONES COMERCIALES DURADERAS</span>
           </div>
         </div>
 
@@ -749,14 +749,14 @@
         <!-- Header Institucional -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-6 mb-8">
           <div>
-            <span class="inline-block bg-brand-navy text-white text-[11px] font-mono uppercase tracking-widest font-bold px-3 py-1 rounded mb-2">
+            <span class="inline-block bg-brand-navy text-white text-[11px] uppercase tracking-widest font-bold px-3 py-1 rounded mb-2">
               SISTEMA DE GESTIÓN DE CALIDAD ISO 9001
             </span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-950 uppercase">
               POLÍTICA DE CALIDAD DISCODE ECUADOR
             </h2>
           </div>
-          <div class="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-right self-start sm:self-auto shadow-2xs font-mono text-xs">
+          <div class="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-right self-start sm:self-auto shadow-2xs text-xs">
             <span class="text-slate-500 block text-[10px] uppercase">Control Documental</span>
             <span class="font-bold text-slate-900">Rev: 01</span> · <span class="text-slate-600">Fecha: 19/11/2025</span>
           </div>
@@ -771,7 +771,7 @@
 
         <!-- Directrices Estratégicas del SGC -->
         <div>
-          <h3 class="text-sm font-mono font-bold uppercase tracking-wider text-brand-navy mb-5 flex items-center gap-2">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-brand-navy mb-5 flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-brand-navy"></span>
             Orientamos nuestro Sistema de Gestión de Calidad a:
           </h3>
@@ -779,7 +779,7 @@
           <div class="grid grid-cols-1 gap-3.5">
             
             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:bg-white hover:border-brand-navy/40 transition">
-              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-mono font-bold text-xs shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 01
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -788,7 +788,7 @@
             </div>
 
             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:bg-white hover:border-brand-navy/40 transition">
-              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-mono font-bold text-xs shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 02
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -797,7 +797,7 @@
             </div>
 
             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:bg-white hover:border-brand-navy/40 transition">
-              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-mono font-bold text-xs shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 03
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -806,7 +806,7 @@
             </div>
 
             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:bg-white hover:border-brand-navy/40 transition">
-              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-mono font-bold text-xs shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 04
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -815,7 +815,7 @@
             </div>
 
             <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:bg-white hover:border-brand-navy/40 transition">
-              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-mono font-bold text-xs shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 05
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -828,7 +828,7 @@
 
         <!-- Footer del Documento y CTA de Asesoría -->
         <div class="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div class="text-xs text-slate-500 font-mono">
+          <div class="text-xs text-slate-500">
             Discode Ecuador S.A.S · RUC y Matriz Guayaquil · Cobertura Nacional
           </div>
           <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20asesoria%20comercial%20o%20informacion%20de%20calidad" target="_blank" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-blue-600 text-white font-bold px-6 py-2.5 text-xs uppercase tracking-wider rounded-lg transition shadow-sm">
@@ -941,7 +941,7 @@
             <li><a href="nosotros.html#calidad" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Sistema ISO 9001</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Guayaquil · Quito · Cuenca</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Contacto & Cotizaciones</a></li>
-            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-mono font-bold text-base tracking-wider">+593 98 434 5891</a></li>
+            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-bold text-base tracking-wider">+593 98 434 5891</a></li>
           </ul>
         </div>
 

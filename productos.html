@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -17,7 +17,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -595,8 +595,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="productos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Productos</a>
-          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir productos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir productos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-productos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -612,8 +612,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="soluciones.html" class="text-slate-800 hover:text-brand-navy font-semibold">Soluciones</a>
-          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir soluciones">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir soluciones">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-soluciones" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -628,8 +628,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="recursos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Recursos</a>
-          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir recursos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir recursos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-recursos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -668,7 +668,7 @@
 
     <div class="discode-container relative z-10">
       <div class="max-w-4xl lg:max-w-5xl xl:max-w-6xl">
-        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
+        <span class="text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
           Catálogo Técnico de Equipos y Suministros
         </span>
         <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 drop-shadow-sm">
@@ -809,7 +809,7 @@
               <div class="bg-gradient-to-br from-blue-50/90 to-white rounded-2xl p-4 border border-blue-200 hover:shadow-md transition duration-200 group ring-1 ring-blue-500/10">
                 <div class="flex items-center justify-between gap-2 mb-1">
                   <strong class="text-sm font-bold text-slate-950 block">Etiquetas para congelados</strong>
-                  <span class="text-[9px] font-mono uppercase bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">Especialidad</span>
+                  <span class="text-[9px] uppercase bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">Especialidad</span>
                 </div>
                 <p class="text-xs text-slate-600 leading-snug">Adhesivos especiales resistentes a condensación y congelación profunda.</p>
               </div>
@@ -878,7 +878,7 @@
         <div class="bg-white rounded-3xl p-7 border-2 border-brand-navy shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative">
           <div>
             <div class="flex justify-end items-center mb-3">
-              <span class="text-[10px] font-mono uppercase bg-brand-navy text-white px-2.5 py-0.5 rounded-full font-bold shadow-xs">
+              <span class="text-[10px] uppercase bg-brand-navy text-white px-2.5 py-0.5 rounded-full font-bold shadow-xs">
                 Alta Exigencia
               </span>
             </div>
@@ -968,9 +968,9 @@
           </p>
         </div>
         <div class="flex items-center gap-2 flex-wrap">
-          <span class="text-xs font-mono text-slate-400 font-semibold mr-1">MARCAS OFICIALES:</span>
-          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold font-mono border border-slate-200/80">ZEBRA</span>
-          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold font-mono border border-slate-200/80">TSC</span>
+          <span class="text-xs text-slate-400 font-semibold mr-1">MARCAS OFICIALES:</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200/80">ZEBRA</span>
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200/80">TSC</span>
         </div>
       </div>
 
@@ -980,7 +980,7 @@
         <!-- Impresora 1: Industriales -->
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
               Volumen Pesado
             </span>
             <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
@@ -1015,7 +1015,7 @@
         <!-- Impresora 2: Semi-Industriales -->
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
               Medio Volumen
             </span>
             <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
@@ -1050,7 +1050,7 @@
         <!-- Impresora 3: Escritorio -->
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
               Comercial & Oficina
             </span>
             <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
@@ -1085,7 +1085,7 @@
         <!-- Impresora 4: Móviles -->
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-6 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-white text-slate-500 border border-slate-200/80 mb-3 shadow-2xs">
               Movilidad en Bodega
             </span>
             <div class="bg-white rounded-2xl p-4 mb-5 flex items-center justify-center h-44 border border-slate-100 shadow-2xs overflow-hidden">
@@ -1204,10 +1204,10 @@
         <!-- Columna Derecha: Modelos Disponibles Reiner (Tarjetas Estilizadas) -->
         <div class="lg:col-span-7 space-y-5">
           <div class="flex items-center justify-between pb-2">
-            <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">
               Modelos Disponibles Reiner JetStamp
             </span>
-            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-blue-50 text-brand-navy border border-blue-100/80">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-blue-50 text-brand-navy border border-blue-100/80">
               Tecnología Alemana
             </span>
           </div>
@@ -1218,14 +1218,14 @@
               <div class="sm:col-span-8">
                 <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-slate-100 text-slate-500 mb-1">
                       Gran Formato
                     </span>
                     <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
                       Reiner JetStamp 1025
                     </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                  <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
                     25 mm Altura
                   </span>
                 </div>
@@ -1233,7 +1233,7 @@
                   Impresión de gran tamaño con altura de hasta 25 milímetros. Permite imprimir logotipos, códigos de barras legibles, textos de varias líneas y datos variables con pantalla táctil integrada.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Cartón, madera, metal, plástico</span>
+                  <span class="text-slate-500 text-[11px]">Superficies: Cartón, madera, metal, plástico</span>
                   <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%201025" data-whatsapp-context="reiner_1025" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
                     <span>Cotizar 1025</span>
                     <span>→</span>
@@ -1252,14 +1252,14 @@
               <div class="sm:col-span-8">
                 <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-slate-100 text-slate-500 mb-1">
                       Precisión y Velocidad
                     </span>
                     <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
                       Reiner JetStamp 970
                     </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                  <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
                     Inyección Rápida
                   </span>
                 </div>
@@ -1267,7 +1267,7 @@
                   Tecnología de inyección de tinta térmica para marcado rápido de lotes y fechas de alta resolución sobre superficies absorbentes y no absorbentes con tintas de secado instantáneo.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Vidrio, envases plásticos, tapas</span>
+                  <span class="text-slate-500 text-[11px]">Superficies: Vidrio, envases plásticos, tapas</span>
                   <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20970" data-whatsapp-context="reiner_970" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
                     <span>Cotizar 970</span>
                     <span>→</span>
@@ -1286,14 +1286,14 @@
               <div class="sm:col-span-8">
                 <div class="flex justify-between items-start mb-2 gap-2">
                   <div>
-                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase bg-slate-100 text-slate-500 mb-1">
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-slate-100 text-slate-500 mb-1">
                       Ultra Compacto
                     </span>
                     <h3 class="text-xl font-bold text-slate-950 group-hover:text-brand-navy transition">
                       Reiner JetStamp 990
                     </h3>
                   </div>
-                  <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
+                  <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2.5 py-1 rounded-full font-bold flex-shrink-0">
                     Fechador Móvil
                   </span>
                 </div>
@@ -1301,7 +1301,7 @@
                   El codificador más compacto y ligero de la línea. Ideal para dos líneas de texto (ejemplo: FAB / VENC y LOTE) con posicionamiento exacto sobre espacios reducidos.
                 </p>
                 <div class="flex flex-wrap items-center justify-between pt-3 border-t border-slate-100 text-xs gap-2">
-                  <span class="text-slate-500 font-mono text-[11px]">Superficies: Empaques pequeños, etiquetas, tapas</span>
+                  <span class="text-slate-500 text-[11px]">Superficies: Empaques pequeños, etiquetas, tapas</span>
                   <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20me%20interesa%20cotizar%20el%20codificador%20Reiner%20JetStamp%20990" data-whatsapp-context="reiner_990" target="_blank" class="font-bold text-brand-navy hover:text-blue-600 flex items-center gap-1 transition">
                     <span>Cotizar 990</span>
                     <span>→</span>
@@ -1339,7 +1339,7 @@
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="mb-3">
-              <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
+              <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
                 Confección Textil
               </span>
             </div>
@@ -1381,7 +1381,7 @@
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="mb-3">
-              <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
+              <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
                 Empaque & Cierre
               </span>
             </div>
@@ -1423,7 +1423,7 @@
         <div class="bg-slate-50/70 hover:bg-slate-100/70 rounded-3xl p-7 border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="mb-3">
-              <span class="text-[10px] font-mono uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
+              <span class="text-[10px] uppercase bg-blue-50 text-brand-navy border border-blue-100 px-2 py-0.5 rounded-full font-bold">
                 Protección de Carga
               </span>
             </div>
@@ -1586,7 +1586,7 @@
             <li><a href="nosotros.html#calidad" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Sistema ISO 9001</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Guayaquil · Quito · Cuenca</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Contacto & Cotizaciones</a></li>
-            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-mono font-bold text-base tracking-wider">+593 98 434 5891</a></li>
+            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-bold text-base tracking-wider">+593 98 434 5891</a></li>
           </ul>
         </div>
 

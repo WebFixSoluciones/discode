@@ -12,7 +12,7 @@
   <!-- Tipografía Técnica de Precisión -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Configuración personalizada de Tailwind -->
   <script>
@@ -21,7 +21,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -599,8 +599,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="productos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Productos</a>
-          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir productos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir productos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-productos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -616,8 +616,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="soluciones.html" class="text-slate-800 hover:text-brand-navy font-semibold">Soluciones</a>
-          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir soluciones">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir soluciones">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-soluciones" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -632,8 +632,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="recursos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Recursos</a>
-          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir recursos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir recursos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-recursos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -738,7 +738,7 @@
           </a>
         </div>
 
-        <p class="text-xs uppercase tracking-wider font-mono text-slate-300 drop-shadow-sm">
+        <p class="text-xs uppercase tracking-wider text-slate-300 drop-shadow-sm">
           Todo lo que necesitas para identificar, imprimir y controlar tus productos, en un solo lugar.
         </p>
       </div>
@@ -746,19 +746,19 @@
       <!-- CIFRAS / BENCHMARKS TÉCNICOS: ALTO CONTRASTE -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 text-white">
         <div class="border-l-2 border-brand-navy pl-4">
-          <span class="block font-mono text-2xl font-bold text-white">ISO 9001</span>
+          <span class="block text-2xl font-bold text-white">ISO 9001</span>
           <span class="block text-xs uppercase tracking-wider text-slate-200 mt-1">Calidad Certificada</span>
         </div>
         <div class="border-l-2 border-brand-navy pl-4">
-          <span class="block font-mono text-2xl font-bold text-white">4 LÍNEAS</span>
+          <span class="block text-2xl font-bold text-white">4 LÍNEAS</span>
           <span class="block text-xs uppercase tracking-wider text-slate-200 mt-1">Insumos y Maquinaria</span>
         </div>
         <div class="border-l-2 border-brand-navy pl-4">
-          <span class="block font-mono text-2xl font-bold text-white">REINER</span>
+          <span class="block text-2xl font-bold text-white">REINER</span>
           <span class="block text-xs uppercase tracking-wider text-slate-200 mt-1">Tecnología Alemana</span>
         </div>
         <div class="border-l-2 border-brand-navy pl-4">
-          <span class="block font-mono text-2xl font-bold text-white">COBERTURA</span>
+          <span class="block text-2xl font-bold text-white">COBERTURA</span>
           <span class="block text-xs uppercase tracking-wider text-slate-200 mt-1">Soporte Técnico Nacional</span>
         </div>
       </div>
@@ -771,7 +771,7 @@
       
       <!-- Encabezado de Sección con Texto Oficial Original -->
       <div class="max-w-4xl mb-8 md:mb-10">
-        <span class="text-xs uppercase tracking-widest font-mono text-white/80 block mb-2.5 font-semibold">
+        <span class="text-xs uppercase tracking-widest text-white/80 block mb-2.5 font-semibold">
           ¿Por qué DISCODE?
         </span>
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4 leading-tight">
@@ -840,10 +840,10 @@
     <div class="discode-container">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <div>
-          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Portafolio Industrial</span>
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2">Portafolio Industrial</span>
           <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">PRODUCTOS PARA CADA ETAPA DE TU OPERACIÓN</h2>
         </div>
-        <a href="productos.html" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline font-mono mt-4 md:mt-0">
+        <a href="productos.html" class="text-xs font-bold text-brand-navy uppercase tracking-wider hover:underline mt-4 md:mt-0">
           VER CATÁLOGO COMPLETO →
         </a>
       </div>
@@ -862,9 +862,9 @@
               Etiquetas fabricadas para diferentes aplicaciones, materiales, tamaños y necesidades de identificación.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-8 font-medium">
-              <li class="py-1 flex justify-between"><span>Identificación de productos</span><span class="text-brand-navy font-mono font-bold">·</span></li>
-              <li class="py-1 flex justify-between"><span>Etiquetas para congelados</span><span class="text-brand-navy font-mono font-bold">·</span></li>
-              <li class="py-1 flex justify-between"><span>Cajas, fundas y exportación</span><span class="text-brand-navy font-mono font-bold">·</span></li>
+              <li class="py-1 flex justify-between"><span>Identificación de productos</span><span class="text-brand-navy font-bold">·</span></li>
+              <li class="py-1 flex justify-between"><span>Etiquetas para congelados</span><span class="text-brand-navy font-bold">·</span></li>
+              <li class="py-1 flex justify-between"><span>Cajas, fundas y exportación</span><span class="text-brand-navy font-bold">·</span></li>
             </ul>
           </div>
           <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-lg shadow-xs hover:shadow-md block">
@@ -883,9 +883,9 @@
               Ribbons de transferencia térmica para obtener impresiones claras, resistentes y de alta calidad.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-8 font-medium">
-              <li class="py-1 flex justify-between"><span>Ribbon de cera</span><span class="text-slate-400 font-mono">Papel</span></li>
-              <li class="py-1 flex justify-between"><span>Ribbon de resina</span><span class="text-slate-400 font-mono">Sintético</span></li>
-              <li class="py-1 flex justify-between"><span>Ribbon de resina textil</span><span class="text-slate-400 font-mono">Prendas</span></li>
+              <li class="py-1 flex justify-between"><span>Ribbon de cera</span><span class="text-slate-400">Papel</span></li>
+              <li class="py-1 flex justify-between"><span>Ribbon de resina</span><span class="text-slate-400">Sintético</span></li>
+              <li class="py-1 flex justify-between"><span>Ribbon de resina textil</span><span class="text-slate-400">Prendas</span></li>
             </ul>
           </div>
           <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20ribbons" data-whatsapp-context="ribbons" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-lg shadow-xs hover:shadow-md block">
@@ -904,9 +904,9 @@
               Impresoras industriales, semi industriales, de escritorio y móviles para diferentes volúmenes y aplicaciones.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-8 font-medium">
-              <li class="py-1 flex justify-between"><span>Industriales de alto volumen</span><span class="text-slate-400 font-mono">Planta</span></li>
-              <li class="py-1 flex justify-between"><span>Semi industriales y textil</span><span class="text-slate-400 font-mono">Taller</span></li>
-              <li class="py-1 flex justify-between"><span>Marcas Zebra, TSC y otras</span><span class="text-slate-400 font-mono">Soporte</span></li>
+              <li class="py-1 flex justify-between"><span>Industriales de alto volumen</span><span class="text-slate-400">Planta</span></li>
+              <li class="py-1 flex justify-between"><span>Semi industriales y textil</span><span class="text-slate-400">Taller</span></li>
+              <li class="py-1 flex justify-between"><span>Marcas Zebra, TSC y otras</span><span class="text-slate-400">Soporte</span></li>
             </ul>
           </div>
           <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20una%20impresora%20de%20etiquetas" data-whatsapp-context="impresoras" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-lg shadow-xs hover:shadow-md block">
@@ -925,9 +925,9 @@
               Soluciones para impresión y codificación directa sobre diferentes tipos de superficies y productos.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-8 font-medium">
-              <li class="py-1 flex justify-between"><span>Tecnología alemana Reiner</span><span class="text-slate-400 font-mono">JetStamp</span></li>
-              <li class="py-1 flex justify-between"><span>Fechas, lotes y códigos</span><span class="text-slate-400 font-mono">Directo</span></li>
-              <li class="py-1 flex justify-between"><span>Repuestos y servicio técnico</span><span class="text-slate-400 font-mono">Local</span></li>
+              <li class="py-1 flex justify-between"><span>Tecnología alemana Reiner</span><span class="text-slate-400">JetStamp</span></li>
+              <li class="py-1 flex justify-between"><span>Fechas, lotes y códigos</span><span class="text-slate-400">Directo</span></li>
+              <li class="py-1 flex justify-between"><span>Repuestos y servicio técnico</span><span class="text-slate-400">Local</span></li>
             </ul>
           </div>
           <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20codificadores%20directos%20Reiner" data-whatsapp-context="codificadores" target="_blank" class="w-full text-center py-3 text-xs font-bold uppercase tracking-wider bg-white hover:bg-brand-navy hover:text-white text-slate-900 border border-slate-200 hover:border-brand-navy transition rounded-lg shadow-xs hover:shadow-md block">
@@ -950,7 +950,7 @@
   <section class="relative z-10 -mt-8 md:-mt-12 rounded-t-[2rem] md:rounded-t-[3rem] bg-slate-50 pt-20 md:pt-28 pb-24 md:pb-28 shadow-[0_-15px_35px_rgba(0,0,0,0.04)] overflow-hidden">
     <div class="discode-container">
       <div class="max-w-3xl mb-14">
-        <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Integración de Servicios</span>
+        <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2">Integración de Servicios</span>
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-950">MÁS QUE PRODUCTOS, UNA SOLUCIÓN</h2>
         <p class="text-base text-slate-600 mt-4 leading-relaxed">
           Diseñamos soluciones que combinan equipos, suministros y servicio para simplificar tus procesos de identificación y trazabilidad.
@@ -962,13 +962,13 @@
         <!-- Bloque 1: Solución Integral -->
         <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-4">MODELO 01</span>
+            <span class="text-xs text-slate-400 block mb-4">MODELO 01</span>
             <img src="assets/images/soluciones/cajas-discode-impresora.png" alt="Solución Integral DISCODE - Suministro integral de etiquetas e impresora" class="w-full h-48 object-cover rounded-xl mb-5">
             <h3 class="text-xl font-bold text-slate-950 mb-3">SOLUCIÓN INTEGRAL DISCODE</h3>
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
               Integramos los productos y servicios necesarios para cubrir tus requerimientos de identificación y codificación.
             </p>
-            <p class="text-xs font-mono text-slate-500 mb-6">
+            <p class="text-xs text-slate-500 mb-6">
               Centraliza etiquetas, ribbons, impresoras y codificadores con un solo proveedor calificado.
             </p>
           </div>
@@ -980,13 +980,13 @@
         <!-- Bloque 2: Servicio Absoluto -->
         <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
           <div>
-            <span class="font-mono text-xs text-slate-400 block mb-4">MODELO 02</span>
+            <span class="text-xs text-slate-400 block mb-4">MODELO 02</span>
             <img src="assets/images/impresoras/zebra-zt411-empacadora.png" alt="Servicio Absoluto DISCODE - Soporte y continuidad operativa en planta" class="w-full h-48 object-cover rounded-xl mb-5">
             <h3 class="text-xl font-bold text-slate-950 mb-3">SERVICIO ABSOLUTO DISCODE</h3>
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
               Una solución orientada a garantizar continuidad, soporte y atención durante la operación.
             </p>
-            <p class="text-xs font-mono text-slate-500 mb-6">
+            <p class="text-xs text-slate-500 mb-6">
               Combinamos suministro programado, mantenimiento preventivo y soporte técnico de planta.
             </p>
           </div>
@@ -999,7 +999,7 @@
         <div class="bg-white p-8 rounded-2xl shadow-md ring-2 ring-brand-navy hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="flex justify-between items-center mb-4">
-              <span class="font-mono text-xs text-brand-navy font-bold">MODELO 03</span>
+              <span class="text-xs text-brand-navy font-bold">MODELO 03</span>
               <span class="text-[10px] uppercase font-bold tracking-widest bg-brand-navy text-white px-2.5 py-0.5 rounded-full">Cero Inversión Inicial</span>
             </div>
             <img src="assets/images/soluciones/area-etiquetado-comodato.png" alt="Área de etiquetado en comodato DISCODE" class="w-full h-48 object-cover rounded-xl mb-5">
@@ -1007,7 +1007,7 @@
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
               Una alternativa para empresas que requieren equipos de impresión y codificación acompañados de suministros y soporte.
             </p>
-            <p class="text-xs font-mono text-slate-500 mb-6">
+            <p class="text-xs text-slate-500 mb-6">
               Equipos de impresión sin inversión inicial de capital, con consumibles y respaldo técnico garantizados.
             </p>
           </div>
@@ -1025,13 +1025,13 @@
     <div class="discode-container">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
         <div>
-          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2 font-mono">Cobertura Multisectorial</span>
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2">Cobertura Multisectorial</span>
           <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">SOLUCIONES PARA DIFERENTES INDUSTRIAS</h2>
           <p class="text-sm md:text-base text-slate-400 mt-3 leading-relaxed max-w-2xl">
             Conocemos que cada industria tiene necesidades diferentes de identificación, etiquetado, codificación y trazabilidad. Desarrollamos soluciones a la medida de cada proceso productivo.
           </p>
         </div>
-        <a href="industrias.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-brand-navy uppercase tracking-wider font-mono mt-4 md:mt-0 transition">
+        <a href="industrias.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-brand-navy uppercase tracking-wider mt-4 md:mt-0 transition">
           <span>VER TODAS LAS INDUSTRIAS</span>
           <span>→</span>
         </a>
@@ -1145,7 +1145,7 @@
       
       <!-- Encabezado Centrado tipo Brevo -->
       <div class="max-w-3xl mx-auto mb-10 md:mb-12">
-        <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2.5 font-mono">
+        <span class="text-xs uppercase tracking-widest font-semibold text-brand-navy block mb-2.5">
           Tecnología y Equipamiento Global
         </span>
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-950 mb-3">
@@ -1235,7 +1235,7 @@
 
       <!-- Enlace estilo Brevo -->
       <div class="mt-8">
-        <a href="marcas.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-navy hover:text-slate-950 uppercase tracking-wider font-mono transition">
+        <a href="marcas.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-navy hover:text-slate-950 uppercase tracking-wider transition">
           <span>Ver marcas y compatibilidad técnica</span>
           <span>→</span>
         </a>
@@ -1266,7 +1266,7 @@
         </a>
       </div>
 
-      <p class="text-[11px] font-mono text-blue-200">
+      <p class="text-[11px] text-blue-200">
         Sin costo de diagnóstico inicial · Soporte técnico nacional · ISO 9001
       </p>
     </div>
@@ -1372,7 +1372,7 @@
             <li><a href="nosotros.html#calidad" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Sistema ISO 9001</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Guayaquil · Quito · Cuenca</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Contacto & Cotizaciones</a></li>
-            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-mono font-bold text-base tracking-wider">+593 98 434 5891</a></li>
+            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-bold text-base tracking-wider">+593 98 434 5891</a></li>
           </ul>
         </div>
 

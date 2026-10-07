@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -17,7 +17,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -595,8 +595,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="productos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Productos</a>
-          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir productos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-productos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir productos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-productos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -612,8 +612,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="soluciones.html" class="text-slate-800 hover:text-brand-navy font-semibold">Soluciones</a>
-          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir soluciones">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-soluciones" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir soluciones">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-soluciones" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -628,8 +628,8 @@
       <div class="border-b border-slate-100 pb-2">
         <div class="flex items-center justify-between py-1">
           <a href="recursos.html" class="text-slate-800 hover:text-brand-navy font-semibold">Recursos</a>
-          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 font-mono text-xs" aria-label="Expandir recursos">
-            <span class="accordion-icon font-mono font-bold">[+]</span>
+          <button data-accordion-btn="mobile-list-recursos" class="p-1 text-slate-500 hover:text-slate-900 text-xs" aria-label="Expandir recursos">
+            <span class="accordion-icon font-bold">[+]</span>
           </button>
         </div>
         <div id="mobile-list-recursos" class="hidden pl-4 py-2 space-y-2 text-xs border-l-2 border-slate-200 mt-1">
@@ -668,7 +668,7 @@
 
     <div class="discode-container relative z-10">
       <div class="max-w-3xl">
-        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
+        <span class="text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
           Atención Comercial y Soporte
         </span>
         <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 drop-shadow-sm">
@@ -688,7 +688,7 @@
         
         <!-- Formulario estructurado para enviar a WhatsApp -->
         <div class="lg:col-span-7 bg-white border border-slate-300 p-8 md:p-10">
-          <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Formulario de Requerimiento</span>
+          <span class="text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Formulario de Requerimiento</span>
           <h2 class="text-2xl font-bold tracking-tight text-slate-950 mb-6">Generador de Cotización Inmediata</h2>
           
           <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
@@ -728,7 +728,7 @@
             </div>
 
             <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span class="text-xs text-slate-500 font-mono">Abre WhatsApp con mensaje pre-estructurado</span>
+              <span class="text-xs text-slate-500">Abre WhatsApp con mensaje pre-estructurado</span>
               <button type="submit" class="w-full sm:w-auto bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
                 Cotizar por WhatsApp →
               </button>
@@ -743,24 +743,24 @@
             <div class="border border-slate-200 bg-slate-50 p-2 mb-6">
               <img src="assets/images/soluciones/asistente-discode.png" alt="Especialista de Asesoría y Soporte Técnico DISCODE" class="w-full h-56 object-cover object-top">
               <div class="p-2.5 bg-white border-t border-slate-200 text-center">
-                <span class="font-mono text-xs font-bold text-slate-900 block">ASESORÍA TÉCNICA PERSONALIZADA</span>
+                <span class="text-xs font-bold text-slate-900 block">ASESORÍA TÉCNICA PERSONALIZADA</span>
                 <span class="text-[11px] text-slate-500">Acompañamiento en planta y especificación de suministros</span>
               </div>
             </div>
 
-            <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-4">Canales de Contacto Directo</span>
+            <span class="text-xs uppercase tracking-widest text-brand-navy font-bold block mb-4">Canales de Contacto Directo</span>
             
             <div class="space-y-6">
               <div>
-                <span class="text-xs font-mono text-slate-400 block uppercase">Línea Directa y WhatsApp Comercial:</span>
-                <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." data-whatsapp-context="default" target="_blank" class="text-xl font-bold font-mono text-slate-950 hover:text-brand-navy transition block mt-1 discode-phone-text">
+                <span class="text-xs text-slate-400 block uppercase">Línea Directa y WhatsApp Comercial:</span>
+                <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." data-whatsapp-context="default" target="_blank" class="text-xl font-bold text-slate-950 hover:text-brand-navy transition block mt-1 discode-phone-text">
                   +593 98 434 5891
                 </a>
                 <span class="text-xs text-slate-500 block mt-0.5">Atención técnica y cotizaciones de lunes a viernes.</span>
               </div>
 
               <div class="pt-4 border-t border-slate-100">
-                <span class="text-xs font-mono text-slate-400 block uppercase">Correo Corporativo:</span>
+                <span class="text-xs text-slate-400 block uppercase">Correo Corporativo:</span>
                 <a href="mailto:ventas@discode.net" class="text-base font-semibold text-slate-900 hover:text-brand-navy transition block mt-1 discode-email-link">
                   ventas@discode.net
                 </a>
@@ -768,7 +768,7 @@
               </div>
 
               <div class="pt-4 border-t border-slate-100">
-                <span class="text-xs font-mono text-slate-400 block uppercase">Cobertura Territorial:</span>
+                <span class="text-xs text-slate-400 block uppercase">Cobertura Territorial:</span>
                 <p class="text-sm text-slate-800 font-medium mt-1">
                   Guayaquil · Quito · Cuenca · Machala · Manta
                 </p>
@@ -776,8 +776,8 @@
               </div>
 
               <div class="pt-4 border-t border-slate-100">
-                <span class="text-xs font-mono text-slate-400 block uppercase">Horario de Operaciones:</span>
-                <p class="text-xs font-mono text-slate-800 mt-1">
+                <span class="text-xs text-slate-400 block uppercase">Horario de Operaciones:</span>
+                <p class="text-xs text-slate-800 mt-1">
                   Lunes a Viernes: 08:30 — 17:30
                 </p>
               </div>
@@ -786,7 +786,7 @@
 
           <!-- Insignia ISO 9001 -->
           <div class="border-2 border-brand-navy bg-slate-50 p-6 flex items-center gap-4">
-            <div class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center font-mono font-bold text-xs shrink-0 border border-brand-navy">
+            <div class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center font-bold text-xs shrink-0 border border-brand-navy">
               ISO<br>9001
             </div>
             <div>
@@ -901,7 +901,7 @@
             <li><a href="nosotros.html#calidad" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Sistema ISO 9001</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Guayaquil · Quito · Cuenca</a></li>
             <li><a href="contacto.html" class="inline-block py-0.5 hover:text-blue-400 transition-colors">Contacto & Cotizaciones</a></li>
-            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-mono font-bold text-base tracking-wider">+593 98 434 5891</a></li>
+            <li><a href="https://wa.me/593984345891" data-whatsapp-context="default" target="_blank" class="inline-block py-0.5 text-blue-400 hover:text-white transition-colors font-bold text-base tracking-wider">+593 98 434 5891</a></li>
           </ul>
         </div>
 
