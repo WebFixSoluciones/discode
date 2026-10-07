@@ -659,132 +659,139 @@
   </header>
 
   <!-- ENCABEZADO DE PÁGINA: HERO TÉCNICO CON IMAGEN DE FONDO -->
-  <section class="relative overflow-hidden bg-slate-950 text-white py-12 md:py-16">
+  <section class="relative overflow-hidden bg-slate-950 text-white pt-14 pb-20 md:pt-16 md:pb-24">
     <!-- Imagen de fondo con overlay técnico luminoso y balanceado -->
     <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none select-none">
       <img src="assets/images/etiquetas/etiquetas-codigo-qr-trazabilidad.png" alt="Recursos y Conocimiento Técnico DISCODE" class="w-full h-full object-cover object-center">
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/35 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/40 to-transparent"></div>
     </div>
 
     <div class="discode-container relative z-10">
       <div class="max-w-3xl">
-        <span class="font-mono text-[11px] uppercase tracking-widest text-blue-400 font-semibold block mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-2">
           Centro de Conocimiento Técnico
         </span>
-        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 drop-shadow-sm">
-          RECURSOS Y CONOCIMIENTO
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white mb-4 drop-shadow-sm">
+          Recursos y Conocimiento
         </h1>
-        <p class="text-sm sm:text-base text-slate-100 leading-relaxed max-w-2xl mb-6 drop-shadow-xs">
-          Información práctica para ayudarte a seleccionar, utilizar y mantener correctamente tus soluciones de identificación.
+        <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mb-6 drop-shadow-xs">
+          Documentación técnica oficial y guías de ingeniería para seleccionar materiales compatibles, optimizar impresoras y eliminar mermas en tus procesos.
         </p>
 
         <!-- Índice rápido de artículos -->
-        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10 text-xs font-mono">
-          <a href="recurso-selector-ribbon.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">01. Selector de Ribbon →</a>
-          <a href="recurso-transferencia-vs-directa.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">02. Transferencia vs. Directa →</a>
-          <a href="recurso-como-elegir-impresora.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">03. Cómo Elegir Impresora →</a>
-          <a href="recurso-tipo-de-etiqueta.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">04. Tipo de Etiqueta →</a>
-          <a href="recurso-mejorar-trazabilidad.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">05. Trazabilidad en 6 Pasos →</a>
-          <a href="recurso-evitar-desperdicios.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">06. Evitar Desperdicio →</a>
-          <a href="recurso-mantenimiento-zebra.html" class="px-3 py-1.5 border border-white/20 bg-white/5 hover:bg-brand-navy hover:border-brand-navy hover:text-white transition rounded-sm">07. Mantenimiento Zebra →</a>
+        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10 text-xs">
+          <a href="recurso-selector-ribbon.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Selector de Ribbon →</a>
+          <a href="recurso-transferencia-vs-directa.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Transferencia vs. Directa →</a>
+          <a href="recurso-como-elegir-impresora.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Cómo Elegir Impresora →</a>
+          <a href="recurso-tipo-de-etiqueta.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Tipo de Etiqueta →</a>
+          <a href="recurso-mejorar-trazabilidad.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Trazabilidad en 6 Pasos →</a>
+          <a href="recurso-evitar-desperdicios.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Evitar Desperdicios →</a>
+          <a href="recurso-mantenimiento-zebra.html" class="px-3 py-1.5 bg-white/10 hover:bg-blue-600 text-white transition rounded-xl font-medium backdrop-blur-sm">Mantenimiento Zebra →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMPONENTE 1: SELECTOR TÉCNICO INTERACTIVO DE RIBBON (PÁGINAS 12-14 DE LA GUÍA) -->
-  <section id="selector-ribbon" class="py-20 bg-slate-50">
-    <div class="discode-container max-w-5xl">
-      <div class="mb-10 text-center">
-        <span class="font-mono text-xs uppercase tracking-widest text-brand-navy font-bold block mb-2">Herramienta Interactiva</span>
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">¿Qué ribbon necesito para mis etiquetas?</h2>
-        <p class="text-sm text-slate-600 mt-2 max-w-2xl mx-auto">
-          La elección del ribbon depende principalmente del material de la etiqueta y de las condiciones a las que estará expuesta la impresión. En DISCODE contamos con Ribbons de Cera, Resina y Resina Textil.
-        </p>
-      </div>
-
-      <!-- Galería Visual de Tipos de Ribbon -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-        <div class="bg-white border border-slate-200/80 rounded-2xl p-4 text-center shadow-xs">
-          <div class="h-32 flex items-center justify-center mb-3">
-            <img src="assets/images/ribbons/ribbon-cera.png" alt="Ribbon de Cera Formulada" class="h-28 object-contain">
-          </div>
-          <span class="font-bold text-slate-900 block text-xs">Cera Formulada</span>
-          <span class="text-[11px] text-slate-500">Papel mate, bond y despacho</span>
-        </div>
-        <div class="bg-white border border-slate-200/80 rounded-2xl p-4 text-center shadow-xs">
-          <div class="h-32 flex items-center justify-center mb-3">
-            <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon Mezcla Cera Resina" class="h-28 object-contain">
-          </div>
-          <span class="font-bold text-slate-900 block text-xs">Cera / Resina</span>
-          <span class="text-[11px] text-slate-500">Polipropileno mate y brillo</span>
-        </div>
-        <div class="bg-white border border-slate-200/80 rounded-2xl p-4 text-center shadow-xs">
-          <div class="h-32 flex items-center justify-center mb-3">
-            <img src="assets/images/ribbons/ribbon-resina.png" alt="Ribbon de Resina Textil HL35" class="h-28 object-contain">
-          </div>
-          <span class="font-bold text-slate-900 block text-xs">Resina Pura & Textil</span>
-          <span class="text-[11px] text-slate-500">Congelación extrema y lavado</span>
-        </div>
-      </div>
-
-      <div class="bg-white border border-slate-300 p-8 md:p-10 rounded-2xl shadow-xs">
-        <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-900 mb-4">
-          Paso 1: ¿Qué material tiene tu etiqueta?
-        </label>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <button type="button" onclick="selectRibbonMaterial('papel')" id="ribbon-opt-papel" class="ribbon-select-btn text-left p-5 border border-brand-navy bg-slate-50 ring-1 ring-brand-navy transition">
-            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 01</span>
-            <span class="font-bold text-slate-950 block text-base">Papel / Cartón</span>
-            <span class="text-xs text-black block mt-1">Etiquetas de papel bond, mate o semi-brillo para logística general.</span>
-          </button>
-
-          <button type="button" onclick="selectRibbonMaterial('sintetico')" id="ribbon-opt-sintetico" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-400 transition">
-            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 02</span>
-            <span class="font-bold text-slate-950 block text-base">Sintético / Polipropileno</span>
-            <span class="text-xs text-black block mt-1">Polipropileno (BOPP), poliéster, congelación profunda y roce.</span>
-          </button>
-
-          <button type="button" onclick="selectRibbonMaterial('textil')" id="ribbon-opt-textil" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-400 transition">
-            <span class="font-mono text-[10px] text-slate-400 block mb-1">SUSTRATO 03</span>
-            <span class="font-bold text-slate-950 block text-base">Textil / Ropa</span>
-            <span class="text-xs text-black block mt-1">Cintas cosidas de poliamida (nylon) o raso satín para prendas.</span>
-          </button>
-        </div>
-
-        <!-- Panel de Diagnóstico -->
-        <div class="border-t border-slate-200 pt-6">
-          <span class="font-mono text-[11px] text-brand-navy font-bold uppercase tracking-wider block" id="ribbon-result-type">
-            TIPO: WAX / CERA INDUSTRIAL
-          </span>
-          <h3 id="ribbon-result-title" class="text-xl font-bold text-slate-950 mt-1 mb-2">
-            Ribbon de Cera Formulada
-          </h3>
-          <p id="ribbon-result-desc" class="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
-            Solución eficiente y de alto rendimiento para impresión sobre etiquetas de papel. Proporciona excelente nitidez de códigos de barras para logística y almacenamiento comercial.
+  <!-- CONTENIDO DE RECURSOS CON TRANSICIÓN CURVA -->
+  <div class="relative z-20 -mt-8 md:-mt-12 rounded-t-[2.5rem] md:rounded-t-[3.5rem] bg-slate-50 border-t border-white/20 pt-16 pb-20 shadow-2xl">
+    
+    <!-- COMPONENTE 1: SELECTOR TÉCNICO INTERACTIVO DE RIBBON -->
+    <section id="selector-ribbon" class="pb-20">
+      <div class="discode-container max-w-5xl">
+        <div class="mb-10 text-center">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-2">Herramienta Interactiva</span>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-950">¿Qué ribbon necesito para mis etiquetas?</h2>
+          <p class="text-sm text-slate-600 mt-2 max-w-2xl mx-auto leading-relaxed">
+            La elección del ribbon depende del material de la etiqueta y de las condiciones térmicas y mecánicas a las que estará expuesta la impresión. En DISCODE contamos con Ribbons de Cera, Resina y Resina Textil HL35.
           </p>
+        </div>
 
-          <div id="ribbon-result-specs" class="bg-slate-50 border border-slate-200 p-4 text-xs font-mono text-slate-700 space-y-2 mb-8">
-            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900">Papel mate, brillante, cartulinas</strong></div>
-            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900">Moderada (despacho general)</strong></div>
-            <div class="border-b border-slate-200 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900">Bodega, logística, cajas máster</strong></div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 bg-slate-50 border border-slate-200">
-            <div>
-              <strong class="text-xs font-bold text-slate-950 block uppercase tracking-wider">¿Tienes dudas sobre qué ribbon utilizar?</strong>
-              <span class="text-xs text-black">Envíanos una muestra física o las especificaciones de tu equipo. Te ayudamos a identificar el adecuado.</span>
+        <!-- Galería Visual de Tipos de Ribbon -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+          <div class="bg-white border border-slate-100 rounded-3xl p-6 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-md transition">
+            <div class="h-32 flex items-center justify-center mb-3">
+              <img src="assets/images/ribbons/ribbon-cera.png" alt="Ribbon de Cera Formulada" class="h-28 object-contain">
             </div>
-            <a id="ribbon-result-cta" href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera%20para%20etiquetas%20de%20Papel" target="_blank" class="whitespace-nowrap bg-brand-navy hover:bg-slate-900 text-white px-6 py-3 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-              Cotizar Ribbon por WhatsApp
-            </a>
+            <span class="font-bold text-slate-900 block text-sm">Cera Formulada</span>
+            <span class="text-xs text-slate-500 mt-1 block">Papel mate, bond y logística general</span>
+          </div>
+          <div class="bg-white border border-slate-100 rounded-3xl p-6 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-md transition">
+            <div class="h-32 flex items-center justify-center mb-3">
+              <img src="assets/images/ribbons/ribbon-cera-resina.png" alt="Ribbon Mezcla Cera Resina" class="h-28 object-contain">
+            </div>
+            <span class="font-bold text-slate-900 block text-sm">Cera / Resina</span>
+            <span class="text-xs text-slate-500 mt-1 block">Polipropileno mate y brillo comercial</span>
+          </div>
+          <div class="bg-white border border-slate-100 rounded-3xl p-6 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-md transition">
+            <div class="h-32 flex items-center justify-center mb-3">
+              <img src="assets/images/ribbons/ribbon-resina.png" alt="Ribbon de Resina Textil HL35" class="h-28 object-contain">
+            </div>
+            <span class="font-bold text-slate-900 block text-sm">Resina Pura & Textil</span>
+            <span class="text-xs text-slate-500 mt-1 block">Congelación profunda y lavado industrial</span>
           </div>
         </div>
 
+        <div class="bg-white border border-slate-100 p-6 sm:p-10 rounded-3xl shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">
+            Paso 1: ¿Qué material tiene tu etiqueta?
+          </label>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <button type="button" onclick="selectRibbonMaterial('papel')" id="ribbon-opt-papel" class="ribbon-select-btn text-left p-5 border-2 border-blue-600 bg-blue-50/50 rounded-2xl shadow-xs transition">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Sustrato 01</span>
+              <span class="font-bold text-slate-950 block text-base">Papel / Cartón</span>
+              <span class="text-xs text-slate-600 block mt-1 leading-snug">Etiquetas de papel bond, mate o semi-brillo para logística general.</span>
+            </button>
+
+            <button type="button" onclick="selectRibbonMaterial('sintetico')" id="ribbon-opt-sintetico" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-300 rounded-2xl transition">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Sustrato 02</span>
+              <span class="font-bold text-slate-950 block text-base">Sintético / BOPP</span>
+              <span class="text-xs text-slate-600 block mt-1 leading-snug">Polipropileno (BOPP), poliéster, congelación profunda y roce.</span>
+            </button>
+
+            <button type="button" onclick="selectRibbonMaterial('textil')" id="ribbon-opt-textil" class="ribbon-select-btn text-left p-5 border border-slate-200 bg-white hover:border-slate-300 rounded-2xl transition">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Sustrato 03</span>
+              <span class="font-bold text-slate-950 block text-base">Textil / Ropa</span>
+              <span class="text-xs text-slate-600 block mt-1 leading-snug">Cintas cosidas de poliamida (nylon) o raso satín para prendas.</span>
+            </button>
+          </div>
+
+          <!-- Panel de Diagnóstico -->
+          <div class="rounded-2xl bg-gradient-to-br from-blue-50/70 via-slate-50/40 to-blue-50/30 border border-blue-100/80 p-6 sm:p-7 shadow-xs">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1" id="ribbon-result-type">
+              Tipo: Wax / Cera Industrial
+            </span>
+            <h3 id="ribbon-result-title" class="text-xl sm:text-2xl font-black text-slate-950 mb-2">
+              Ribbon de Cera Formulada
+            </h3>
+            <p id="ribbon-result-desc" class="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
+              Solución eficiente y de alto rendimiento para impresión sobre etiquetas de papel. Proporciona excelente nitidez de códigos de barras para logística y almacenamiento comercial.
+            </p>
+
+            <div id="ribbon-result-specs" class="bg-white/80 border border-blue-100/60 rounded-xl p-4 text-xs text-slate-700 space-y-2 mb-6">
+              <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Sustratos idóneos:</span> <strong class="text-slate-900 font-bold">Papel mate, brillante, cartulinas</strong></div>
+              <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Resistencia al roce:</span> <strong class="text-slate-900 font-bold">Moderada (despacho general)</strong></div>
+              <div class="border-b border-slate-100 pb-1.5 flex justify-between"><span>Aplicaciones:</span> <strong class="text-slate-900 font-bold">Bodega, logística, cajas máster</strong></div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+              <p class="text-xs text-slate-600">
+                <strong class="text-slate-900 font-bold">¿Tienes dudas sobre qué ribbon utilizar?</strong> Envíanos las especificaciones de tu equipo y producto.
+              </p>
+              <div class="flex items-center gap-2 shrink-0">
+                <a href="recurso-selector-ribbon.html" class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 px-4 py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-xs">
+                  Ver Guía Completa →
+                </a>
+                <a id="ribbon-result-cta" href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20cotizar%20Ribbon%20de%20Cera%20para%20etiquetas%20de%20Papel" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-md whitespace-nowrap">
+                  Cotizar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- ARTÍCULO 2: ¿TRANSFERENCIA TÉRMICA O TÉRMICA DIRECTA? (PÁGINAS 14-16 DE LA GUÍA) -->
   <section id="comparativa-termica" class="py-20 bg-white">
@@ -1327,17 +1334,38 @@
           </p>
         </div>
 
-        <div class="border-2 border-brand-navy bg-white p-6">
-          <strong class="font-mono text-xs text-brand-navy font-bold uppercase block mb-1">Paso 7: ¿Cuándo debo solicitar servicio técnico?</strong>
+        <div class="border border-slate-100 bg-white p-6 rounded-3xl shadow-xs">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Paso 7: Soporte Técnico Especializado</span>
           <h3 class="text-base font-bold text-slate-950 mb-2">Diagnóstico y Mantenimiento Técnico DISCODE</h3>
-          <p class="text-xs text-black leading-relaxed mb-4">
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
             Si la impresora presenta líneas continuas en la impresión, etiquetas desalineadas, problemas de alimentación o fallas que no se solucionan con una limpieza básica, solicita una revisión técnica especializada.
           </p>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20solicito%20servicio%20t%C3%A9cnico%20para%20impresora%20Zebra" data-whatsapp-context="servicio_tecnico" target="_blank" class="inline-block bg-brand-navy hover:bg-slate-900 text-white px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            COTIZAR SERVICIO POR WHATSAPP
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20solicito%20servicio%20t%C3%A9cnico%20para%20impresora%20Zebra" data-whatsapp-context="servicio_tecnico" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-xs">
+            Cotizar Servicio por WhatsApp
           </a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE DEL CONTENEDOR CURVO -->
+  </div>
+
+  <!-- LLAMADO A LA ACCIÓN CONTEXTUAL GLOBAL -->
+  <section class="py-12 bg-white">
+    <div class="discode-container">
+      <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl text-white">
+        <div class="max-w-xl">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-1">Ingeniería y Soporte en Planta</span>
+          <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">¿Necesitas asesoría técnica para tus líneas de empaque?</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Nuestros especialistas realizan auditorías de compatibilidad de sustrato y ribbon, y calibración en sitio para tus impresoras industriales Zebra y TSC.
+          </p>
+        </div>
+        <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20asesor%C3%ADa%20t%C3%A9cnica%20sobre%20recursos%20de%20impresi%C3%B3n" data-whatsapp-context="recursos" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-lg hover:shadow-blue-500/25 shrink-0">
+          Hablar con un Ingeniero por WhatsApp →
+        </a>
       </div>
     </div>
   </section>

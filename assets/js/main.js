@@ -189,13 +189,13 @@ function initDynamicContactData() {
 function selectRibbonMaterial(type) {
   const buttons = document.querySelectorAll('.ribbon-select-btn');
   buttons.forEach(b => {
-    b.classList.remove('border-brand-navy', 'bg-slate-50', 'ring-1', 'ring-brand-navy');
+    b.classList.remove('border-blue-600', 'border-2', 'bg-blue-50/50', 'shadow-xs', 'border-brand-navy', 'bg-slate-50', 'ring-1', 'ring-brand-navy');
     b.classList.add('border-slate-200', 'bg-white');
   });
 
   const selectedBtn = document.getElementById(`ribbon-opt-${type}`);
   if (selectedBtn) {
-    selectedBtn.classList.add('border-brand-navy', 'bg-slate-50', 'ring-1', 'ring-brand-navy');
+    selectedBtn.classList.add('border-blue-600', 'border-2', 'bg-blue-50/50', 'shadow-xs');
     selectedBtn.classList.remove('border-slate-200', 'bg-white');
   }
 

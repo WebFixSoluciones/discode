@@ -662,121 +662,158 @@
   <div class="discode-container py-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS -->
-      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
-        <div class="mb-6 pb-4 border-b border-slate-200">
-          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CENTRO DE CONOCIMIENTO</span>
-          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Recursos Técnicos</h2>
-        </div>
-
-        <nav class="space-y-4 text-xs">
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
-            <a href="recursos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
-              · Índice de Guías
-            </a>
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS (MINIMALISTA, SIN FONDOS EN ICONOS NI PÍLDORAS SATURADAS) -->
+      <aside class="lg:col-span-3 sticky top-28 space-y-6">
+        <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] p-5 sm:p-6">
+          <div class="mb-5 px-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Centro Técnico</span>
+            <h2 class="text-lg font-black text-slate-950 tracking-tight">Recursos DISCODE</h2>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Guías Prácticas:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="recurso-selector-ribbon.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  1. Selector de Ribbon
+          <nav class="space-y-4">
+            <!-- Grupo 1: Herramientas & Guías -->
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block px-1 mb-2">
+                Herramientas & Guías
+              </span>
+              <div class="space-y-1">
+                <!-- Selector de Ribbons -->
+                <a href="recurso-selector-ribbon.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Selector de Ribbons</span>
+                  </div>
                 </a>
-              </li>
-              <li>
-                <a href="recurso-transferencia-vs-directa.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  2. Transferencia vs Directa
-                </a>
-              </li>
-              <li>
-                <a href="recurso-como-elegir-impresora.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  3. Elegir Impresora
-                </a>
-              </li>
-              <li>
-                <a href="recurso-tipo-de-etiqueta.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
-                  4. Tipo de Etiqueta
-                </a>
-              </li>
-              <li>
-                <a href="recurso-mejorar-trazabilidad.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  5. Mejorar Trazabilidad
-                </a>
-              </li>
-              <li>
-                <a href="recurso-evitar-desperdicios.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  6. Evitar Desperdicio
-                </a>
-              </li>
-              <li>
-                <a href="recurso-mantenimiento-zebra.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  7. Mantenimiento Zebra
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
 
-        <div class="mt-8 pt-6 border-t border-slate-200">
-          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">MUESTRAS DE SUSTRATOS</span>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20quisiera%20solicitar%20un%20muestrario%20de%20etiquetas%20adhesivas" data-whatsapp-context="etiquetas" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            Solicitar Muestrario
-          </a>
+                <!-- Transferencia vs Directa -->
+                <a href="recurso-transferencia-vs-directa.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Transferencia vs. Directa</span>
+                  </div>
+                </a>
+
+                <!-- Cómo Elegir Impresora -->
+                <a href="recurso-como-elegir-impresora.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Cómo Elegir Impresora</span>
+                  </div>
+                </a>
+
+                <!-- Tipos de Etiquetas (ACTIVO) -->
+                <a href="recurso-tipo-de-etiqueta.html" class="flex items-center gap-3 px-3 py-2 rounded-xl bg-blue-50/70 text-brand-navy font-bold transition">
+                  <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-bold text-slate-950 block leading-tight truncate">Tipos de Etiquetas</span>
+                  </div>
+                </a>
+
+                <!-- 6 Pasos para Trazabilidad -->
+                <a href="recurso-mejorar-trazabilidad.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">6 Pasos para Trazabilidad</span>
+                  </div>
+                </a>
+
+                <!-- Evitar Desperdicio -->
+                <a href="recurso-evitar-desperdicios.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Evitar Desperdicios</span>
+                  </div>
+                </a>
+
+                <!-- Mantenimiento Zebra -->
+                <a href="recurso-mantenimiento-zebra.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Mantenimiento Zebra & TSC</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Grupo 2: Índice General -->
+            <div class="pt-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block px-1 mb-2">
+                Índice General
+              </span>
+              <div class="space-y-1">
+                <a href="recursos.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight transition">Ver Todos los Recursos</span>
+                  </div>
+                </a>
+
+                <a href="servicio-tecnico.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight transition">Servicio Técnico Oficial</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
       </aside>
 
       <!-- CONTENIDO PRINCIPAL: TIPO DE ETIQUETA -->
-      <main class="lg:col-span-9 bg-white">
+      <main class="lg:col-span-9 bg-white space-y-12">
         
-        <!-- Breadcrumb -->
-        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
-          <a href="index.html" class="hover:underline">Inicio</a>
-          <span>/</span>
-          <a href="recursos.html" class="hover:underline">Recursos</a>
-          <span>/</span>
-          <span class="text-slate-900 font-semibold">Tipo de Etiqueta según Aplicación</span>
-        </div>
-
-        <div class="mb-8">
-          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
-            GUÍA TÉCNICA 04 — INGENIERÍA DE MATERIALES Y ADHESIVOS
+        <!-- Breadcrumb & Encabezado Principal -->
+        <div>
+          <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+            <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+            <span>/</span>
+            <a href="recursos.html" class="hover:text-blue-600 transition">Recursos</a>
+            <span>/</span>
+            <span class="text-slate-900 font-semibold">Tipo de Etiqueta según Aplicación</span>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight mb-3">
-            ¿CÓMO SELECCIONAR EL TIPO DE ETIQUETA SEGÚN SU APLICACIÓN?
+
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-2">
+            Ingeniería de Materiales y Adhesivos
+          </span>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950 mb-4">
+            ¿Cómo Seleccionar el Tipo de Etiqueta según su Aplicación?
           </h1>
-          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
             Una etiqueta que se despega en una cámara de congelación o que pierde su adhesión en cajas de exportación causa rechazos aduaneros millonarios. Aprende a evaluar el sustrato, el adhesivo y las condiciones de servicio.
           </p>
         </div>
 
         <!-- ESTRUCTURA ANATÓMICA DE LA ETIQUETA -->
-        <div class="border border-slate-200 p-8 bg-slate-50 mb-12">
-          <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">ANATOMÍA TÉCNICA</span>
-          <h3 class="text-xl font-bold text-slate-950 mb-6">Los 3 componentes de una etiqueta autoadhesiva</h3>
+        <div>
+          <div class="mb-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Anatomía Técnica</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">Los 3 componentes de una etiqueta autoadhesiva</h3>
+            <p class="text-sm text-slate-500 mt-1">Cada elemento define el comportamiento físico y térmico del insumo en línea</p>
+          </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
-            <div class="bg-white p-5 border border-slate-200">
-              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 01</span>
-              <strong class="text-slate-950 text-sm block mb-2">El Facial (Frontal)</strong>
-              <p class="text-slate-600 leading-relaxed">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-50/70 hover:bg-white rounded-3xl p-6 border border-slate-100 hover:border-blue-100 hover:shadow-md transition">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Componente 1</span>
+              <strong class="text-slate-950 text-base font-bold block mb-2">El Facial (Frontal)</strong>
+              <p class="text-sm text-slate-600 leading-relaxed">
                 La capa superior donde se imprime. Puede ser papel (couché, mate, térmico directo) o película plástica sintética (polipropileno BOPP, poliéster o poliamida textil).
               </p>
             </div>
 
-            <div class="bg-white p-5 border border-slate-200">
-              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 02</span>
-              <strong class="text-slate-950 text-sm block mb-2">El Adhesivo</strong>
-              <p class="text-slate-600 leading-relaxed">
+            <div class="bg-slate-50/70 hover:bg-white rounded-3xl p-6 border border-slate-100 hover:border-blue-100 hover:shadow-md transition">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Componente 2</span>
+              <strong class="text-slate-950 text-base font-bold block mb-2">El Adhesivo</strong>
+              <p class="text-sm text-slate-600 leading-relaxed">
                 La formulación química responsable del anclaje. Se clasifica en Acrílico (base agua), Hotmelt (base caucho sintético), Adhesivos especiales para congelación y bajas temperaturas, o Removible (sin dejar residuos).
               </p>
             </div>
 
-            <div class="bg-white p-5 border border-slate-200">
-              <span class="font-mono text-slate-400 block mb-1">COMPONENTE 03</span>
-              <strong class="text-slate-950 text-sm block mb-2">El Liner (Soporte)</strong>
-              <p class="text-slate-600 leading-relaxed">
+            <div class="bg-slate-50/70 hover:bg-white rounded-3xl p-6 border border-slate-100 hover:border-blue-100 hover:shadow-md transition">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Componente 3</span>
+              <strong class="text-slate-950 text-base font-bold block mb-2">El Liner (Soporte)</strong>
+              <p class="text-sm text-slate-600 leading-relaxed">
                 Papel siliconado glassine o kraft que sostiene la etiqueta antes de ser desprendida. Su espesor y resistencia al rasgado son cruciales en dispensadores automáticos.
               </p>
             </div>
@@ -784,66 +821,67 @@
         </div>
 
         <!-- SUSTRATOS MÁS UTILIZADOS EN ECUADOR -->
-        <div class="mb-12">
-          <div class="flex justify-between items-center mb-6 pb-2 border-b border-slate-200">
-            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+        <div>
+          <div class="mb-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Guía de Selección</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">
               Principales Sustratos Faciales y sus Aplicaciones
             </h3>
-            <span class="text-xs font-mono text-slate-400">GUÍA DE SELECCIÓN</span>
+            <p class="text-sm text-slate-500 mt-1">Comportamiento físico y compatibilidad química recomendada</p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
-            <div class="border border-slate-200 p-6 bg-white">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] hover:shadow-md transition">
               <div class="flex justify-between items-start mb-2">
-                <strong class="text-sm font-bold text-slate-950">Papel Couché / Transferencia Térmica</strong>
-                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">ECONÓMICO</span>
+                <strong class="text-base font-bold text-slate-950">Papel Couché / Transferencia Térmica</strong>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Económico</span>
               </div>
-              <p class="text-slate-600 leading-relaxed mb-3">
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
                 Papel estucado semi-brillante con excelente blancura y lisura superficial. Proporciona alto contraste con ribbon de cera.
               </p>
-              <div class="font-mono text-slate-700 space-y-1">
+              <div class="text-xs sm:text-sm text-slate-700 space-y-1.5 pt-3 border-t border-slate-100">
                 <div>· <strong>Uso ideal:</strong> Cajas corrugadas, pallets de almacenamiento, despacho logístico y retail interior.</div>
                 <div>· <strong>Limitación:</strong> No apto para inmersión en agua ni intemperie prolongada.</div>
               </div>
             </div>
 
-            <div class="border-2 border-brand-navy p-6 bg-white">
+            <div class="bg-gradient-to-br from-blue-50/50 to-white rounded-3xl p-6 sm:p-7 border border-blue-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.03)] hover:shadow-md transition">
               <div class="flex justify-between items-start mb-2">
-                <strong class="text-sm font-bold text-brand-navy">Polipropileno (BOPP Blanco / Transparente)</strong>
-                <span class="font-mono text-[10px] bg-brand-navy text-white px-2 py-0.5 font-bold">ALTA RESISTENCIA</span>
+                <strong class="text-base font-bold text-blue-600">Polipropileno (BOPP Blanco / Transparente)</strong>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 px-2 py-0.5 rounded-md">Alta Resistencia</span>
               </div>
-              <p class="text-slate-600 leading-relaxed mb-3">
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
                 Película plástica biorientada ultra resistente al rasgado, a la humedad continua, condensación y aceites. Se imprime con ribbon de resina.
               </p>
-              <div class="font-mono text-slate-700 space-y-1">
+              <div class="text-xs sm:text-sm text-slate-700 space-y-1.5 pt-3 border-t border-blue-100">
                 <div>· <strong>Uso ideal:</strong> Cajas master de camarón y mariscos congelados, botellas plásticas, químicos y cosméticos.</div>
                 <div>· <strong>Ventaja:</strong> No absorbe agua ni se desintegra en túneles de frío.</div>
               </div>
             </div>
 
-            <div class="border border-slate-200 p-6 bg-white">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] hover:shadow-md transition">
               <div class="flex justify-between items-start mb-2">
-                <strong class="text-sm font-bold text-slate-950">Papel Térmico Directo (Top Coated)</strong>
-                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">SIN RIBBON</span>
+                <strong class="text-base font-bold text-slate-950">Papel Térmico Directo (Top Coated)</strong>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Sin Ribbon</span>
               </div>
-              <p class="text-slate-600 leading-relaxed mb-3">
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
                 Papel termosensible con capa barrera superior que protege los químicos contra grasa, vapor y contacto con dedos.
               </p>
-              <div class="font-mono text-slate-700 space-y-1">
+              <div class="text-xs sm:text-sm text-slate-700 space-y-1.5 pt-3 border-t border-slate-100">
                 <div>· <strong>Uso ideal:</strong> Balanzas de supermercados, guías courier y etiquetas de despacho de consumo inmediato.</div>
                 <div>· <strong>Limitación:</strong> Sensible a fuentes directas de calor o exposición solar.</div>
               </div>
             </div>
 
-            <div class="border border-slate-200 p-6 bg-white">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] hover:shadow-md transition">
               <div class="flex justify-between items-start mb-2">
-                <strong class="text-sm font-bold text-slate-950">Poliéster / Poliamida Textil</strong>
-                <span class="font-mono text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5">ESPECIALIDAD</span>
+                <strong class="text-base font-bold text-slate-950">Poliéster / Poliamida Textil</strong>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Especialidad</span>
               </div>
-              <p class="text-slate-600 leading-relaxed mb-3">
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
                 Sustratos técnicos sintéticos diseñados para resistir condiciones extremas de temperatura (+150°C), lavados químicos o fricción abrasiva.
               </p>
-              <div class="font-mono text-slate-700 space-y-1">
+              <div class="text-xs sm:text-sm text-slate-700 space-y-1.5 pt-3 border-t border-slate-100">
                 <div>· <strong>Uso ideal:</strong> Cintas cosidas en prendas de vestir (satín/nylon) y placas de identificación de maquinaria.</div>
                 <div>· <strong>Ventaja:</strong> Resiste lavandería industrial y vapor a presión.</div>
               </div>
@@ -852,62 +890,68 @@
         </div>
 
         <!-- TABLA DE ADHESIVOS SEGÚN TEMPERATURA -->
-        <div class="border border-slate-200 bg-slate-50 p-8 mb-12">
-          <div class="flex justify-between items-center mb-4 pb-2 border-b border-slate-200">
-            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+        <div>
+          <div class="mb-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Rangos Térmicos</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">
               Clasificación de Adhesivos Industriales
             </h3>
-            <span class="text-xs font-mono text-slate-400">RANGOS TÉRMICOS</span>
+            <p class="text-sm text-slate-500 mt-1">Comportamiento del pegamento según temperatura de pegado y régimen de frío</p>
           </div>
 
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs border-collapse bg-white">
-              <thead>
-                <tr class="border-b border-slate-200 bg-slate-100 font-mono text-[11px] text-slate-700">
-                  <th class="py-2.5 px-3">Tipo de Adhesivo</th>
-                  <th class="py-2.5 px-3">Temp. Mínima de Pegado</th>
-                  <th class="py-2.5 px-3">Temp. de Servicio en Régimen</th>
-                  <th class="py-2.5 px-3">Sustrato Recomendado</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-200">
-                <tr>
-                  <td class="py-2.5 px-3 font-bold text-slate-900">Acrílico Estándar</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Ambiente templado</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Uso comercial e industrial moderado</td>
-                  <td class="py-2.5 px-3 text-slate-600">Vidrio, plástico liso, metal, papel</td>
-                </tr>
-                <tr>
-                  <td class="py-2.5 px-3 font-bold text-slate-900">Hotmelt Permanente (Caucho)</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Temperatura ambiente y frío</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Bodegas, logística y refrigeración</td>
-                  <td class="py-2.5 px-3 text-slate-600">Cartón corrugado rugoso, fundas PE</td>
-                </tr>
-                <tr class="bg-brand-navy/5 font-bold">
-                  <td class="py-2.5 px-3 text-brand-navy">Adhesivo Especial para Congelados</td>
-                  <td class="py-2.5 px-3 font-mono text-brand-navy">Bajas temperaturas</td>
-                  <td class="py-2.5 px-3 font-mono text-brand-navy">Cámaras y congelación profunda</td>
-                  <td class="py-2.5 px-3 text-slate-800">Cajas de camarón, atún, carnes y mariscos</td>
-                </tr>
-                <tr>
-                  <td class="py-2.5 px-3 font-bold text-slate-900">Removible Sin Residuos</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Temperatura ambiente</td>
-                  <td class="py-2.5 px-3 font-mono text-slate-700">Despegue limpio sin residuos</td>
-                  <td class="py-2.5 px-3 text-slate-600">Cristalería, vajilla, electrodomésticos</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-slate-700 font-bold text-xs uppercase tracking-wider border-b border-slate-100">
+                    <th class="py-4 px-5">Tipo de Adhesivo</th>
+                    <th class="py-4 px-5">Temp. Mínima de Pegado</th>
+                    <th class="py-4 px-5">Temp. de Servicio en Régimen</th>
+                    <th class="py-4 px-5">Sustrato Recomendado</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-600">
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Acrílico Estándar</td>
+                    <td class="py-3.5 px-5">Ambiente templado</td>
+                    <td class="py-3.5 px-5">Uso comercial e industrial moderado</td>
+                    <td class="py-3.5 px-5">Vidrio, plástico liso, metal, papel</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Hotmelt Permanente (Caucho)</td>
+                    <td class="py-3.5 px-5">Temperatura ambiente y frío</td>
+                    <td class="py-3.5 px-5">Bodegas, logística y refrigeración</td>
+                    <td class="py-3.5 px-5">Cartón corrugado rugoso, fundas PE</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition bg-blue-50/20">
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Adhesivo Especial para Congelados</td>
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Bajas temperaturas</td>
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Cámaras y congelación profunda</td>
+                    <td class="py-3.5 px-5 text-slate-900 font-medium">Cajas de camarón, atún, carnes y mariscos</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Removible Sin Residuos</td>
+                    <td class="py-3.5 px-5">Temperatura ambiente</td>
+                    <td class="py-3.5 px-5">Despegue limpio sin residuos</td>
+                    <td class="py-3.5 px-5">Cristalería, vajilla, electrodomésticos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         <!-- CTA FINAL -->
-        <div class="border border-slate-200 p-8 text-center bg-white">
-          <h3 class="text-xl font-bold text-slate-950 mb-2">¿Tienes problemas de desprendimiento de etiquetas en tu planta?</h3>
-          <p class="text-xs text-black max-w-xl mx-auto mb-6">
-            Envíanos fotos de tus envases y cuéntanos sobre tus condiciones de frío o embalaje. Te enviaremos una muestra con el adhesivo formulado para tu proceso.
-          </p>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20tengo%20problemas%20con%20el%20pegado%20de%20mis%20etiquetas%20y%20quisiera%20asesor%C3%ADa" data-whatsapp-context="etiquetas" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
-            Consultar Adhesivos en WhatsApp
+        <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl text-white">
+          <div class="max-w-xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-1">Muestras Físicas Sin Costo</span>
+            <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">¿Tienes problemas de desprendimiento de etiquetas en tu planta?</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Envíanos fotos de tus envases y cuéntanos sobre tus condiciones de frío o embalaje. Te enviaremos una muestra con el adhesivo formulado para tu proceso.
+            </p>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20tengo%20problemas%20con%20el%20pegado%20de%20mis%20etiquetas%20y%20quisiera%20asesor%C3%ADa" data-whatsapp-context="etiquetas" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-lg hover:shadow-blue-500/25 shrink-0">
+            Consultar Adhesivos en WhatsApp →
           </a>
         </div>
 

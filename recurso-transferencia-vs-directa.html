@@ -662,218 +662,308 @@
   <div class="discode-container py-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS -->
-      <aside class="lg:col-span-3 border border-slate-200 bg-slate-50 p-6 sticky top-24">
-        <div class="mb-6 pb-4 border-b border-slate-200">
-          <span class="font-mono text-[10px] text-slate-400 uppercase tracking-widest block mb-1">CENTRO DE CONOCIMIENTO</span>
-          <h2 class="text-base font-bold text-slate-950 uppercase tracking-tight">Recursos Técnicos</h2>
-        </div>
-
-        <nav class="space-y-4 text-xs">
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-slate-500 block mb-2">Visión General:</span>
-            <a href="recursos.html" class="block py-1.5 px-3 text-slate-700 hover:text-brand-navy hover:bg-white transition rounded-sm">
-              · Índice de Guías
-            </a>
+      <!-- MENÚ LATERAL IZQUIERDO DEDICADO A RECURSOS (MINIMALISTA, SIN FONDOS EN ICONOS NI PÍLDORAS SATURADAS) -->
+      <aside class="lg:col-span-3 sticky top-28 space-y-6">
+        <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] p-5 sm:p-6">
+          <div class="mb-5 px-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Centro Técnico</span>
+            <h2 class="text-lg font-black text-slate-950 tracking-tight">Recursos DISCODE</h2>
           </div>
 
-          <div>
-            <span class="font-mono text-[10px] uppercase tracking-wider font-bold text-brand-navy block mb-2 pt-2 border-t border-slate-200">Guías Prácticas:</span>
-            <ul class="space-y-1 font-medium">
-              <li>
-                <a href="recurso-selector-ribbon.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  1. Selector de Ribbon
+          <nav class="space-y-4">
+            <!-- Grupo 1: Herramientas & Guías -->
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block px-1 mb-2">
+                Herramientas & Guías
+              </span>
+              <div class="space-y-1">
+                <!-- Selector de Ribbons -->
+                <a href="recurso-selector-ribbon.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Selector de Ribbons</span>
+                  </div>
                 </a>
-              </li>
-              <li>
-                <a href="recurso-transferencia-vs-directa.html" class="block py-2 px-3 bg-brand-navy text-white font-bold rounded-sm">
-                  2. Transferencia vs Directa
-                </a>
-              </li>
-              <li>
-                <a href="recurso-como-elegir-impresora.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  3. Elegir Impresora
-                </a>
-              </li>
-              <li>
-                <a href="recurso-tipo-de-etiqueta.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  4. Tipo de Etiqueta
-                </a>
-              </li>
-              <li>
-                <a href="recurso-mejorar-trazabilidad.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  5. Mejorar Trazabilidad
-                </a>
-              </li>
-              <li>
-                <a href="recurso-evitar-desperdicios.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  6. Evitar Desperdicio
-                </a>
-              </li>
-              <li>
-                <a href="recurso-mantenimiento-zebra.html" class="block py-2 px-3 text-slate-700 hover:bg-white hover:text-brand-navy transition rounded-sm">
-                  7. Mantenimiento Zebra
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
 
-        <div class="mt-8 pt-6 border-t border-slate-200">
-          <span class="text-[10px] font-mono uppercase text-slate-400 block mb-1">ASESORÍA EN SUSTRATOS</span>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20necesito%20determinar%20si%20mi%20proceso%20requiere%20transferencia%20t%C3%A9rmica%20o%20t%C3%A9rmica%20directa" data-whatsapp-context="recursos" target="_blank" class="block text-center w-full bg-slate-900 hover:bg-brand-navy text-white py-2.5 text-xs font-bold uppercase tracking-wider transition rounded-lg">
-            Consultar con Ingeniero
-          </a>
+                <!-- Transferencia vs Directa (ACTIVO) -->
+                <a href="recurso-transferencia-vs-directa.html" class="flex items-center gap-3 px-3 py-2 rounded-xl bg-blue-50/70 text-brand-navy font-bold transition">
+                  <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-bold text-slate-950 block leading-tight truncate">Transferencia vs. Directa</span>
+                  </div>
+                </a>
+
+                <!-- Cómo Elegir Impresora -->
+                <a href="recurso-como-elegir-impresora.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Cómo Elegir Impresora</span>
+                  </div>
+                </a>
+
+                <!-- Tipos de Etiquetas -->
+                <a href="recurso-tipo-de-etiqueta.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Tipos de Etiquetas</span>
+                  </div>
+                </a>
+
+                <!-- 6 Pasos para Trazabilidad -->
+                <a href="recurso-mejorar-trazabilidad.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">6 Pasos para Trazabilidad</span>
+                  </div>
+                </a>
+
+                <!-- Evitar Desperdicio -->
+                <a href="recurso-evitar-desperdicios.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Evitar Desperdicios</span>
+                  </div>
+                </a>
+
+                <!-- Mantenimiento Zebra -->
+                <a href="recurso-mantenimiento-zebra.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight truncate transition">Mantenimiento Zebra & TSC</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Grupo 2: Índice General -->
+            <div class="pt-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block px-1 mb-2">
+                Índice General
+              </span>
+              <div class="space-y-1">
+                <a href="recursos.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight transition">Ver Todos los Recursos</span>
+                  </div>
+                </a>
+
+                <a href="servicio-tecnico.html" class="group flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 transition">
+                  <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-blue-600 block leading-tight transition">Servicio Técnico Oficial</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
       </aside>
 
       <!-- CONTENIDO PRINCIPAL: COMPARATIVA TÉRMICA -->
-      <main class="lg:col-span-9 bg-white">
+      <main class="lg:col-span-9 bg-white space-y-12">
         
-        <!-- Breadcrumb -->
-        <div class="font-mono text-xs text-slate-400 mb-6 pb-3 border-b border-slate-100 flex items-center gap-2">
-          <a href="index.html" class="hover:underline">Inicio</a>
-          <span>/</span>
-          <a href="recursos.html" class="hover:underline">Recursos</a>
-          <span>/</span>
-          <span class="text-slate-900 font-semibold">Transferencia Térmica vs Térmica Directa</span>
-        </div>
-
-        <div class="mb-8">
-          <div class="inline-block border border-slate-300 bg-slate-50 text-slate-700 font-mono text-[10px] font-bold px-2 py-0.5 mb-3">
-            GUÍA TÉCNICA 02 — ARQUITECTURA DE TECNOLOGÍAS DE IMPRESIÓN
+        <!-- Breadcrumb & Encabezado Principal -->
+        <div>
+          <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+            <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+            <span>/</span>
+            <a href="recursos.html" class="hover:text-blue-600 transition">Recursos</a>
+            <span>/</span>
+            <span class="text-slate-900 font-semibold">Transferencia Térmica vs Térmica Directa</span>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight mb-3">
-            TRANSFERENCIA TÉRMICA VS. TÉRMICA DIRECTA
+
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-2">
+            Arquitectura de Tecnologías de Impresión
+          </span>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950 mb-4">
+            Transferencia Térmica vs. Térmica Directa
           </h1>
-          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl">
             Uno de los errores más costosos en la industria del embalaje es implementar la tecnología térmica equivocada. Analizamos cuándo conviene utilizar ribbon y cuándo es suficiente una etiqueta térmica directa sin cinta.
           </p>
         </div>
 
-        <!-- EXPLICACIÓN DE AMBAS TECNOLOGÍAS -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- EXPLICACIÓN DE AMBAS TECNOLOGÍAS (CARDS MODERNAS) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           
-          <div class="border-2 border-brand-navy p-6 bg-white">
-            <span class="font-mono text-xs text-brand-navy font-bold block mb-2">TECNOLOGÍA 01 (CON RIBBON)</span>
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-blue-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] hover:shadow-lg transition">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Tecnología 1 (Con Ribbon)</span>
             <h3 class="text-xl font-bold text-slate-950 mb-3">Transferencia Térmica (Thermal Transfer)</h3>
-            <p class="text-xs text-black mb-4 leading-relaxed">
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
               Utiliza una cinta entintada de ribbon (cera o resina). Los elementos calefactores del cabezal térmico derriten la tinta y la transfieren sobre el sustrato (papel o sintético).
             </p>
-            <div class="border-t border-slate-100 pt-3 text-xs space-y-2">
-              <div><strong>Durabilidad:</strong> Extrema (de 1 a 10+ años sin perder contraste).</div>
-              <div><strong>Resistencia:</strong> Soporta luz solar directa, humedad, solventes y congelación profunda.</div>
-              <div><strong>Sustratos:</strong> Papel couché, polipropileno (BOPP), poliéster, telas y nylon.</div>
-              <div><strong>Cuidado de cabezal:</strong> El ribbon actúa como lubricante, prolongando la vida del cabezal.</div>
+            <div class="space-y-3 pt-4 border-t border-slate-100 text-xs sm:text-sm">
+              <div class="flex items-start gap-2.5">
+                <span class="text-blue-600 font-bold">✓</span>
+                <span class="text-slate-700"><strong>Durabilidad:</strong> Extrema (de 1 a 10+ años sin perder contraste).</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-blue-600 font-bold">✓</span>
+                <span class="text-slate-700"><strong>Resistencia:</strong> Soporta luz solar directa, humedad, solventes y congelación profunda.</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-blue-600 font-bold">✓</span>
+                <span class="text-slate-700"><strong>Sustratos:</strong> Papel couché, polipropileno (BOPP), poliéster, telas y nylon.</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-blue-600 font-bold">✓</span>
+                <span class="text-slate-700"><strong>Cuidado de cabezal:</strong> El ribbon actúa como lubricante, prolongando la vida del cabezal.</span>
+              </div>
             </div>
           </div>
 
-          <div class="border border-slate-200 p-6 bg-slate-50">
-            <span class="font-mono text-xs text-slate-500 font-bold block mb-2">TECNOLOGÍA 02 (SIN RIBBON)</span>
+          <div class="bg-slate-50/70 rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.02)] hover:shadow-lg transition">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-1">Tecnología 2 (Sin Ribbon)</span>
             <h3 class="text-xl font-bold text-slate-950 mb-3">Térmica Directa (Direct Thermal)</h3>
-            <p class="text-xs text-black mb-4 leading-relaxed">
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
               No utiliza ribbon. El papel de la etiqueta contiene una capa química termosensible que se oscurece al recibir calor directo de los micropuntos del cabezal.
             </p>
-            <div class="border-t border-slate-200 pt-3 text-xs space-y-2">
-              <div><strong>Durabilidad:</strong> Corta (de 3 semanas a 6 meses según almacenamiento).</div>
-              <div><strong>Sensibilidad:</strong> Se ennegrece con el calor ambiental, roce por fricción o rayos UV.</div>
-              <div><strong>Sustratos:</strong> Papel térmico con o sin recubrimiento protector (top coated).</div>
-              <div><strong>Cuidado de cabezal:</strong> Mayor fricción directa del papel sobre el cabezal térmico.</div>
+            <div class="space-y-3 pt-4 border-t border-slate-200/60 text-xs sm:text-sm">
+              <div class="flex items-start gap-2.5">
+                <span class="text-slate-400 font-bold">·</span>
+                <span class="text-slate-700"><strong>Durabilidad:</strong> Corta (de 3 semanas a 6 meses según almacenamiento).</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-slate-400 font-bold">·</span>
+                <span class="text-slate-700"><strong>Sensibilidad:</strong> Se ennegrece con el calor ambiental, roce por fricción o rayos UV.</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-slate-400 font-bold">·</span>
+                <span class="text-slate-700"><strong>Sustratos:</strong> Papel térmico con o sin recubrimiento protector (top coated).</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="text-slate-400 font-bold">·</span>
+                <span class="text-slate-700"><strong>Cuidado de cabezal:</strong> Mayor fricción directa del papel sobre el cabezal térmico.</span>
+              </div>
             </div>
           </div>
 
         </div>
 
         <!-- TABLA COMPARATIVA EXHAUSTIVA -->
-        <div class="mb-12">
-          <div class="flex justify-between items-center mb-4 pb-2 border-b border-slate-200">
-            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900">
+        <div>
+          <div class="mb-5">
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">
               Matriz de Comparación Operativa
             </h3>
-            <span class="text-xs font-mono text-slate-400">CRITERIOS TÉCNICOS</span>
+            <p class="text-sm text-slate-500 mt-1">Comparativa técnica entre ambas tecnologías bajo condiciones de planta</p>
           </div>
 
-          <div class="overflow-x-auto border border-slate-200">
-            <table class="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr class="border-b border-slate-200 bg-slate-100 font-mono text-[11px] text-slate-700">
-                  <th class="py-3 px-4">Parámetro</th>
-                  <th class="py-3 px-4 font-bold text-brand-navy">Transferencia Térmica (Ribbon)</th>
-                  <th class="py-3 px-4">Térmica Directa (Sin Ribbon)</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-200">
-                <tr class="hover:bg-slate-50 transition">
-                  <td class="py-3 px-4 font-bold text-slate-950">Insumos necesarios</td>
-                  <td class="py-3 px-4 text-slate-700">Rollo de etiquetas + Rollo de ribbon</td>
-                  <td class="py-3 px-4 text-slate-700 font-mono">Únicamente rollo de etiquetas térmicas</td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition bg-slate-50/50">
-                  <td class="py-3 px-4 font-bold text-slate-950">Tiempo de vida de la impresión</td>
-                  <td class="py-3 px-4 text-slate-700 font-bold text-brand-navy">Permanente (Años)</td>
-                  <td class="py-3 px-4 text-slate-600">Temporal (Semanas a meses)</td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition">
-                  <td class="py-3 px-4 font-bold text-slate-950">Comportamiento en congelación profunda</td>
-                  <td class="py-3 px-4 text-slate-700 font-bold text-brand-navy">Excelente con ribbon de resina y BOPP</td>
-                  <td class="py-3 px-4 text-red-600">Riesgo de oscurecimiento por humedad y condensación</td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition bg-slate-50/50">
-                  <td class="py-3 px-4 font-bold text-slate-950">Exposición solar / Rayos UV</td>
-                  <td class="py-3 px-4 text-slate-700">Inmune a la radiación solar normal</td>
-                  <td class="py-3 px-4 text-red-600">Se oscurece por completo y borra el código</td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition">
-                  <td class="py-3 px-4 font-bold text-slate-950">Desgaste del cabezal térmico</td>
-                  <td class="py-3 px-4 text-slate-700">Bajo (la cinta de ribbon protege los microresistores)</td>
-                  <td class="py-3 px-4 text-slate-700">Moderado-Alto (fricción directa y abrasión del papel)</td>
-                </tr>
-                <tr class="hover:bg-slate-50 transition bg-slate-50/50">
-                  <td class="py-3 px-4 font-bold text-slate-950">Costo inicial por etiqueta</td>
-                  <td class="py-3 px-4 text-slate-700">Etiqueta estándar + fracción del ribbon</td>
-                  <td class="py-3 px-4 text-slate-700">Papel térmico químicamente tratado (ligeramente más caro)</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="bg-white rounded-3xl border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)] overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-slate-700 font-bold text-xs uppercase tracking-wider border-b border-slate-100">
+                    <th class="py-4 px-5">Parámetro</th>
+                    <th class="py-4 px-5 font-bold text-blue-600">Transferencia Térmica (Ribbon)</th>
+                    <th class="py-4 px-5">Térmica Directa (Sin Ribbon)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-600">
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Insumos necesarios</td>
+                    <td class="py-3.5 px-5 font-medium text-slate-900">Rollo de etiquetas + Rollo de ribbon</td>
+                    <td class="py-3.5 px-5">Únicamente rollo de etiquetas térmicas</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition bg-blue-50/20">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Tiempo de vida de la impresión</td>
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Permanente (Años)</td>
+                    <td class="py-3.5 px-5">Temporal (Semanas a meses)</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Comportamiento en congelación profunda</td>
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Excelente con ribbon de resina y BOPP</td>
+                    <td class="py-3.5 px-5 text-rose-600 font-medium">Riesgo de oscurecimiento por humedad y condensación</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition bg-blue-50/20">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Exposición solar / Rayos UV</td>
+                    <td class="py-3.5 px-5 font-bold text-blue-600">Inmune a la radiación solar normal</td>
+                    <td class="py-3.5 px-5 text-rose-600 font-medium">Se oscurece por completo y borra el código</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Desgaste del cabezal térmico</td>
+                    <td class="py-3.5 px-5 font-medium text-slate-900">Bajo (la cinta de ribbon protege los microresistores)</td>
+                    <td class="py-3.5 px-5">Moderado-Alto (fricción directa y abrasión del papel)</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/50 transition bg-blue-50/20">
+                    <td class="py-3.5 px-5 font-semibold text-slate-900">Costo inicial por etiqueta</td>
+                    <td class="py-3.5 px-5">Etiqueta estándar + fracción del ribbon</td>
+                    <td class="py-3.5 px-5">Papel térmico químicamente tratado (ligeramente más caro)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         <!-- RECOMENDACIÓN PRÁCTICA SEGÚN APLICACIÓN -->
-        <div class="border border-slate-200 bg-slate-50 p-8 mb-12">
-          <span class="font-mono text-xs text-brand-navy font-bold uppercase tracking-wider block mb-2">CRITERIOS DE DECISIÓN</span>
-          <h3 class="text-xl font-bold text-slate-950 mb-6">¿Cuál debes elegir para tu empresa?</h3>
+        <div>
+          <div class="mb-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Criterios de Decisión</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">¿Cuál debes elegir para tu empresa?</h3>
+            <p class="text-sm text-slate-500 mt-1">Guía práctica según tus condiciones operativas y destino del producto</p>
+          </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-            <div class="bg-white p-6 border border-slate-200">
-              <strong class="text-sm font-bold text-slate-950 block mb-2">Elige Térmica Directa si:</strong>
-              <ul class="text-slate-600 space-y-2 font-mono">
-                <li>· Etiquetas para guías de envíos courier (Servientrega, Tramaco, DHL).</li>
-                <li>· Boletos de pesaje de básculas de camiones y tickets de control.</li>
-                <li>· Rotulación de alimentos frescos que se consumen en menos de 48 horas.</li>
-                <li>· Buscas máxima velocidad y no deseas gestionar cambios de ribbon.</li>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-50/70 rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_35px_rgba(0,0,0,0.02)]">
+              <strong class="text-base font-bold text-slate-950 block mb-4">Elige Térmica Directa si:</strong>
+              <ul class="space-y-3 text-sm text-slate-600">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-slate-400 font-bold">·</span>
+                  <span>Etiquetas para guías de envíos courier (Servientrega, Tramaco, DHL).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-slate-400 font-bold">·</span>
+                  <span>Boletos de pesaje de básculas de camiones y tickets de control.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-slate-400 font-bold">·</span>
+                  <span>Rotulación de alimentos frescos que se consumen en menos de 48 horas.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-slate-400 font-bold">·</span>
+                  <span>Buscas máxima velocidad y no deseas gestionar cambios de ribbon.</span>
+                </li>
               </ul>
             </div>
 
-            <div class="bg-white p-6 border-2 border-brand-navy">
-              <strong class="text-sm font-bold text-brand-navy block mb-2">Elige Transferencia Térmica si:</strong>
-              <ul class="text-slate-700 space-y-2 font-mono">
-                <li>· Exportación de camarón, pescado, flores o frutas (cadena de frío y aduanas).</li>
-                <li>· Identificación de activos fijos, repuestos o herramientas en bodega.</li>
-                <li>· Productos en percha comercial con rotación mayor a 3 meses.</li>
-                <li>· Etiquetas expuestas a químicos, aceites o calor en planta.</li>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-blue-100 shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+              <strong class="text-base font-bold text-blue-600 block mb-4">Elige Transferencia Térmica si:</strong>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Exportación de camarón, pescado, flores o frutas (cadena de frío y aduanas).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Identificación de activos fijos, repuestos o herramientas en bodega.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Productos en percha comercial con rotación mayor a 3 meses.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-blue-600 font-bold">✓</span>
+                  <span>Etiquetas expuestas a químicos, aceites o calor en planta.</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
         <!-- CTA FINAL -->
-        <div class="border border-slate-200 p-8 text-center bg-white">
-          <h3 class="text-xl font-bold text-slate-950 mb-2">¿Aún no estás seguro de qué tecnología conviene a tu planta?</h3>
-          <p class="text-xs text-black max-w-xl mx-auto mb-6">
-            Nuestros ingenieros analizan tu ambiente térmico y vida útil de producto para recomendarte la opción más rentable.
-          </p>
-          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20necesito%20asesor%C3%ADa%20para%20elegir%20entre%20transferencia%20t%C3%A9rmica%20y%20t%C3%A9rmica%20directa" data-whatsapp-context="recursos" target="_blank" class="inline-block bg-brand-navy hover:bg-blue-600 border border-brand-navy hover:border-blue-600 text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-lg shadow-md">
-            Consultar Asesoría por WhatsApp
+        <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-brand-navy rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl text-white">
+          <div class="max-w-xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-1">Asesoría de Ingeniería Sin Costo</span>
+            <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">¿Aún no estás seguro de qué tecnología conviene a tu planta?</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Nuestros ingenieros analizan tu ambiente térmico y vida útil de producto para recomendarte la opción más rentable.
+            </p>
+          </div>
+          <a href="https://wa.me/593984345891?text=Hola%20DISCODE,%20necesito%20asesor%C3%ADa%20para%20elegir%20entre%20transferencia%20t%C3%A9rmica%20y%20t%C3%A9rmica%20directa" data-whatsapp-context="recursos" target="_blank" class="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-lg hover:shadow-blue-500/25 shrink-0">
+            Consultar Asesoría por WhatsApp →
           </a>
         </div>
 
